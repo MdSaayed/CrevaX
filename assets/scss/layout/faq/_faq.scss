@@ -1,0 +1,11 @@
+#faq{
+    background-color: #fff;
+    .faq-area{
+        .faq-item{
+            background-color: $light-color;
+            .faq-toggle-icon{
+                background-color: $primary-color; 
+            }
+        }
+    } 
+}

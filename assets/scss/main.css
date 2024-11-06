@@ -48,10 +48,52 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px;
+/* General Sans Regular (Weight 400) */
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Regular.woff2") format("woff2"), url("../fonts/GeneralSans-Regular.woff") format("woff"), url("../fonts/GeneralSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* General Sans Medium (Weight 500) */
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Medium.woff2") format("woff2"), url("../fonts/GeneralSans-Medium.woff") format("woff"), url("../fonts/GeneralSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* General Sans SemiBold (Weight 600) */
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Bold.woff2") format("woff2"), url("../fonts/GeneralSans-SemiBold.woff") format("woff"), url("../fonts/GeneralSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+/* General Sans Bold (Weight 700) */
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-Bold.woff2") format("woff2"), url("../fonts/GeneralSans-Bold.woff") format("woff"), url("../fonts/GeneralSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* General Sans ExtraBold (Weight 800) */
+@font-face {
+  font-family: "GeneralSans";
+  src: url("../fonts/GeneralSans-ExtraBold.woff2") format("woff2"), url("../fonts/GeneralSans-ExtraBold.woff") format("woff"), url("../fonts/GeneralSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  font-family: "GeneralSans", sans-serif;
+  font-weight: normal;
+}
+
+.section-sub-title {
+  color: #737373;
+  border: 1px solid #C2E0CE;
+  font-weight: 500;
+  padding: 3px 20px;
+  border-radius: 50px;
 }
 
 .container {
@@ -67,24 +109,18 @@ table {
 }
 @media (max-width: 992px) {
   .container {
-    padding: 40px;
+    padding: 60px;
   }
 }
 @media (max-width: 768px) {
   .container {
-    padding: 20px;
+    padding: 60px 20px;
   }
 }
 @media (max-width: 480px) {
   .container {
-    padding: 10px;
+    padding: 60px 10px;
   }
-}
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px;
 }
 
 .container {
@@ -100,17 +136,17 @@ table {
 }
 @media (max-width: 992px) {
   .container {
-    padding: 40px;
+    padding: 60px;
   }
 }
 @media (max-width: 768px) {
   .container {
-    padding: 20px;
+    padding: 60px 20px;
   }
 }
 @media (max-width: 480px) {
   .container {
-    padding: 10px;
+    padding: 60px 10px;
   }
 }
 
@@ -128,6 +164,12 @@ nav ul li {
 nav ul li:hover {
   color: #24904F;
   transition: 0.5 ease;
+}
+
+@media (min-width: 612px) and (max-width: 992px) {
+  #header-area .header-bg {
+    margin-top: -9rem;
+  }
 }
 
 .header-btn-area .login-btn {
@@ -165,6 +207,7 @@ nav ul li:hover {
   border-radius: 50px;
 }
 .header-content-area .header-title {
+  font-family: "GeneralSans", sans-serif;
   font-weight: 500;
   line-height: 120%;
   color: #171717;
@@ -200,4 +243,40 @@ nav ul li:hover {
   background-color: #098239;
   border: 1px solid #098239;
   transition: 0.5s ease;
+}
+
+#features {
+  background-color: #FFFFFF;
+}
+#features .feature-item {
+  background: #F5FAF7;
+}
+
+#faq {
+  background-color: #fff;
+}
+#faq .faq-area .faq-item {
+  background-color: #F5FAF7;
+}
+#faq .faq-area .faq-item .faq-toggle-icon {
+  background-color: #098239;
+}
+
+#testimonial {
+  background-color: #F5FAF7;
+}
+#testimonial .testimonial-item {
+  background-color: #FFFFFF;
+}
+#testimonial .testimonial-item .testimonial-content p {
+  color: #404040;
+}
+#testimonial .testimonial-item .star-rating i {
+  color: #C2E0CE;
+}
+#testimonial .testimonial-item .testimonail-profile h3 {
+  color: #404040;
+}
+#testimonial .testimonial-item .testimonail-profile p {
+  color: #404040;
 }/*# sourceMappingURL=main.css.map */

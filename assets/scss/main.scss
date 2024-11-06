@@ -1,7 +1,16 @@
 @import "./reset";
-@import "./components/container/container";
+@import "./fonts";
 @import "./variable";
+@import "./common/common";
+@import "./components/container/container";
 @import "./mixin";
 @import "./extend";
 @import "./components/container/container";
 @import "./layout/header/header";
+@import "./layout/features/features";
+@import "./layout/faq/faq";    
+@import "./animation/animation";    
+@import"./layout/testimonials/testimonials"; 
+ 
+
+ 
