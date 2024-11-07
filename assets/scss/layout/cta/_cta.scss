@@ -1,0 +1,20 @@
+#cta{
+    .cta-area{
+        margin: 0 auto;
+        background-color: $green-deep;
+        h3,p{
+            color: $light-neutral;
+            z-index: 9999;
+        }
+        .btn-area{
+            z-index: 9999;
+            .cta-btn{
+                @include btn($bgColor: $light-color, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor: $light-color, $border:$light-color); 
+                
+            }
+        }
+        .section-bg{
+            background-color: #0D3822;
+        }
+    }
+} 
