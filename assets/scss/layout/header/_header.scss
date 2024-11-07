@@ -44,13 +44,8 @@ nav {
         border-radius: 1.5rem !important; 
         height: 100% I !important; 
     }
-
     .header-sub-title{
-        color:$soft-gray ;
-        border: 1px solid $light-mint-green; 
-        font-weight: 500;
-        padding: 3px 20px;
-        border-radius: 50px;
+        @extend .section-sub-title;
     }
     .header-title{
         font-family: $font-family-heading;

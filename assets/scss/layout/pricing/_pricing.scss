@@ -1,0 +1,42 @@
+#pricing{
+    .pricing-cards{
+        .card{
+            background-color: $light-color;
+            border: 1px solid rgba(64, 64, 64, 0.12);
+            &:hover{
+                background-color: $green-deep;
+                transition: 0.5s ease;
+                h3,p,.feature{
+                    color: $light-neutral;
+                }
+                .price{
+                    span{
+                        color: $light-neutral;
+                    }
+                }
+                .fa-check{
+                    color: #FAFDFB;
+                }
+            }
+            h3,p{
+                color: $soft-gray;
+            }
+            .price{
+                span{
+                    color: $dark-neutral;
+                }
+            }
+            .feature{
+                color: $dark-blue-gray;
+            }
+            .buy-now-btn{
+                text-decoration: none;
+                display: block;
+                background-color: $soft-green-gray;
+                padding: 12px 5px;
+                border-radius: 32px;
+                text-align: center;
+            }
+        }
+    }
+}

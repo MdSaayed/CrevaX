@@ -88,7 +88,7 @@ body {
   font-weight: normal;
 }
 
-.section-sub-title {
+.section-sub-title, #testimonial .section-sub-title, #testimonial .header-content-area .header-sub-title, .header-content-area #testimonial .header-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features .header-sub-title, #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features .header-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq .header-sub-title, #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq .header-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features #faq .header-sub-title, #features #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features #faq .header-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq #features .header-sub-title, #faq #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq #features .header-sub-title, #faq .section-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq .header-sub-title, #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq .header-sub-title, #faq #features #testimonial .section-sub-title, #features #testimonial #faq .section-sub-title, #faq #testimonial #features .section-sub-title, #testimonial #features #faq .section-sub-title, #faq #features #testimonial .header-content-area .header-sub-title, #features #testimonial .header-content-area #faq .header-sub-title, #faq #testimonial .header-content-area #features .header-sub-title, #testimonial .header-content-area #features #faq .header-sub-title, #faq #features .header-content-area #testimonial .header-sub-title, #features .header-content-area #testimonial #faq .header-sub-title, #faq .header-content-area #testimonial #features .header-sub-title, .header-content-area #testimonial #features #faq .header-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq .header-sub-title, #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq .header-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features #faq .header-sub-title, #features #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features #faq .header-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq #features .header-sub-title, #faq #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq #features .header-sub-title, #faq .header-content-area .header-sub-title, .header-content-area #faq .header-sub-title, #features .section-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features .header-sub-title, #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features .header-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features .header-sub-title, #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features .header-sub-title, #features #faq #testimonial .section-sub-title, #faq #testimonial #features .section-sub-title, #features #testimonial #faq .section-sub-title, #testimonial #faq #features .section-sub-title, #features #faq #testimonial .header-content-area .header-sub-title, #faq #testimonial .header-content-area #features .header-sub-title, #features #testimonial .header-content-area #faq .header-sub-title, #testimonial .header-content-area #faq #features .header-sub-title, #features #faq .header-content-area #testimonial .header-sub-title, #faq .header-content-area #testimonial #features .header-sub-title, #features .header-content-area #testimonial #faq .header-sub-title, .header-content-area #testimonial #faq #features .header-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features #faq .header-sub-title, #features #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features #faq .header-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq #features .header-sub-title, #faq #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq #features .header-sub-title, #features .header-content-area .header-sub-title, .header-content-area #features .header-sub-title, .header-content-area .header-sub-title {
   color: #737373;
   border: 1px solid #C2E0CE;
   font-weight: 500;
@@ -199,13 +199,6 @@ nav ul li:hover {
   border-radius: 1.5rem !important;
   height: 100% I !important;
 }
-.header-content-area .header-sub-title {
-  color: #737373;
-  border: 1px solid #C2E0CE;
-  font-weight: 500;
-  padding: 3px 20px;
-  border-radius: 50px;
-}
 .header-content-area .header-title {
   font-family: "GeneralSans", sans-serif;
   font-weight: 500;
@@ -279,4 +272,39 @@ nav ul li:hover {
 }
 #testimonial .testimonial-item .testimonail-profile p {
   color: #404040;
+}
+
+#pricing .pricing-cards .card {
+  background-color: #F5FAF7;
+  border: 1px solid rgba(64, 64, 64, 0.12);
+}
+#pricing .pricing-cards .card:hover {
+  background-color: #012C16;
+  transition: 0.5s ease;
+}
+#pricing .pricing-cards .card:hover h3, #pricing .pricing-cards .card:hover p, #pricing .pricing-cards .card:hover .feature {
+  color: #FAFAFA;
+}
+#pricing .pricing-cards .card:hover .price span {
+  color: #FAFAFA;
+}
+#pricing .pricing-cards .card:hover .fa-check {
+  color: #FAFDFB;
+}
+#pricing .pricing-cards .card h3, #pricing .pricing-cards .card p {
+  color: #737373;
+}
+#pricing .pricing-cards .card .price span {
+  color: #171717;
+}
+#pricing .pricing-cards .card .feature {
+  color: #3E4557;
+}
+#pricing .pricing-cards .card .buy-now-btn {
+  text-decoration: none;
+  display: block;
+  background-color: #DFEFE5;
+  padding: 12px 5px;
+  border-radius: 32px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
