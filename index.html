@@ -325,11 +325,18 @@
     <!-- pricing start here -->
      <section id="pricing">
         <div class="container">
-            <div class="section-heading lg:col-span-1 flex flex-col items-center">
+            <div class="section-heading lg:col-span-1 flex flex-col items-center  mb-14">
                 <h2 class="section-title text-5xl font-medium leading-[57px] mt-[20px] text-center mb-6 max-w-[556px]">Powerful Features for </br> Visionary Creators</h2>
                 <p class="text-center max-w-[556px]">AirSync offers flexible pricing plans for businesses of all sizes. Whether you're a small startup or a large enterprise</p>
             </div>
-            <div class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16">
+            <div class="flex items-center justify-center">
+                <div class="pricing-switcher p-2 flex-inline items-center justify-center gap-4 rounded-full">
+                    <button class="switcher-btn active" data-target="card1">Monthly</button>
+                    <button class="switcher-btn" data-target="card2">Annual (Save 30%)</button>
+                </div>
+            </div> 
+            <!-- monthly -->
+            <div id="card1" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16">
                 <div class="card p-10 rounded-2xl">
                     <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
                     <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
@@ -385,9 +392,125 @@
                     </div>
                 </div>
             </div>
+            <!-- yearly -->
+            <div id="card2" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16 hidden">
+                <div class="card p-10 rounded-2xl">
+                    <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
+                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                    <div class="price my-6">
+                        <span class="text-4xl font-medium text-center block">$500.00 USD</span>
+                    </div>
+                    <div class="pakage-features">
+                        <ul>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">Intuitive Task Creation</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2"> Collaboration Tools</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">Flexible Pricing Options</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">Various Functionalities</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-16">
+                        <a class="buy-now-btn" href="#">Started 14 days free</a>
+                    </div>
+                </div>
+                <div class="card p-10 rounded-2xl">
+                    <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
+                    <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
+                    <div class="price my-6">
+                        <span class="text-4xl font-medium text-center block">$700.00 USD</span>
+                    </div>
+                    <div class="pakage-features">
+                        <ul>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">200+ integrations</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2"> Up to 20 individual users</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">40GB individual storage</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">Advanced custom features</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-16">
+                        <a class="buy-now-btn" href="#">Started 14 days free</a>
+                    </div>
+                </div>
+                <div class="card p-10 rounded-2xl">
+                    <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
+                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                    <div class="price my-6">
+                        <span class="text-4xl font-medium text-center block">$ 1000.00 USD</span>
+                    </div>
+                    <div class="pakage-features">
+                        <ul>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">Audit log and data tracking</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2"> Unlimited individual accounts</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">Basic chat and support services</span></li>
+                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="feature ml-2">Personalized Priority Support</span></li>
+                        </ul>
+                    </div>
+                    <div class="mt-16">
+                        <a class="buy-now-btn" href="#">Started 14 days free</a>
+                    </div>
+                </div>
+            </div>
         </div>
      </section>
     <!-- pricing end here -->
+
+    <!-- blogs start here -->
+     <section id="blogs">
+        <div class="container py-28">
+            <div class="section-heading">
+                <div class="flex justify-center">
+                    <span class="section-sub-title text-center text-[20px]">Article and  Recurses</span>
+                </div>
+                <h2 class="section-title text-center text-5xl font-medium leading-[57px] mt-[20px]">Discover the AirSync Blog </br> for the Newest Updates</h2>
+            </div>
+            <div class="blog-area grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+                <div class="blog-card rounded-lg">
+                    <div class="thumbnail">
+                        <a href="blog-details.html">
+                            <img src="./assets/img/blog/blog-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-content mt-12 rounded-lg p-6">
+                        <div class="meta flex gap-4">
+                            <div class="blog-cat">
+                                <span class=" px-2 py-[2px] rounded">Technology</span>
+                            </div>
+                            <div class="blog-date">
+                                <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-4 blog-title">
+                            <a href="blog-details.html">
+                                <p class="font-medium text-2xl">Stay ahead of the curve with the newest features on AirSync CRM Platform!</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-card rounded-lg">
+                    <div class="blog-content mb-12 rounded-lg p-6">
+                        <div class="meta flex gap-4">
+                            <div class="blog-cat">
+                                <span class=" px-2 py-[2px] rounded">Technology</span>
+                            </div>
+                            <div class="blog-date">
+                                <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-4 blog-title">
+                            <a href="blog-details.html">
+                                <p class="font-medium text-2xl">Stay in the loop with the newest features and enhancements on the AirSync CRM website!</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <a href="blog-details.html">
+                            <img src="./assets/img/blog/blog-2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- blogs end here -->
   
 
     <!-- js  -->

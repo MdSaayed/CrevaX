@@ -274,6 +274,29 @@ nav ul li:hover {
   color: #404040;
 }
 
+#pricing .pricing-switcher {
+  background-color: #EBF5EF;
+  margin: 0 auto;
+}
+#pricing .pricing-switcher .switcher-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  padding: 8px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #404040;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 20px;
+}
+#pricing .pricing-switcher .switcher-btn.active {
+  background-color: #098239;
+  color: #F5FAF7;
+}
+#pricing .pricing-switcher .switcher-btn:hover {
+  background-color: #098239;
+  color: #F5FAF7;
+}
 #pricing .pricing-cards .card {
   background-color: #F5FAF7;
   border: 1px solid rgba(64, 64, 64, 0.12);
@@ -291,6 +314,9 @@ nav ul li:hover {
 #pricing .pricing-cards .card:hover .fa-check {
   color: #FAFDFB;
 }
+#pricing .pricing-cards .card:hover .buy-now-btn {
+  background-color: #F5FAF7;
+}
 #pricing .pricing-cards .card h3, #pricing .pricing-cards .card p {
   color: #737373;
 }
@@ -307,4 +333,25 @@ nav ul li:hover {
   padding: 12px 5px;
   border-radius: 32px;
   text-align: center;
+}
+
+#blogs .blog-card {
+  background-color: #FFFFFF;
+}
+#blogs .blog-card .blog-content {
+  border: 1px solid rgba(64, 64, 64, 0.08);
+}
+#blogs .blog-card .blog-content .blog-cat span {
+  background-color: #F5FAF7;
+  font-weight: 500;
+  color: #404040;
+  display: block;
+}
+#blogs .blog-card .blog-content .blog-date p {
+  background-color: #F5FAF7;
+  font-weight: 500;
+  color: #404040;
+}
+#blogs .blog-card .blog-content .blog-title {
+  color: #171717;
 }/*# sourceMappingURL=main.css.map */

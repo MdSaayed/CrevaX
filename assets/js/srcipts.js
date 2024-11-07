@@ -40,3 +40,23 @@ document.querySelectorAll('.faq-question').forEach(item => {
 });
 
 
+// pricing swither
+document.querySelectorAll('.switcher-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove 'active' class from all buttons
+      document.querySelectorAll('.switcher-btn').forEach(btn => btn.classList.remove('active'));
+      
+      // Hide all pricing cards by adding 'hidden' class
+      document.querySelectorAll('.pricing-cards').forEach(card => card.classList.add('hidden'));
+      
+      // Add 'active' class to the clicked button
+      button.classList.add('active');
+      
+      // Show the target card by removing 'hidden' class based on data-target
+      const targetId = button.getAttribute('data-target');
+      document.getElementById(targetId).classList.remove('hidden');
+    });
+  });
+  
+  
+

@@ -1,4 +1,31 @@
 #pricing{
+    .pricing-switcher {
+        background-color: $light-normal;
+        margin: 0 auto;
+
+    .switcher-btn {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        padding: 8px 20px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: $dark-gray;
+        transition: color 0.3s, background-color 0.3s;
+        border-radius: 20px;
+
+        &.active {
+        background-color: $primary-color;
+        color: $light-color;
+        }
+
+        &:hover {
+        background-color:$primary-color;
+        color: $light-color;
+        }
+    }
+    }
+
     .pricing-cards{
         .card{
             background-color: $light-color;
@@ -16,6 +43,9 @@
                 }
                 .fa-check{
                     color: #FAFDFB;
+                }
+                .buy-now-btn{
+                    background-color: $light-color;
                 }
             }
             h3,p{
