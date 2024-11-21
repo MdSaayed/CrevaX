@@ -88,12 +88,19 @@ body {
   font-weight: normal;
 }
 
-.section-sub-title, #testimonial .section-sub-title, #testimonial .header-content-area .header-sub-title, .header-content-area #testimonial .header-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features .header-sub-title, #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features .header-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq .header-sub-title, #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq .header-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features #faq .header-sub-title, #features #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features #faq .header-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq #features .header-sub-title, #faq #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq #features .header-sub-title, #faq .section-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq .header-sub-title, #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq .header-sub-title, #faq #features #testimonial .section-sub-title, #features #testimonial #faq .section-sub-title, #faq #testimonial #features .section-sub-title, #testimonial #features #faq .section-sub-title, #faq #features #testimonial .header-content-area .header-sub-title, #features #testimonial .header-content-area #faq .header-sub-title, #faq #testimonial .header-content-area #features .header-sub-title, #testimonial .header-content-area #features #faq .header-sub-title, #faq #features .header-content-area #testimonial .header-sub-title, #features .header-content-area #testimonial #faq .header-sub-title, #faq .header-content-area #testimonial #features .header-sub-title, .header-content-area #testimonial #features #faq .header-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq .header-sub-title, #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq .header-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features #faq .header-sub-title, #features #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features #faq .header-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq #features .header-sub-title, #faq #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq #features .header-sub-title, #faq .header-content-area .header-sub-title, .header-content-area #faq .header-sub-title, #features .section-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features .header-sub-title, #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features .header-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features .header-sub-title, #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features .header-sub-title, #features #faq #testimonial .section-sub-title, #faq #testimonial #features .section-sub-title, #features #testimonial #faq .section-sub-title, #testimonial #faq #features .section-sub-title, #features #faq #testimonial .header-content-area .header-sub-title, #faq #testimonial .header-content-area #features .header-sub-title, #features #testimonial .header-content-area #faq .header-sub-title, #testimonial .header-content-area #faq #features .header-sub-title, #features #faq .header-content-area #testimonial .header-sub-title, #faq .header-content-area #testimonial #features .header-sub-title, #features .header-content-area #testimonial #faq .header-sub-title, .header-content-area #testimonial #faq #features .header-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #features #faq .header-sub-title, #features #faq .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #features #faq .header-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial .header-content-area .header-sub-title, #testimonial .header-content-area #faq #features .header-sub-title, #faq #features .header-content-area #testimonial .header-sub-title, .header-content-area #testimonial #faq #features .header-sub-title, #features .header-content-area .header-sub-title, .header-content-area #features .header-sub-title, .header-content-area .header-sub-title {
+.section-sub-title, #testimonial .section-sub-title, #testimonial #hero-section-home .hero-content-area .hero-sub-title, #hero-section-home .hero-content-area #testimonial .hero-sub-title, #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features #faq .hero-sub-title, #features #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq #features .hero-sub-title, #faq #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq #features .hero-sub-title, #faq .section-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #faq #features #testimonial .section-sub-title, #features #testimonial #faq .section-sub-title, #faq #testimonial #features .section-sub-title, #testimonial #features #faq .section-sub-title, #faq #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #features #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #faq #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features #faq .hero-sub-title, #faq #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features #faq .hero-sub-title, #faq #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features #faq .hero-sub-title, #features #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq #features .hero-sub-title, #faq #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq #features .hero-sub-title, #features .section-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #features #faq #testimonial .section-sub-title, #faq #testimonial #features .section-sub-title, #features #testimonial #faq .section-sub-title, #testimonial #faq #features .section-sub-title, #features #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #faq #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #features #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq #features .hero-sub-title, #features #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq #features .hero-sub-title, #features #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq #features .hero-sub-title, #features #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq #features .hero-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features #faq .hero-sub-title, #features #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq #features .hero-sub-title, #faq #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq #features .hero-sub-title, #hero-section-feature .hero-content-area .hero-sub-title, #hero-section-home .hero-content-area .hero-sub-title {
   color: #737373;
   border: 1px solid #C2E0CE;
   font-weight: 500;
   padding: 3px 20px;
   border-radius: 50px;
+}
+
+.hero-title, #hero-section-feature .hero-content-area .hero-title {
+  font-family: "GeneralSans", sans-serif;
+  font-weight: 500;
+  line-height: 120%;
+  color: #171717;
 }
 
 #footer .container .footer-content-area {
@@ -217,20 +224,44 @@ body {
   }
 }
 
-nav ul {
+#header-area {
+  height: 90px;
+}
+#header-area nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
-nav ul li {
+#header-area nav ul li {
   color: #737373;
   font-weight: 400;
   line-height: 24px;
 }
-nav ul li:hover {
+#header-area nav ul li:hover {
   color: #24904F;
   transition: 0.5 ease;
+}
+#header-area .header-btn-area .login-btn {
+  color: #737373;
+  font-weight: 400;
+  line-height: 24px;
+}
+#header-area .header-btn-area .btn-primary {
+  font-weight: 400;
+  line-height: 24px;
+  color: #F5FAF7;
+  background-color: #098239;
+  border: 1px solid #098239;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#header-area .header-btn-area .btn-primary:hover {
+  color: #098239;
+  background-color: transparent;
+  border: 1px solid #098239;
+  transition: 0.5s ease;
 }
 
 @media (min-width: 612px) and (max-width: 992px) {
@@ -239,40 +270,12 @@ nav ul li:hover {
   }
 }
 
-.header-btn-area .login-btn {
-  color: #737373;
-  font-weight: 400;
-  line-height: 24px;
-}
-.header-btn-area .btn-primary {
-  font-weight: 400;
-  line-height: 24px;
-  color: #F5FAF7;
-  background-color: #098239;
-  border: 1px solid #098239;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.header-btn-area .btn-primary:hover {
-  color: #098239;
-  background-color: transparent;
-  border: 1px solid #098239;
-  transition: 0.5s ease;
-}
-
-.header-content-area .content {
+#hero-section-home .hero-content-area .content {
   background: linear-gradient(180deg, rgba(198, 235, 231, 0.18) 0%, rgba(228, 235, 255, 0.3) 100%) !important;
   border-radius: 1.5rem !important;
-  height: 100% I !important;
+  height: 100% !important;
 }
-.header-content-area .header-title {
-  font-family: "GeneralSans", sans-serif;
-  font-weight: 500;
-  line-height: 120%;
-  color: #171717;
-}
-.header-content-area .btn-primary {
+#hero-section-home .hero-content-area .btn-primary {
   font-weight: 400;
   line-height: 24px;
   color: #F5FAF7;
@@ -282,13 +285,13 @@ nav ul li:hover {
   border-radius: 50px;
   cursor: pointer;
 }
-.header-content-area .btn-primary:hover {
+#hero-section-home .hero-content-area .btn-primary:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
   transition: 0.5s ease;
 }
-.header-content-area .btn-secondary {
+#hero-section-home .hero-content-area .btn-secondary {
   font-weight: 400;
   line-height: 24px;
   color: #404040;
@@ -298,7 +301,49 @@ nav ul li:hover {
   border-radius: 50px;
   cursor: pointer;
 }
-.header-content-area .btn-secondary:hover {
+#hero-section-home .hero-content-area .btn-secondary:hover {
+  color: #F5FAF7;
+  background-color: #098239;
+  border: 1px solid #098239;
+  transition: 0.5s ease;
+}
+
+#hero-section-feature {
+  margin-top: -90px;
+}
+#hero-section-feature .hero-content-area {
+  padding-top: 3rem;
+}
+#hero-section-feature .hero-content-area .content {
+  max-height: 634px !important;
+}
+#hero-section-feature .hero-content-area .btn-primary {
+  font-weight: 400;
+  line-height: 24px;
+  color: #F5FAF7;
+  background-color: #098239;
+  border: 1px solid #098239;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#hero-section-feature .hero-content-area .btn-primary:hover {
+  color: #098239;
+  background-color: transparent;
+  border: 1px solid #098239;
+  transition: 0.5s ease;
+}
+#hero-section-feature .hero-content-area .btn-secondary {
+  font-weight: 400;
+  line-height: 24px;
+  color: #404040;
+  background-color: #EBF5EF;
+  border: 1px solid #F5FAF7;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#hero-section-feature .hero-content-area .btn-secondary:hover {
   color: #F5FAF7;
   background-color: #098239;
   border: 1px solid #098239;

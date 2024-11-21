@@ -1,0 +1,46 @@
+// home page 
+#hero-section-home{
+    .hero-content-area{
+        .content{ 
+            background: linear-gradient(180deg, rgba(198, 235, 231, 0.18) 0%, rgba(228, 235, 255, 0.30) 100%) !important; 
+            border-radius: 1.5rem !important; 
+            height: 100% !important; 
+        }
+        .hero-sub-title{
+            @extend .section-sub-title;
+        }
+        .hero-sub-title{
+            @extend .section-sub-title;
+        }
+        .btn-primary {
+            @include btn(); 
+        }
+        .btn-secondary {
+            @include btn($bgColor: $light-color, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor: $light-color, $border:$light-color);    
+        } 
+    }  
+} 
+
+// feature page
+#hero-section-feature{
+    margin-top: -90px;
+    .hero-content-area{
+        padding-top: 3rem;
+        .content{ 
+            max-height: 634px !important; 
+        }
+        .hero-sub-title{
+            @extend .section-sub-title;
+        }
+        .hero-title{
+           @extend .hero-title; 
+        }
+        .btn-primary {
+            @include btn(); 
+        }
+        .btn-secondary {
+            @include btn($bgColor: $light-normal, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor: $light-color, $border:$light-color);    
+        } 
+    }  
+} 
+
