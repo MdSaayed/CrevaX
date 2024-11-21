@@ -1,0 +1,14 @@
+#faq{
+    background-color: #fff;
+    .section-sub-title{
+        @extend  .section-sub-title;
+    }
+    .faq-area{ 
+        .faq-item{
+            background-color: $light-color;
+            .faq-toggle-icon{
+                background-color: $primary-color; 
+            }
+        }
+    } 
+}

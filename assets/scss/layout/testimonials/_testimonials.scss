@@ -1,0 +1,23 @@
+#testimonial{
+    background-color: $light-color;
+    .section-sub-title{
+        @extend .section-sub-title;
+    }
+    .testimonial-item{
+        background-color: $white;
+        .testimonial-content p{
+            color: $dark-gray
+        }
+        .star-rating{
+            i{
+                color: $light-mint-green;
+            }
+        }
+        .testimonail-profile h3{
+            color: $dark-gray;
+        }
+        .testimonail-profile p{
+            color: $dark-gray;
+        }
+    }
+}

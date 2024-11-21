@@ -1,0 +1,65 @@
+nav {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+        li {
+            color: $soft-gray;
+            font-weight: 400;
+            line-height: 24px;
+
+            &:hover {
+                color: $green-bright;
+                transition: 0.5 ease;
+            }
+        }
+    }
+}
+
+#header-area{
+    @media (min-width: 612px) and (max-width: 992px) {
+        .header-bg {
+            margin-top: -9rem;
+        }
+    }   
+}
+
+.header-btn-area {
+    .login-btn {
+        color: $soft-gray;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .btn-primary {
+        @include btn(); 
+    }
+}
+
+.header-content-area{
+    .content{ 
+        background: linear-gradient(180deg, rgba(198, 235, 231, 0.18) 0%, rgba(228, 235, 255, 0.30) 100%) !important; 
+        border-radius: 1.5rem !important; 
+        height: 100% I !important; 
+    }
+    .header-sub-title{
+        @extend .section-sub-title;
+    }
+    .header-title{
+        font-family: $font-family-heading;
+        font-weight: 500;
+        line-height: 120%;
+        color: $dark-neutral;
+    }
+    .btn-primary {
+        @include btn(); 
+    }
+    .btn-secondary {
+        @include btn($bgColor: $light-color, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor: $light-color, $border:$light-color);    
+    }
+}
+
+
+    
