@@ -39,7 +39,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -50,45 +50,50 @@ table {
 
 /* General Sans Regular (Weight 400) */
 @font-face {
-  font-family: "GeneralSans";
+  font-family: 'GeneralSans';
   src: url("../fonts/GeneralSans-Regular.woff2") format("woff2"), url("../fonts/GeneralSans-Regular.woff") format("woff"), url("../fonts/GeneralSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
+
 /* General Sans Medium (Weight 500) */
 @font-face {
-  font-family: "GeneralSans";
+  font-family: 'GeneralSans';
   src: url("../fonts/GeneralSans-Medium.woff2") format("woff2"), url("../fonts/GeneralSans-Medium.woff") format("woff"), url("../fonts/GeneralSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
+
 /* General Sans SemiBold (Weight 600) */
 @font-face {
-  font-family: "GeneralSans";
+  font-family: 'GeneralSans';
   src: url("../fonts/GeneralSans-Bold.woff2") format("woff2"), url("../fonts/GeneralSans-SemiBold.woff") format("woff"), url("../fonts/GeneralSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
+
 /* General Sans Bold (Weight 700) */
 @font-face {
-  font-family: "GeneralSans";
+  font-family: 'GeneralSans';
   src: url("../fonts/GeneralSans-Bold.woff2") format("woff2"), url("../fonts/GeneralSans-Bold.woff") format("woff"), url("../fonts/GeneralSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
+
 /* General Sans ExtraBold (Weight 800) */
 @font-face {
-  font-family: "GeneralSans";
+  font-family: 'GeneralSans';
   src: url("../fonts/GeneralSans-ExtraBold.woff2") format("woff2"), url("../fonts/GeneralSans-ExtraBold.woff") format("woff"), url("../fonts/GeneralSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
+
 body {
-  font-family: "GeneralSans", sans-serif;
+  font-family: 'GeneralSans', sans-serif;
   font-weight: normal;
 }
 
-.section-sub-title, #testimonial .section-sub-title, #testimonial #hero-section-home .hero-content-area .hero-sub-title, #hero-section-home .hero-content-area #testimonial .hero-sub-title, #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features #faq .hero-sub-title, #features #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq #features .hero-sub-title, #faq #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq #features .hero-sub-title, #faq .section-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #faq #features #testimonial .section-sub-title, #features #testimonial #faq .section-sub-title, #faq #testimonial #features .section-sub-title, #testimonial #features #faq .section-sub-title, #faq #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #features #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #faq #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features #faq .hero-sub-title, #faq #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features #faq .hero-sub-title, #faq #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #testimonial .section-sub-title, #testimonial #faq .section-sub-title, #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features #faq .hero-sub-title, #features #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq #features .hero-sub-title, #faq #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq #features .hero-sub-title, #features .section-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #features #testimonial .section-sub-title, #testimonial #features .section-sub-title, #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #features #faq #testimonial .section-sub-title, #faq #testimonial #features .section-sub-title, #features #testimonial #faq .section-sub-title, #testimonial #faq #features .section-sub-title, #features #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #faq #testimonial #hero-section-home .hero-content-area #features .hero-sub-title, #features #testimonial #hero-section-home .hero-content-area #faq .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq #features .hero-sub-title, #features #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #faq #hero-section-home .hero-content-area #testimonial #features .hero-sub-title, #features #hero-section-home .hero-content-area #testimonial #faq .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq #features .hero-sub-title, #features #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #faq #testimonial #hero-section-feature .hero-content-area #features .hero-sub-title, #features #testimonial #hero-section-feature .hero-content-area #faq .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq #features .hero-sub-title, #features #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #faq #hero-section-feature .hero-content-area #testimonial #features .hero-sub-title, #features #hero-section-feature .hero-content-area #testimonial #faq .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq #features .hero-sub-title, #features #faq #testimonial .section-sub-title, #testimonial #features #faq .section-sub-title, #features #faq #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #features #faq .hero-sub-title, #features #faq #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #features #faq .hero-sub-title, #features #faq #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #features #faq .hero-sub-title, #faq #features #testimonial .section-sub-title, #testimonial #faq #features .section-sub-title, #faq #features #testimonial #hero-section-home .hero-content-area .hero-sub-title, #testimonial #hero-section-home .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-home .hero-content-area #testimonial .hero-sub-title, #hero-section-home .hero-content-area #testimonial #faq #features .hero-sub-title, #faq #features #testimonial #hero-section-feature .hero-content-area .hero-sub-title, #testimonial #hero-section-feature .hero-content-area #faq #features .hero-sub-title, #faq #features #hero-section-feature .hero-content-area #testimonial .hero-sub-title, #hero-section-feature .hero-content-area #testimonial #faq #features .hero-sub-title, #hero-section-feature .hero-content-area .hero-sub-title, #hero-section-home .hero-content-area .hero-sub-title {
+.section-sub-title, #hero-section-home .hero-content-area .hero-sub-title, #hero-section-features .hero-content-area .hero-sub-title, #features .section-sub-title, #feature-details .section-heading .section-sub-title, #faq .section-sub-title, #testimonial .section-sub-title {
   color: #737373;
   border: 1px solid #C2E0CE;
   font-weight: 500;
@@ -96,31 +101,54 @@ body {
   border-radius: 50px;
 }
 
-.hero-title, #hero-section-feature .hero-content-area .hero-title {
+.hero-title, #hero-section-features .hero-content-area .hero-title {
   font-family: "GeneralSans", sans-serif;
   font-weight: 500;
   line-height: 120%;
   color: #171717;
 }
 
+.blog-cat span {
+  background-color: #F5FAF7;
+  font-weight: 500;
+  color: #404040;
+  display: block;
+}
+
+.blog-date p {
+  background-color: #F5FAF7;
+  font-weight: 500;
+  color: #404040;
+}
+
+.blog-title {
+  color: #171717;
+}
+
 #footer .container .footer-content-area {
   background-color: #EBF5EF;
 }
+
 #footer .container .footer-content-area h3 {
   color: #171717;
 }
+
 #footer .container .footer-content-area p {
   color: #737373;
 }
+
 #footer .container .footer-content-area .newslatter input {
   border: 1px solid #C2E0CE;
   height: 48px;
+  -webkit-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
+
 #footer .container .footer-content-area .newslatter input:focus {
   border: 1px solid #098239;
   outline: none;
 }
+
 #footer .container .footer-content-area .newslatter .btn {
   font-weight: 400;
   line-height: 24px;
@@ -131,41 +159,52 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+
 #footer .container .footer-content-area .newslatter .btn:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+
 #footer .container .footer-content-area .links h3 {
   color: #171717;
 }
+
 #footer .container .footer-content-area .links h4 {
   color: #404040;
 }
+
 #footer .container .footer-content-area .links li {
   color: #171717;
   margin-bottom: 16px;
 }
+
 #footer .container .footer-content-area .links .icon-wrapper {
   background-color: #FAFDFB;
 }
+
 #footer .container .footer-content-area .copyright-text {
   position: relative;
   padding-top: 32px;
 }
+
 #footer .container .footer-content-area .copyright-text::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0) 25%, rgb(9, 130, 57) 50%, rgba(0, 212, 255, 0) 75%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(2, 0, 36, 0)), color-stop(50%, #098239), color-stop(75%, rgba(0, 212, 255, 0)));
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0) 25%, #098239 50%, rgba(0, 212, 255, 0) 75%);
 }
+
 #footer .container .footer-content-area .copyright-text p {
   color: #404040;
 }
+
 #footer .container .footer-content-area .copyright-text a {
   color: #098239;
 }
@@ -175,49 +214,26 @@ body {
   margin: 0 auto;
   padding: 80px;
 }
+
 @media (max-width: 1200px) {
   .container {
     max-width: 100%;
     padding: 60px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    padding: 60px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    padding: 60px 20px;
-  }
-}
-@media (max-width: 480px) {
-  .container {
-    padding: 60px 10px;
   }
 }
 
-.container {
-  max-width: 1440px !important;
-  margin: 0 auto;
-  padding: 80px;
-}
-@media (max-width: 1200px) {
-  .container {
-    max-width: 100%;
-    padding: 60px;
-  }
-}
 @media (max-width: 992px) {
   .container {
     padding: 60px;
   }
 }
+
 @media (max-width: 768px) {
   .container {
     padding: 60px 20px;
   }
 }
+
 @media (max-width: 480px) {
   .container {
     padding: 60px 10px;
@@ -227,26 +243,38 @@ body {
 #header-area {
   height: 90px;
 }
+
 #header-area nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
 }
+
 #header-area nav ul li {
   color: #737373;
   font-weight: 400;
   line-height: 24px;
 }
+
 #header-area nav ul li:hover {
   color: #24904F;
+  -webkit-transition: 0.5 ease;
   transition: 0.5 ease;
 }
+
 #header-area .header-btn-area .login-btn {
   color: #737373;
   font-weight: 400;
   line-height: 24px;
 }
+
 #header-area .header-btn-area .btn-primary {
   font-weight: 400;
   line-height: 24px;
@@ -257,10 +285,12 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+
 #header-area .header-btn-area .btn-primary:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -271,10 +301,12 @@ body {
 }
 
 #hero-section-home .hero-content-area .content {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(198, 235, 231, 0.18)), to(rgba(228, 235, 255, 0.3))) !important;
   background: linear-gradient(180deg, rgba(198, 235, 231, 0.18) 0%, rgba(228, 235, 255, 0.3) 100%) !important;
   border-radius: 1.5rem !important;
   height: 100% !important;
 }
+
 #hero-section-home .hero-content-area .btn-primary {
   font-weight: 400;
   line-height: 24px;
@@ -285,12 +317,15 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+
 #hero-section-home .hero-content-area .btn-primary:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+
 #hero-section-home .hero-content-area .btn-secondary {
   font-weight: 400;
   line-height: 24px;
@@ -301,23 +336,28 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+
 #hero-section-home .hero-content-area .btn-secondary:hover {
   color: #F5FAF7;
   background-color: #098239;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-#hero-section-feature {
+#hero-section-features {
   margin-top: -90px;
 }
-#hero-section-feature .hero-content-area {
+
+#hero-section-features .hero-content-area {
   padding-top: 3rem;
 }
-#hero-section-feature .hero-content-area .content {
+
+#hero-section-features .hero-content-area .content {
   max-height: 634px !important;
 }
-#hero-section-feature .hero-content-area .btn-primary {
+
+#hero-section-features .hero-content-area .btn-primary {
   font-weight: 400;
   line-height: 24px;
   color: #F5FAF7;
@@ -327,13 +367,16 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
-#hero-section-feature .hero-content-area .btn-primary:hover {
+
+#hero-section-features .hero-content-area .btn-primary:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-#hero-section-feature .hero-content-area .btn-secondary {
+
+#hero-section-features .hero-content-area .btn-secondary {
   font-weight: 400;
   line-height: 24px;
   color: #404040;
@@ -343,26 +386,55 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
-#hero-section-feature .hero-content-area .btn-secondary:hover {
+
+#hero-section-features .hero-content-area .btn-secondary:hover {
   color: #F5FAF7;
   background-color: #098239;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
 #features {
   background-color: #FFFFFF;
 }
-#features .feature-item {
+
+#features .features-item {
   background: #F5FAF7;
+}
+
+#feature-details .section-heading .circle-icon {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #4382FF;
+  border-radius: 50%;
+}
+
+#feature-details .section-heading #hero-section-features .hero-content-area .hero-sub-title, #hero-section-features .hero-content-area #feature-details .section-heading .hero-sub-title, #feature-details .section-heading .section-sub-title, #feature-details .section-heading #hero-section-home .hero-content-area .hero-sub-title, #hero-section-home .hero-content-area #feature-details .section-heading .hero-sub-title {
+  background-color: #FFFFFF;
+  border: 1px solid #F3F7FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#feature-details .feature-content h3 {
+  color: #171717;
+}
+
+#feature-details .feature-content p {
+  color: #404040;
 }
 
 #faq {
   background-color: #fff;
 }
+
 #faq .faq-area .faq-item {
   background-color: #F5FAF7;
 }
+
 #faq .faq-area .faq-item .faq-toggle-icon {
   background-color: #098239;
 }
@@ -370,18 +442,23 @@ body {
 #testimonial {
   background-color: #F5FAF7;
 }
+
 #testimonial .testimonial-item {
   background-color: #FFFFFF;
 }
+
 #testimonial .testimonial-item .testimonial-content p {
   color: #404040;
 }
+
 #testimonial .testimonial-item .star-rating i {
   color: #C2E0CE;
 }
+
 #testimonial .testimonial-item .testimonail-profile h3 {
   color: #404040;
 }
+
 #testimonial .testimonial-item .testimonail-profile p {
   color: #404040;
 }
@@ -390,53 +467,68 @@ body {
   background-color: #EBF5EF;
   margin: 0 auto;
 }
+
 #pricing .pricing-switcher .switcher-btn {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   border: none;
   background: none;
   color: #404040;
+  -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
   padding: 8px 15px;
   border-radius: 50px;
   cursor: pointer;
 }
+
 #pricing .pricing-switcher .switcher-btn.active {
   background-color: #098239;
   color: #F5FAF7;
 }
+
 #pricing .pricing-switcher .switcher-btn:hover {
   background-color: #098239;
   color: #F5FAF7;
 }
+
 #pricing .pricing-cards .card {
   background-color: #F5FAF7;
   border: 1px solid rgba(64, 64, 64, 0.12);
 }
+
 #pricing .pricing-cards .card:hover {
   background-color: #012C16;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
-#pricing .pricing-cards .card:hover h3, #pricing .pricing-cards .card:hover p, #pricing .pricing-cards .card:hover .feature {
+
+#pricing .pricing-cards .card:hover h3, #pricing .pricing-cards .card:hover p, #pricing .pricing-cards .card:hover .features {
   color: #FAFAFA;
 }
+
 #pricing .pricing-cards .card:hover .price span {
   color: #FAFAFA;
 }
+
 #pricing .pricing-cards .card:hover .fa-check {
   color: #FAFDFB;
 }
+
 #pricing .pricing-cards .card:hover .buy-now-btn {
   background-color: #F5FAF7;
 }
+
 #pricing .pricing-cards .card h3, #pricing .pricing-cards .card p {
   color: #737373;
 }
+
 #pricing .pricing-cards .card .price span {
   color: #171717;
 }
-#pricing .pricing-cards .card .feature {
+
+#pricing .pricing-cards .card .features {
   color: #3E4557;
 }
+
 #pricing .pricing-cards .card .buy-now-btn {
   text-decoration: none;
   display: block;
@@ -449,23 +541,11 @@ body {
 #blogs .blog-card {
   background-color: #FFFFFF;
 }
+
 #blogs .blog-card .blog-content {
   border: 1px solid rgba(64, 64, 64, 0.08);
 }
-#blogs .blog-card .blog-content .blog-cat span {
-  background-color: #F5FAF7;
-  font-weight: 500;
-  color: #404040;
-  display: block;
-}
-#blogs .blog-card .blog-content .blog-date p {
-  background-color: #F5FAF7;
-  font-weight: 500;
-  color: #404040;
-}
-#blogs .blog-card .blog-content .blog-title {
-  color: #171717;
-}
+
 #blogs .blog-btn-area .btn-primary {
   font-weight: 400;
   line-height: 24px;
@@ -476,12 +556,15 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+
 #blogs .blog-btn-area .btn-primary:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+
 #blogs .blog-btn-area .btn-secondary {
   font-weight: 400;
   line-height: 24px;
@@ -492,10 +575,12 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+
 #blogs .blog-btn-area .btn-secondary:hover {
   color: #F5FAF7;
   background-color: #098239;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -503,13 +588,16 @@ body {
   margin: 0 auto;
   background-color: #012C16;
 }
+
 #cta .cta-area h3, #cta .cta-area p {
   color: #FAFAFA;
   z-index: 9999;
 }
+
 #cta .cta-area .btn-area {
   z-index: 9999;
 }
+
 #cta .cta-area .btn-area .cta-btn {
   font-weight: 400;
   line-height: 24px;
@@ -520,12 +608,112 @@ body {
   border-radius: 50px;
   cursor: pointer;
 }
+
 #cta .cta-area .btn-area .cta-btn:hover {
   color: #F5FAF7;
   background-color: #098239;
   border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+
 #cta .cta-area .section-bg {
   background-color: #0D3822;
-}/*# sourceMappingURL=main.css.map */
+}
+
+#latest-post .blog-filter a {
+  color: #404040;
+  padding: 8px 20px;
+  border-radius: 32px;
+}
+
+#latest-post .blog-filter .active {
+  background-color: #098239;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+#latest-post .blog-card {
+  background-color: #FFFFFF;
+}
+
+#latest-post .blog-card .thumbnail {
+  border-radius: 32px;
+}
+
+#latest-post .blog-card .thumbnail img {
+  width: 100%;
+}
+
+#latest-post .blog-card .blog-content .blog-cat span {
+  background-color: #F5FAF7;
+  font-weight: 500;
+  color: #404040;
+  display: block;
+}
+
+#latest-post .blog-card .blog-content .blog-date p {
+  background-color: #F5FAF7;
+  font-weight: 500;
+  color: #404040;
+}
+
+#latest-post .blog-card .blog-content .blog-title {
+  color: #171717;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.team-members-container .team-member-card .team-member-image {
+  background-color: #C2E0CE;
+  border-radius: 16px;
+  position: relative;
+  z-index: -1;
+}
+
+.team-members-container .team-member-card .team-member-image img {
+  max-width: 262px;
+  max-height: 320px;
+}
+
+.team-members-container .team-member-card .team-member-content {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.2);
+          box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.2);
+}
+
+.team-members-container .team-member-card .team-member-content .team-member-info {
+  border-bottom: 1px solid #C2E0CE;
+  padding-bottom: 5px;
+}
+
+.team-members-container .team-member-card .team-member-content .team-member-info .team-member-name {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #171717;
+}
+
+.team-members-container .team-member-card .team-member-content .team-member-info .team-member-role {
+  color: #091E42;
+  text-align: center;
+  font-size: 14px;
+}
+
+.team-members-container .team-member-card .team-member-content .team-member-social-links img {
+  background: #098239;
+  width: 26px;
+  padding: 4px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.our-mission .card {
+  background-color: #EBF5EF;
+}
+
+.our-mission .card p {
+  color: #404040;
+  font-size: 18px;
+}
+/*# sourceMappingURL=main.css.map */

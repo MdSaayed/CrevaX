@@ -32,7 +32,7 @@
             &:hover{
                 background-color: $green-deep;
                 transition: 0.5s ease;
-                h3,p,.feature{
+                h3,p,.features{
                     color: $light-neutral;
                 }
                 .price{
@@ -55,7 +55,7 @@
                     color: $dark-neutral;
                 }
             }
-            .feature{
+            .features{
                 color: $dark-blue-gray;
             }
             .buy-now-btn{

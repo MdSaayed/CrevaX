@@ -2,25 +2,8 @@
     .blog-card{
         background-color: $white;
         .blog-content{
-            border: 1px solid rgba($dark-gray, 8%);
-            .blog-cat{
-                span{
-                    background-color: $light-color;
-                    font-weight: 500;
-                    color: $dark-gray;
-                    display: block;
-                }
-            }
-            .blog-date{
-                p{
-                    background-color: $light-color;
-                    font-weight: 500;
-                    color: $dark-gray;
-                }
-            }
-            .blog-title{
-                color: $dark-neutral;
-            }
+            border: 1px solid rgba($dark-gray, 0.08); // 8% = 0.08
+            
         }
        
     }
@@ -34,3 +17,4 @@
         }
     }
 }
+

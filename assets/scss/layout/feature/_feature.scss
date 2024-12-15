@@ -1,0 +1,38 @@
+#features{
+    background-color: $white;
+    .section-sub-title{
+        @extend  .section-sub-title;
+    }
+    .features-item{
+        background: $light-color;
+    }
+}
+
+
+// feature details
+#feature-details{
+    .section-heading{
+        .circle-icon{
+            display: block;
+            width:8px; 
+            height:8px;
+            background-color:#4382FF;      
+            border-radius:50%;                  
+        }
+        .section-sub-title{
+            @extend .section-sub-title; 
+            background-color:$white;
+            border:1px solid #F3F7FF;
+            display: flex;
+        }
+    }
+    .feature-content{
+        h3{
+            color:$dark-neutral;           
+        }
+        p{
+            color: $dark-gray;         
+        } 
+    } 
+}
+

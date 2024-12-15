@@ -57,6 +57,20 @@ document.querySelectorAll('.switcher-btn').forEach(button => {
       document.getElementById(targetId).classList.remove('hidden');
     });
   });
+
+
+
+// Select all filter buttons
+const filterButtons = document.querySelectorAll('.filter-btn');
+filterButtons.forEach(button => {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    // Add the 'active' class to the clicked button
+    button.classList.add('active');
+  });
+});
+
   
   
 

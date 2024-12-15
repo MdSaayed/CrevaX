@@ -3,18 +3,21 @@
 @import "./variable";
 @import "./mixin";
 @import "./extend";
-@import "./layout/footer/footer.scss";
-@import "./components/container/container";
+@import "./layout/footer/footer";
 @import "./components/container/container";
 @import "./layout/header/header";
 @import "./layout/hero/hero";
-@import "./layout/features/features";
+@import "./layout/feature/feature";
 @import "./layout/faq/faq";    
 @import "./animation/animation";    
 @import"./layout/testimonials/testimonials"; 
 @import "./layout/pricing/pricing";
 @import "./layout/blogs/blogs";
-@import "./layout/cta/cta";
+@import "./layout/cta/cta";       
+@import "./layout/latest-post/latest-post";       
+@import "./layout/team-member/team-member";       
+@import "./layout/about/about";       
+
  
  
-  
+ 
