@@ -1,33 +1,4 @@
 #pricing{
-    .pricing-switcher {
-        background-color: $light-normal;
-        margin: 0 auto;
-
-    .switcher-btn {
-        font-family: 'Inter', sans-serif;
-        border: none;
-        background: none;
-        color: $dark-gray;
-        transition: color 0.3s, background-color 0.3s;
-        padding: 8px 15px;
-        border-radius: 50px;
-        cursor: pointer;
-
-        &.active {
-        background-color: $primary-color; 
-        color: $light-color;
-        }
-
-        &:hover {
-        background-color:$primary-color;
-        color: $light-color;
-        }
-        @media (max-width: 310px) {
-                padding: 4px 12px;
-    }
-    }
-    }
-
     .pricing-cards{
         .card{
             background-color: $light-color;
@@ -100,40 +71,113 @@
     }
 }
 
-
 #pricing-table {
-    table {
-      font-size: 0.875rem;
-      width: 100%;
-  
-      tr {
-        font-weight: 400;
-        text-align: left;
-        font-size: 16px;
-        padding: 0.75rem;
-  
-        &:nth-child(odd) {
-          background-color: $light-color;
-        }
-  
-        &:nth-child(even) {
-          background-color: $white;
-        }
-      }
-  
-      td {
-        padding: 0.75rem;
-  
-        &:first-child {
-          width: 35%; // 
-        }
-  
-        &:not(:first-child) {
-         text-align: center;
-          width: calc(65% / 3);  
-        }
-      }
+    overflow-x: scroll;
+    scrollbar-color: #aef5c7 transparent; // For Firefox
+    scrollbar-width: thin; // For Firefox
+
+    /* For Webkit Browsers (Chrome, Edge, Safari) */
+    &::-webkit-scrollbar {
+        height: 8px; /* Horizontal scrollbar height */
     }
-  }
+    &::-webkit-scrollbar-thumb {
+        background-color: #aef5c7; /* Light mint green */
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent; /* Optional track color */
+    }
+
+    table {
+        font-size: 0.875rem;
+        width: 100%;
+
+        tr {
+            font-weight: 400;
+            text-align: left;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+
+            &:nth-child(odd) {
+                background-color: $light-color;
+            }
+
+            &:nth-child(even) {
+                background-color: $white;
+            }
+        }
+
+        td {
+            padding: 0.75rem;
+
+            &:first-child {
+                width: 35%; 
+            }
+
+            &:not(:first-child) {
+                text-align: center;
+                width: calc(65% / 3);  
+            }
+        }
+        @media screen and (max-width: 767px) {
+            min-width: 767px;
+        }       
+    }
+}
+
+#pricing-details{
+    .pricing-details-area{
+        .section-desc{
+            color: $soft-gray;
+        }
+        ul { 
+            list-style-type: disc;  
+            padding-left: 20px;    
+            margin-bottom: 2rem;
+            li::marker {
+              color: $blue-gray;      
+            }
+          }
+          .section-separator{
+            padding: 1.5rem 0;
+            border-top: 1px solid $light-mint-green;
+            .feature-sub-title{
+                color: $dark-gray;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+              }
+
+          }          
+    }
+    .pricing-cards{
+        border: 1px solid $light-mint-green;
+        border-radius: 10px;
+        padding: 2rem 1rem;
+        .price{
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 48px;
+            color: $dark-neutral;
+            span{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+        .product-desc{
+            margin: 20px 0px;
+            color:$soft-gray;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .btn{
+            @include btn(); 
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
   
   

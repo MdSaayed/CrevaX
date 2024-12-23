@@ -45,50 +45,51 @@
     </header>
     <!-- header end here -->
 
-    <!-- team detail start here -->
-    <section id="team-details">
+    <!-- pricing details satart here -->
+     <section id="pricing-details">
         <div class="container">
-            <div class="details-area grid grid-cols-1 lg:grid-cols-3 items-center gap-12 p-8 md:p-12 lg:pr-48">
-                <div class="content lg:col-span-2">
-                    <h2 class="section-title ">About Cameron Williamson</h2>
-                    <p class="section-desc mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <ul class="mt-10 list-disc">
+            <div class="pricing-details-area grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="content">
+                    <h2 class="section-title mt-0">Features</h2>
+                    <ul class="mt-2 list-disc">
                         <li class="mb-2 section-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit ut eu sem integer vitae justo egestas </li>
                         <li class="mb-2 section-desc">Et odio pellentesque diam volutpat commodo pellentesque eu tincidunt tortor aliquam. </li>
                         <li class="mb-2 section-desc">Aliquet enim tortor at auctor urna nunc id cursus elis</li>
                         <li class="mb-2 section-desc">Aliquet enim tortor at auctor urna nunc id cursu</li>
                     </ul>
+                    <div class="section-separator">
+                        <h3 class="feature-sub-title">Why Choose it</h3>
+                        <p class="section-desc mt-2">The standard plan of Spectra is tailored for individual developers and small teams working on SaaS projects. It offers essential tools and features to streamline project management, improve collaboration, and facilitate efficient project execution.</p>
+                    </div>
+                    <div class="section-separator">
+                        <h3 class="feature-sub-title">Benefits brief</h3>
+                        <p class="section-desc mt-2">The standard plan of Spectra is tailored for individual developers and small teams working on SaaS projects. It offers essential tools and features to streamline project management, improve collaboration, and facilitate efficient project execution.</p>
+                    </div>
                 </div>
-                <div class="team-member-card">
-                    <div class="team-member-image flex justify-center">
-                        <img src="./assets/img/team-member/team-member1.png" alt="Team Member">
-                    </div>
-                    <div class="team-member-content p-2 mx-2 md:p-4 md:mx-4 -mt-8 rounded-lg">
-                        <div class="team-member-info">
-                            <h2 class="team-member-name">John Smith</h2>
-                            <p class="team-member-role">UX Designer</p>
+                <div class="flex flex-col lg:items-end lg:justify-start">
+                    <div class="col">
+                        <div class="pricing-switcher p-2 inline-block items-center justify-end gap-4 rounded-full mb-8">
+                            <button class="switcher-btn active" data-target="card1">Monthly</button>
+                            <button class="switcher-btn" data-target="card2">Annual (Save 30%)</button>
                         </div>
-                        <div class="team-member-social-links flex space-x-2 justify-center mt-6">
-                            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                                <img src="./assets/icons/facebook.svg" alt="Facebook">
-                            </a>
-                            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-                                <img src="./assets/icons/twitter.svg" alt="Twitter">
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-                                <img src="./assets/icons/linkedin-2.svg" alt="LinkedIn">
-                            </a>
-                            <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-                                <img src="./assets/icons/youtube.svg" alt="YouTube">
-                            </a>
-                        </div>
-                        
                     </div>
+                    <div id="card1" class="col pricing-cards">
+                        <div>
+                            <p class="price">$14.00 <span>USD/per month</span></p>
+                        </div>
+                        <div>
+                            <p class="product-desc">Comprehensive package tailored for growing businesses</p>
+                        </div>
+                        <div>
+                            <a class="btn">Get Started</a>
+                        </div>
+                    </div>
+                    <div id="card2" class="col pricing-cards hidden"></div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- team detail end here -->
+     </section>
+    <!-- pricing details end here -->
 
     <!-- faq start here -->
     <section id="faq">

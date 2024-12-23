@@ -93,6 +93,13 @@ body {
   font-weight: normal;
 }
 
+.section-title {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 57px;
+  margin-top: 20px;
+}
+
 .section-sub-title, #hero-section-home .hero-content-area .hero-sub-title, #hero-section-features .hero-content-area .hero-sub-title, #features .section-sub-title, #feature-details .section-heading .section-sub-title, #faq .section-sub-title, #testimonial .section-sub-title {
   color: #737373;
   border: 1px solid #C2E0CE;
@@ -171,6 +178,38 @@ body {
   padding: 4px;
   height: 26px;
   border-radius: 50%;
+}
+
+.pricing-switcher {
+  background-color: #EBF5EF;
+}
+
+.pricing-switcher .switcher-btn {
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background: none;
+  color: #404040;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pricing-switcher .switcher-btn.active {
+  background-color: #098239;
+  color: #F5FAF7;
+}
+
+.pricing-switcher .switcher-btn:hover {
+  background-color: #098239;
+  color: #F5FAF7;
+}
+
+@media (max-width: 310px) {
+  .pricing-switcher .switcher-btn {
+    padding: 4px 12px;
+  }
 }
 
 #footer .container .footer-content-area {
@@ -511,39 +550,6 @@ body {
   color: #404040;
 }
 
-#pricing .pricing-switcher {
-  background-color: #EBF5EF;
-  margin: 0 auto;
-}
-
-#pricing .pricing-switcher .switcher-btn {
-  font-family: 'Inter', sans-serif;
-  border: none;
-  background: none;
-  color: #404040;
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-#pricing .pricing-switcher .switcher-btn.active {
-  background-color: #098239;
-  color: #F5FAF7;
-}
-
-#pricing .pricing-switcher .switcher-btn:hover {
-  background-color: #098239;
-  color: #F5FAF7;
-}
-
-@media (max-width: 310px) {
-  #pricing .pricing-switcher .switcher-btn {
-    padding: 4px 12px;
-  }
-}
-
 #pricing .pricing-cards .card {
   background-color: #F5FAF7;
   border: 1px solid rgba(64, 64, 64, 0.12);
@@ -627,6 +633,29 @@ body {
   }
 }
 
+#pricing-table {
+  overflow-x: scroll;
+  scrollbar-color: #aef5c7 transparent;
+  scrollbar-width: thin;
+  /* For Webkit Browsers (Chrome, Edge, Safari) */
+}
+
+#pricing-table::-webkit-scrollbar {
+  height: 8px;
+  /* Horizontal scrollbar height */
+}
+
+#pricing-table::-webkit-scrollbar-thumb {
+  background-color: #aef5c7;
+  /* Light mint green */
+  border-radius: 10px;
+}
+
+#pricing-table::-webkit-scrollbar-track {
+  background: transparent;
+  /* Optional track color */
+}
+
 #pricing-table table {
   font-size: 0.875rem;
   width: 100%;
@@ -636,7 +665,12 @@ body {
   font-weight: 400;
   text-align: left;
   font-size: 16px;
-  padding: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #pricing-table table tr:nth-child(odd) {
@@ -658,6 +692,84 @@ body {
 #pricing-table table td:not(:first-child) {
   text-align: center;
   width: calc(65% / 3);
+}
+
+@media screen and (max-width: 767px) {
+  #pricing-table table {
+    min-width: 767px;
+  }
+}
+
+#pricing-details .pricing-details-area .section-desc {
+  color: #737373;
+}
+
+#pricing-details .pricing-details-area ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 2rem;
+}
+
+#pricing-details .pricing-details-area ul li::marker {
+  color: #DFE6FB;
+}
+
+#pricing-details .pricing-details-area .section-separator {
+  padding: 1.5rem 0;
+  border-top: 1px solid #C2E0CE;
+}
+
+#pricing-details .pricing-details-area .section-separator .feature-sub-title {
+  color: #404040;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+#pricing-details .pricing-cards {
+  border: 1px solid #C2E0CE;
+  border-radius: 10px;
+  padding: 2rem 1rem;
+}
+
+#pricing-details .pricing-cards .price {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 48px;
+  color: #171717;
+}
+
+#pricing-details .pricing-cards .price span {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#pricing-details .pricing-cards .product-desc {
+  margin: 20px 0px;
+  color: #737373;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#pricing-details .pricing-cards .btn {
+  font-weight: 400;
+  line-height: 24px;
+  color: #F5FAF7;
+  background-color: #098239;
+  border: 1px solid #098239;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+#pricing-details .pricing-cards .btn:hover {
+  color: #098239;
+  background-color: transparent;
+  border: 1px solid #098239;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 #blogs .blog-card {
