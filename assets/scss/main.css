@@ -125,6 +125,54 @@ body {
   color: #171717;
 }
 
+.section-desc {
+  color: #404040;
+}
+
+.team-member-card .team-member-image {
+  background-color: #C2E0CE;
+  border-radius: 16px;
+  position: relative;
+  z-index: -1;
+}
+
+.team-member-card .team-member-image img {
+  max-width: 262px;
+  max-height: 320px;
+}
+
+.team-member-card .team-member-content {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.2);
+          box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.2);
+}
+
+.team-member-card .team-member-content .team-member-info {
+  border-bottom: 1px solid #C2E0CE;
+  padding-bottom: 5px;
+}
+
+.team-member-card .team-member-content .team-member-info .team-member-name {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #171717;
+}
+
+.team-member-card .team-member-content .team-member-info .team-member-role {
+  color: #091E42;
+  text-align: center;
+  font-size: 14px;
+}
+
+.team-member-card .team-member-content .team-member-social-links img {
+  background: #098239;
+  width: 26px;
+  padding: 4px;
+  height: 26px;
+  border-radius: 50%;
+}
+
 #footer .container .footer-content-area {
   background-color: #EBF5EF;
 }
@@ -490,6 +538,12 @@ body {
   color: #F5FAF7;
 }
 
+@media (max-width: 310px) {
+  #pricing .pricing-switcher .switcher-btn {
+    padding: 4px 12px;
+  }
+}
+
 #pricing .pricing-cards .card {
   background-color: #F5FAF7;
   border: 1px solid rgba(64, 64, 64, 0.12);
@@ -536,6 +590,74 @@ body {
   padding: 12px 5px;
   border-radius: 32px;
   text-align: center;
+}
+
+#hero-pricing .content-area {
+  background-color: #d5ebf2;
+  z-index: -10;
+}
+
+@media (min-width: 566px) {
+  #hero-pricing {
+    margin-bottom: -24rem;
+  }
+}
+
+@media (max-width: 565px) {
+  #hero-pricing {
+    margin-bottom: -20rem;
+  }
+}
+
+@media (max-width: 520px) {
+  #hero-pricing {
+    margin-bottom: -16rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #hero-pricing {
+    margin-bottom: -13rem;
+  }
+}
+
+@media (max-width: 310px) {
+  #hero-pricing {
+    margin-bottom: -13rem;
+  }
+}
+
+#pricing-table table {
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+#pricing-table table tr {
+  font-weight: 400;
+  text-align: left;
+  font-size: 16px;
+  padding: 0.75rem;
+}
+
+#pricing-table table tr:nth-child(odd) {
+  background-color: #F5FAF7;
+}
+
+#pricing-table table tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+#pricing-table table td {
+  padding: 0.75rem;
+}
+
+#pricing-table table td:first-child {
+  width: 35%;
+}
+
+#pricing-table table td:not(:first-child) {
+  text-align: center;
+  width: calc(65% / 3);
 }
 
 #blogs .blog-card {
@@ -664,48 +786,9 @@ body {
   font-size: 20px;
 }
 
-.team-members-container .team-member-card .team-member-image {
-  background-color: #C2E0CE;
-  border-radius: 16px;
-  position: relative;
-  z-index: -1;
-}
-
-.team-members-container .team-member-card .team-member-image img {
-  max-width: 262px;
-  max-height: 320px;
-}
-
-.team-members-container .team-member-card .team-member-content {
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.2);
-          box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.2);
-}
-
-.team-members-container .team-member-card .team-member-content .team-member-info {
-  border-bottom: 1px solid #C2E0CE;
-  padding-bottom: 5px;
-}
-
-.team-members-container .team-member-card .team-member-content .team-member-info .team-member-name {
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-  color: #171717;
-}
-
-.team-members-container .team-member-card .team-member-content .team-member-info .team-member-role {
-  color: #091E42;
-  text-align: center;
-  font-size: 14px;
-}
-
-.team-members-container .team-member-card .team-member-content .team-member-social-links img {
-  background: #098239;
-  width: 26px;
-  padding: 4px;
-  height: 26px;
-  border-radius: 50%;
+#blog-breadcrumb {
+  background-color: #EBF5EF;
+  margin-top: -90px;
 }
 
 .our-mission .card {
@@ -715,5 +798,36 @@ body {
 .our-mission .card p {
   color: #404040;
   font-size: 18px;
+}
+
+#team-details .details-area {
+  border: 1px solid #DFE6FB;
+  border-radius: 30px;
+}
+
+#team-details .details-area ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#team-details .details-area ul li::marker {
+  color: #DFE6FB;
+}
+
+#stats-section .stat-card {
+  background-color: #FFFFFF;
+}
+
+#stats-section .stat-card h3 {
+  color: #404040;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#stats-section .stat-card .count {
+  font-size: 40px;
+  font-weight: 500;
+  color: #171717;
 }
 /*# sourceMappingURL=main.css.map */

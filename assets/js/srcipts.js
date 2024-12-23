@@ -72,5 +72,39 @@ filterButtons.forEach(button => {
 });
 
   
+// coundown section
+function startCounter() {
+  const counters = document.querySelectorAll('#stats-section .animated-text');
+
+  counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const increment = target / 100; // Adjust speed (100 steps)
+
+      const updateCounter = () => {
+          if (count < target) {
+              count += increment;
+              counter.textContent = Math.ceil(count);
+              requestAnimationFrame(updateCounter); // Smooth animation
+          } else {
+              counter.textContent = target; // Ensure it ends at the target
+          }
+      };
+      updateCounter();
+  });
+}
+
+// Trigger the counter when the section is visible
+const section = document.querySelector('#stats-section');
+const observer = new IntersectionObserver(
+  (entries) => {
+      if (entries[0].isIntersecting) {
+          startCounter();
+          observer.disconnect(); // Run only once
+      }
+  },
+  { threshold: 0.5 } // Trigger when 50% visible
+);
+observer.observe(section);
   
 

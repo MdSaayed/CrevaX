@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrevaX</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- maincss -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/scss/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header start here -->
+    <header id="header-area">
+        <div class="container py-0">
+            <div class="flex justify-between items-center h-[96px]">
+                <div class="header-logo">
+                    <img src="./assets/img/logo/Logo.png" alt="Logo">
+                </div>
+                <div class="main-nav hidden md:block lg:block">
+                    <nav>
+                        <ul class="flex space-x-4">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="feature.html">features</a></li>
+                            <li><a href="">All pages</a></li>
+                            <li><a href="">Cart(0)</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-btn-area flex items-center gap-6">
+                    <button class="login-btn">Login</button>
+                    <button class="btn-primary">Get started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end here -->
+
+    <!-- team detail start here -->
+    <section id="team-details">
+        <div class="container">
+            <div class="details-area grid grid-cols-1 lg:grid-cols-3 items-center gap-12 p-8 md:p-12 lg:pr-48">
+                <div class="content lg:col-span-2">
+                    <h2 class="section-title text-5xl font-medium leading-[57px] mt-[20px]">About Cameron Williamson</h2>
+                    <p class="section-desc mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <ul class="mt-10 list-disc">
+                        <li class="mb-2 section-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit ut eu sem integer vitae justo egestas </li>
+                        <li class="mb-2 section-desc">Et odio pellentesque diam volutpat commodo pellentesque eu tincidunt tortor aliquam. </li>
+                        <li class="mb-2 section-desc">Aliquet enim tortor at auctor urna nunc id cursus elis</li>
+                        <li class="mb-2 section-desc">Aliquet enim tortor at auctor urna nunc id cursu</li>
+                    </ul>
+                </div>
+                <div class="team-member-card">
+                    <div class="team-member-image flex justify-center">
+                        <img src="./assets/img/team-member/team-member1.png" alt="Team Member">
+                    </div>
+                    <div class="team-member-content p-2 mx-2 md:p-4 md:mx-4 -mt-8 rounded-lg">
+                        <div class="team-member-info">
+                            <h2 class="team-member-name">John Smith</h2>
+                            <p class="team-member-role">UX Designer</p>
+                        </div>
+                        <div class="team-member-social-links flex space-x-2 justify-center mt-6">
+                            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                <img src="./assets/icons/facebook.svg" alt="Facebook">
+                            </a>
+                            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                                <img src="./assets/icons/twitter.svg" alt="Twitter">
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                <img src="./assets/icons/linkedin-2.svg" alt="LinkedIn">
+                            </a>
+                            <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                                <img src="./assets/icons/youtube.svg" alt="YouTube">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team detail end here -->
+
+    <!-- faq start here -->
+    <section id="faq">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                <!-- Section Heading -->
+                <div class="section-heading lg:col-span-1">
+                    <div class="flex justify-start">
+                        <span class="section-sub-title text-center text-[20px]">Faq</span>
+                    </div>
+                    <h2 class="section-title text-5xl font-medium leading-[57px] mt-[20px]">The answers to <br> your questions.</h2>
+                </div>
+
+                <!-- faq area -->
+                <div class="faq-area flex flex-col gap-4 lg:col-span-2">
+                    <!-- faw item -->
+                    <div class="faq-item w-full rounded-lg p-4">
+                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                            <span class="text-start">What features does AirSync provide for CRM users?</span>
+                            <div>
+                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
+                        </button>
+                        <div
+                             class="faq-answer max-h-screen overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                        </div>
+                    </div>
+                    <div class="faq-item w-full rounded-lg p-4">
+                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                            <span class="text-start">What support options are available for AirSync users?</span>
+                            <div>
+                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
+                        </button>
+                        <div
+                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                        </div>
+                    </div>
+                    <div class="faq-item w-full rounded-lg p-4">
+                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                            <span class="text-start">What features does AirSync offer for managing customer data?</span>
+                            <div>
+                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
+                        </button>
+                        <div
+                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                        </div>
+                    </div>
+                    <div class="faq-item w-full rounded-lg p-4">
+                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                            <span class="text-start">How can AirSync help improve customer relationships?</span>
+                            <div>
+                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
+                        </button>
+                        <div
+                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                        </div>
+                    </div>
+                    <div class="faq-item w-full rounded-lg p-4">
+                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                            <span class="text-start">What integrations does AirSync have with other tools?</span>
+                            <div>
+                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
+                        </button>
+                        <div
+                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                        </div>
+                    </div>
+                    <div class="faq-item w-full rounded-lg p-4">
+                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                            <span class="text-start">What security measures does AirSync have in place for data protection?</span>
+                            <div>
+                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
+                        </button>
+                        <div
+                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq end here -->
+
+    <!-- CTA start here -->
+     <section id="cta">
+        <div class="container">
+            <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
+                <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
+                <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
+                <div class="btn-area mx-auto mt-8">
+                    <a class="cta-btn inline-block" href="">Started 14 days free</a>
+                </div>
+                <div class="section-bg w-[300px] h-[300px] md:w-[409px] w-[300px] h-[300px] md:h-[409px] rounded-full absolute -top-[12.5rem] -left-[10.5rem] z-20"></div>
+                <div class="section-bg w-[409px] h-[409px] rounded-full absolute -bottom-[12rem] -right-[7rem] z-20"></div>
+            </div>
+        </div>
+     </section>
+    <!-- CTA end here -->
+
+    <!-- footer start here -->
+     <footer id="footer">
+        <div class="container">
+            <div class="footer-content-area rounded-lg px-8 py-20  md:px-12 lg:p-20">
+                <div class="newslatter grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 justify-between items-center">
+                    <div class="text-center lg:text-left">
+                        <h3 class="font-medium text-2xl mb-2">Join Our Newslatter</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="subscribe-form">
+                        <form action="">
+                            <div class="flex justify-end gap-4">
+                                <input class="rounded-full w-full bg-transparent px-4" type="email" placeholder="Enter your email">
+                                <input class="btn" type="submit" value="Subscribe">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="links flex justify-between flex-wrap mt-16 gap-8">
+                    <div class="">
+                        <div>
+                            <img src="./assets/img/logo/Logo.png" alt="">
+                        </div>
+                        <ul class="mt-8">
+                            <li class="flex items-center gap-4">
+                                <div class="icon-wrapper p-[5px] rounded-lg">
+                                    <img class="w-6 h-6" src="./assets/icons/calling.svg" alt="Phone Icon"> 
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-xl">Phone</h3>
+                                    <a href="tel:+22484502520">+22 484 5025 20</a>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="icon-wrapper p-[5px] rounded-lg">
+                                    <img class="w-6 h-6" src="./assets/icons/email.svg" alt="Email Icon">
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-xl">Email</h3>
+                                    <a href="mailto:info@airloom.com">info@airloom.com</a>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="icon-wrapper p-[5px] rounded-lg">
+                                    <img class="w-6 h-6" src="./assets/icons/sms-tracking.svg" alt="Address Icon"> 
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-xl">Address</h3>
+                                    <a href="https://www.google.com/maps?q=Kurigram,+Dhaka,+Bangladesh" target="_blank" rel="noopener noreferrer">
+                                        Kurigram, Dhaka, Bangladesh
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>  
+                    </div>
+                    <div class="">
+                        <h3  class="font-medium text-2xl">Main Page</h3>
+                        <ul class="mt-8 grid grid-cols-2 sm:grid-cols-[1fr_repeat(2,1fr)] grid-rows-[1fr_repeat(3,1fr)] gap-x-8 justify-between">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="feature.html">features</a></li>
+                            <li><a href="">features Single</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Blog details</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Tem details</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Careers details</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Integrations details</a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h3 class="font-medium text-2xl">Utility Page</h3>
+                        <ul class="mt-8">
+                            <li><a href="">Style Guide</a></li>
+                            <li><a href="">Password Protected</a></li>
+                            <li><a href="">404 Not Found</a></li>
+                            <li><a href="">Licenses</a></li>
+                            <li><a href="">Changelog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright-text flex justify-center md:justify-between flex-wrap gap-4  items-center mt-12">
+                    <div>
+                        <p class="text-center md:text-left">
+                            Copyright © <span class="font-medium">AirFin</span> 
+                            <span class="mx-2">|</span>
+                            Designed by <a href="#" class="hover:underline">AirDokan</a> 
+                            and Powered by <a href="#" class="hover:underline">Webflow</a>
+                          </p>
+                    </div>
+                    <div>
+                        <ul class="flex gap-2 justify-end">
+                            <li><a href=""> <img src="./assets/icons/X.svg" alt=""></a></li>
+                            <li><a href=""> <img src="./assets/icons/LinkedIn.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- footer end here -->
+  
+
+    <!-- js  -->
+     <script src="./assets/js/srcipts.js"></script>
+</body>
+</html>
