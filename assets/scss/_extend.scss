@@ -16,6 +16,12 @@
     font-weight: 500;
     line-height: 120%;
     color: $dark-neutral;
+    font-size: 3rem; 
+    text-align: center;
+    margin-top: 20px;
+    @media (min-width: 768px) {
+        font-size: 3.5rem;
+    }
 }
 
 .blog-cat{

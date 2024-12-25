@@ -9,9 +9,6 @@
         .hero-sub-title{
             @extend .section-sub-title;
         }
-        .hero-sub-title{
-            @extend .section-sub-title;
-        }
         .btn-primary {
             @include btn(); 
         }

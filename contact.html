@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrevaX</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- maincss -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/scss/main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header start here -->
+    <header id="header-area">
+        <div class="container py-0">
+            <div class="flex justify-between items-center h-[96px]">
+                <div class="header-logo">
+                    <img src="./assets/img/logo/Logo.png" alt="Logo">
+                </div>
+                <div class="main-nav hidden md:block lg:block">
+                    <nav>
+                        <ul class="flex space-x-4">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="feature.html">features</a></li>
+                            <li><a href="">All pages</a></li>
+                            <li><a href="">Cart(0)</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-btn-area flex items-center gap-6">
+                    <button class="login-btn">Login</button>
+                    <button class="btn-primary">Get started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end here -->
+
+    <!-- Contact Form Start -->
+    <section id="contact-area" class="contact-section">
+        <div class="container">
+            <div class="section-heading-area">
+                <h2 class="section-title text-center">Contact us today</h2>
+            </div>
+            <form id="contact-form" class="contact-form mx-auto w-full mt-16" method="post">
+                <div class="form-group flex flex-col mb-4">
+                    <label for="first-name" class="form-label">First Name</label>
+                    <input type="text" id="first-name" class="form-input" name="first_name" placeholder="Enter your first name"  required>
+                </div>
+                <div class="form-group flex flex-col mb-4">
+                    <label for="last-name" class="form-label">Last Name</label>
+                    <input type="text" id="last-name" class="form-input" name="last_name" placeholder="Enter your last name"  required>
+                </div>
+                <div class="form-group flex flex-col mb-4">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-input" name="email" placeholder="Enter your email"  required>
+                </div>
+                <div class="form-group flex flex-col mb-4">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-textarea" name="message" rows="5"  placeholder="Type your message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Form End -->
+
+
+    <!-- footer start here -->
+     <footer id="footer">
+        <div class="container">
+            <div class="footer-content-area rounded-lg px-8 py-20  md:px-12 lg:p-20">
+                <div class="newslatter grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 justify-between items-center">
+                    <div class="text-center lg:text-left">
+                        <h3 class="font-medium text-2xl mb-2">Join Our Newslatter</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="subscribe-form">
+                        <form action="">
+                            <div class="flex justify-end gap-4">
+                                <input class="rounded-full w-full bg-transparent px-4" type="email" placeholder="Enter your email">
+                                <input class="btn" type="submit" value="Subscribe">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="links flex justify-between flex-wrap mt-16 gap-8">
+                    <div class="">
+                        <div>
+                            <img src="./assets/img/logo/Logo.png" alt="">
+                        </div>
+                        <ul class="mt-8">
+                            <li class="flex items-center gap-4">
+                                <div class="icon-wrapper p-[5px] rounded-lg">
+                                    <img class="w-6 h-6" src="./assets/icons/calling.svg" alt="Phone Icon"> 
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-xl">Phone</h3>
+                                    <a href="tel:+22484502520">+22 484 5025 20</a>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="icon-wrapper p-[5px] rounded-lg">
+                                    <img class="w-6 h-6" src="./assets/icons/email.svg" alt="Email Icon">
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-xl">Email</h3>
+                                    <a href="mailto:info@airloom.com">info@airloom.com</a>
+                                </div>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="icon-wrapper p-[5px] rounded-lg">
+                                    <img class="w-6 h-6" src="./assets/icons/sms-tracking.svg" alt="Address Icon"> 
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-xl">Address</h3>
+                                    <a href="https://www.google.com/maps?q=Kurigram,+Dhaka,+Bangladesh" target="_blank" rel="noopener noreferrer">
+                                        Kurigram, Dhaka, Bangladesh
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>  
+                    </div>
+                    <div class="">
+                        <h3  class="font-medium text-2xl">Main Page</h3>
+                        <ul class="mt-8 grid grid-cols-2 sm:grid-cols-[1fr_repeat(2,1fr)] grid-rows-[1fr_repeat(3,1fr)] gap-x-8 justify-between">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="feature.html">features</a></li>
+                            <li><a href="">features Single</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Blog details</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Tem details</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Careers details</a></li>
+                            <li><a href="">Integrations</a></li>
+                            <li><a href="">Integrations details</a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h3 class="font-medium text-2xl">Utility Page</h3>
+                        <ul class="mt-8">
+                            <li><a href="">Style Guide</a></li>
+                            <li><a href="">Password Protected</a></li>
+                            <li><a href="">404 Not Found</a></li>
+                            <li><a href="">Licenses</a></li>
+                            <li><a href="">Changelog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright-text flex justify-center md:justify-between flex-wrap gap-4  items-center mt-12">
+                    <div>
+                        <p class="text-center md:text-left">
+                            Copyright © <span class="font-medium">AirFin</span> 
+                            <span class="mx-2">|</span>
+                            Designed by <a href="#" class="hover:underline">AirDokan</a> 
+                            and Powered by <a href="#" class="hover:underline">Webflow</a>
+                          </p>
+                    </div>
+                    <div>
+                        <ul class="flex gap-2 justify-end">
+                            <li><a href=""> <img src="./assets/icons/X.svg" alt=""></a></li>
+                            <li><a href=""> <img src="./assets/icons/LinkedIn.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- footer end here -->
+  
+
+    <!-- js  -->
+     <script src="./assets/js/srcipts.js"></script>
+</body>
+</html>

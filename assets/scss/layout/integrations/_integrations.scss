@@ -1,0 +1,98 @@
+#integrations{
+    .integration-card-area{
+        .integration-card{
+            background-color: $light-normal;
+            padding: 32px;
+            border-radius: 20px;
+            h3{
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 48px;
+                color: $dark-neutral;
+                margin: 18px 0;
+            }
+            p{
+                color: $dark-gray;
+                font-weight: normal;
+                font-size: 18;
+                line-height: 27px;
+                margin-top: -4px;
+            }
+            @media (max-width: 768px) { 
+                padding: 24px;
+            }
+        }
+    }
+}
+
+
+// details page here
+#integrations-details{
+    .integration-header{
+        background-color: $light-normal;
+        padding: 2rem;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        .integration-title{
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 48px;
+            color:#141A18;
+        }
+        .integration-description{
+            color: $dark-gray;
+            max-width: 600px;
+            line-height: 24px;
+        }
+        .btn-primary{
+            @include btn();
+            display: inline-block;
+            @media (max-width: 1024px) { 
+                margin-top:  24px;
+            }
+        }
+        @media (max-width: 768px) { 
+            padding: 1rem;
+        }
+    }
+    .integration-content{
+        background-color: $light-normal;
+        border-radius: 20px;
+        margin-top: 3rem;
+        padding: 5rem;
+        h3{
+            font-weight: 500;
+            font-size: 2.5rem;
+            line-height: 57px;
+            color: $dark-neutral;
+
+        }
+        p{
+            font-size: 18px;
+            line-height: 27px;
+            font-weight: normal;
+            color: $dark-gray;
+        }
+        ul{
+            list-style: disc;
+            padding: 0 0 0 1.5rem;
+            li {
+                position: relative;  
+                margin: 0.5rem 0; 
+            
+                &::marker {
+                  color: #012C16;  
+                  font-size: 1rem; 
+                }
+              }
+        }
+        @media (max-width: 1024px) { 
+            padding: 3rem;
+        }
+        @media (max-width: 768px) { 
+            padding: 2rem;
+        }
+    }
+}
