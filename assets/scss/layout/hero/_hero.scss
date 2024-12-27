@@ -9,12 +9,6 @@
         .hero-sub-title{
             @extend .section-sub-title;
         }
-        .btn-primary {
-            @include btn(); 
-        }
-        .btn-secondary {
-            @include btn($bgColor: $light-color, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor: $light-color, $border:$light-color);    
-        } 
     }  
 } 
 
@@ -32,12 +26,6 @@
         .hero-title{
            @extend .hero-title; 
         }
-        .btn-primary {
-            @include btn(); 
-        }
-        .btn-secondary {
-            @include btn($bgColor: $light-normal, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor: $light-color, $border:$light-color);    
-        } 
     }  
 } 
 

@@ -47,13 +47,13 @@
             line-height: 24px;
         }
         .btn-primary{
-            @include btn();
+            @include btn;  
             display: inline-block;
             @media (max-width: 1024px) { 
                 margin-top:  24px;
             }
         }
-        @media (max-width: 768px) { 
+        @media (max-width: 768px) {  
             padding: 1rem;
         }
     }

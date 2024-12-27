@@ -95,16 +95,64 @@ function startCounter() {
 }
 
 // Trigger the counter when the section is visible
-const section = document.querySelector('#stats-section');
-const observer = new IntersectionObserver(
-  (entries) => {
-      if (entries[0].isIntersecting) {
-          startCounter();
-          observer.disconnect(); // Run only once
-      }
-  },
-  { threshold: 0.5 } // Trigger when 50% visible
-);
-observer.observe(section);
+// const section = document.querySelector('#stats-section');
+// const observer = new IntersectionObserver(
+//   (entries) => {
+//       if (entries[0].isIntersecting) {
+//           startCounter();
+//           observer.disconnect(); // Run only once
+//       }
+//   },
+//   { threshold: 0.5 } // Trigger when 50% visible
+// );
+// observer.observe(section);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('#stats-section');
+    if (section) {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    startCounter();
+                    observer.disconnect(); // Run only once
+                }
+            },
+            { threshold: 0.5 } // Trigger when 50% visible
+        );
+        observer.observe(section);
+    } else {
+        console.error("Element with ID 'stats-section' not found.");
+    }
+});
+
   
 
+
+
+// signin page tab
+const tabButtons = document.querySelectorAll('.tab-button');
+const forms = document.querySelectorAll('.auth-form');
+
+// Loop through each tab button
+tabButtons.forEach(button => {
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Remove 'active' class from all tab buttons
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Add 'active' class to the clicked button
+        button.classList.add('active');
+
+        // Get the target form ID from the data-target attribute
+        const targetForm = button.getAttribute('data-target');
+
+        // Show the target form and hide others
+        forms.forEach(form => {
+            form.classList.toggle('active', form.id === targetForm);
+        });
+    });
+});
+
+
+console.log("clicked");
