@@ -16,34 +16,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- use for nav menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
 </head>
 <body>
     <!-- header start here -->
     <header id="header-area">
-        <div class="container py-0">
+        <div class="container">
             <div class="flex justify-between items-center h-[96px]">
                 <div class="header-logo">
                     <img src="./assets/img/logo/Logo.png" alt="Logo">
                 </div>
-                <div class="main-nav hidden md:block lg:block">
+                <div class="main-nav">
                     <nav>
-                        <ul class="flex space-x-4">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="careers.html">Careers</a></li>
                             <li><a href="feature.html">features</a></li>
-                            <li><a href="">All pages</a></li>
+                            <li class="has-dropdown"><a href="">All pages</a>
+                                <ul class="dropdown">
+                                    <li class="dropdown has-dropdown"><a href="careers-2.html">Careers</a>
+                                        <ul class="dropdown">
+                                            <li ><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="integrations.html">Integrations</a></li>
+                                    <li><a href="integrations-details.html">Integrations Details</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="pricing-details.html">Pricing Details</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-single.html">Blog Single</a></li>
+                                    <li><a href="feature.html">Feature</a></li>
+                                    <li><a href="feature-single.html">Feature Single</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="team-details.html">Team Details</a></li>
+                                    <li><a href="sign-in.html">SignIn</a></li>
+                                </ul>
+                            </li>
                             <li><a href="">Cart(0)</a></li>
+                            <i class="fa-solid fa-xmark menu-close-btn"></i>
                         </ul>
                     </nav>
                 </div>
                 <div class="header-btn-area flex items-center gap-6">
                     <button class="login-btn">Login</button>
                     <button class="btn-primary">Get started</button>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
     </header>
     <!-- header end here -->
+
+
+
+
+
 
     <!-- hero start here -->
      <section id="hero-section-home" class="">

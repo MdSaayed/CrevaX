@@ -120,9 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { threshold: 0.5 } // Trigger when 50% visible
         );
         observer.observe(section);
-    } else {
-        console.error("Element with ID 'stats-section' not found.");
-    }
+    } 
 });
 
   
@@ -155,4 +153,39 @@ tabButtons.forEach(button => {
 });
 
 
-console.log("clicked");
+
+// ===================menu=========================================
+const menuButton = document.querySelector('.fa-bars');
+const closeButton = document.querySelector('.menu-close-btn');
+const navMenu = document.querySelector('.nav-menu');
+const body = document.body;
+
+// Open Mobile Menu
+menuButton.addEventListener('click', () => {
+  navMenu.classList.add('active');  
+  document.body.style.overflow = 'hidden';
+});
+
+// Close Mobile Menu
+closeButton.addEventListener('click', () => {
+  navMenu.classList.remove('active'); 
+   document.body.style.overflow = 'auto';
+});
+
+// On screen resize, ensure mobile menu is hidden on larger screens
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 992) {
+    navMenu.classList.remove('active');  
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Close Mobile Menu if clicked outside
+document.addEventListener('click', (event) => {
+    if (!navMenu.contains(event.target) && !menuButton.contains(event.target)) {
+      navMenu.classList.remove('active');  
+      body.style.overflow = 'auto';  
+    }
+  });
+
+  

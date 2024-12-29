@@ -1,44 +1,159 @@
-#header-area{
-    height: 90px;
-    nav {
+#header-area {
+  height: 90px;
+  .container {
+    padding: 0 5rem;
+    nav{
         ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 24px;
-    
-            li {
-                color: $soft-gray;
-                font-weight: 400;
-                line-height: 24px;
-    
-                &:hover {
-                    color: $green-bright;
-                    transition: 0.5 ease;
-                }
-            }
-        }
-    }
-    .header-btn-area {
-        .login-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 24px;
+          li {
             color: $soft-gray;
             font-weight: 400;
-            line-height: 24px;
+            line-height: 100px;
+            position: relative;
+            &:hover {
+              color: $green-bright;
+              transition: 0.5s ease;
+              ul{
+                display: block;
+              }
+            }
+            // &.has-dropdown  {
+            //   &::after {
+            //     content: '+';
+            //     position: absolute;
+            //     right: -16px; // Adjust position as needed
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     font-size: 16px;
+            //     color: $soft-gray;
+            //   }
+
+            //   &:hover::after {
+            //     color: $green-bright;
+            //   }
+            }
+
+            ul {
+              position: absolute;
+              display: none;
+              flex-direction: column;
+              left: 0;
+              top: 92px;
+              min-width: 170px;
+              background-color: $white;
+              box-shadow: 5px 6px 15px -7px rgba(64,64,64,0.3);
+              -webkit-box-shadow: 5px 6px 15px -7px rgba(64,64,64,0.3);
+              -moz-box-shadow: 5px 6px 15px -7px rgba(64,64,64,0.3);
+              li {
+                padding: 5px 20px;
+                color: $white;
+                line-height: 30px;
+                width: 100%;
+                color: $dark-gray;
+                &:not(:first-child) {
+                  border-top: 1px solid $light-normal;
+                }
+              }
+            }
+
+          }
+
+          .has-dropdown  {
+            &::after {
+              content: '+';
+              position: absolute;
+              right: -16px; // Adjust position as needed
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 16px;
+              color: $soft-gray;
+            }
+
+            &:hover::after {
+              color: $green-bright;
+            }
+            .has-dropdown{
+              position: absolute;
+              top: 20px;
+              right:120px;
+              display: none;
+            }
+          }
+
+          .menu-close-btn{
+            display: none;
+          }
+
+
+          // responsive ul
+          @media (max-width: 992px) {
+            flex-direction: column;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: calc(100dvh);
+            transform: translateX(-100%);
+            transition: 0.5s ease;
+            opacity: 0;
+            gap: 0;
+
+            li {
+              margin: 0;
+              line-height: 57px;
+              &.has-dropdown {
+                &::after {
+                  right: -31px; 
+                  top: 28px;
+                  font-size: 30px;
+                }
+  
+                &:hover::after {
+                  color: $green-bright;
+                }
+              }
+              a {
+                color: $white;
+                font-size: 24px;
+                font-weight: 500;
+                margin: 0;
+              }
+            }
+            .menu-close-btn{
+              display: block;
+              position: absolute;
+              top: 15px;
+              right: 15px;
+              font-size: 25px;
+              color: $white;
+            }
+            &.active{
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          @media (max-width: 768px) {
+            width: 100%;
+          }
         }
+      }
+    .header-btn-area {
+        .login-btn {
+        color: $soft-gray;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .fa-bars{
+        display: none;
+        font-size: 25px;
+        @media (max-width: 992px) {
+            display: block; 
+        }
+      }
     }
+  }
 }
-
-#header-area{
-    @media (min-width: 612px) and (max-width: 992px) {
-        .header-bg {
-            margin-top: -9rem;
-        }
-    }   
-}
-
-
-
-
-
-
-    
