@@ -157,8 +157,10 @@ tabButtons.forEach(button => {
 // ===================menu=========================================
 const menuButton = document.querySelector('.fa-bars');
 const closeButton = document.querySelector('.menu-close-btn');
-const navMenu = document.querySelector('.nav-menu');
+const navMenu = document.querySelector('nav');
 const body = document.body;
+
+console.log(navMenu);
 
 // Open Mobile Menu
 menuButton.addEventListener('click', () => {
