@@ -755,8 +755,17 @@ body {
   max-height: 634px !important;
 }
 
+#hero-section-features .hero-content-area .content {
+  height: auto;
+  padding: 7rem 1.5rem;
+}
+
 #features {
   background-color: #FFFFFF;
+}
+
+#features .section-title {
+  font-size: 2.8rem;
 }
 
 #features .features-item {
