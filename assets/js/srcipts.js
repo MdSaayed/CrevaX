@@ -160,7 +160,7 @@ const closeButton = document.querySelector('.menu-close-btn');
 const navMenu = document.querySelector('nav');
 const body = document.body;
 
-console.log(navMenu);
+ 
 
 // Open Mobile Menu
 menuButton.addEventListener('click', () => {
@@ -191,3 +191,8 @@ document.addEventListener('click', (event) => {
   });
 
   
+
+
+
+
+
