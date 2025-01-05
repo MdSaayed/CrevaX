@@ -327,7 +327,7 @@ body {
           transform: rotate(45deg);
 }
 
-#brands, #pricing, #blogs, #cta, #footer {
+#brands, #blogs, #cta, #footer {
   background-color: #FAFDFB;
 }
 
