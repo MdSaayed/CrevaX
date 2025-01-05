@@ -1780,9 +1780,17 @@ body {
   padding: 0;
 }
 
+#sign-in .container .auth-panel .form-panel #signup-form .password-strength.active, #sign-in .container .auth-panel .form-panel #signin-form .password-strength.active, #sign-up .container .auth-panel .form-panel #signup-form .password-strength.active, #sign-up .container .auth-panel .form-panel #signin-form .password-strength.active {
+  color: #098239;
+}
+
 #sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item {
   position: relative;
   padding-left: 20px;
+}
+
+#sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item.active, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item.active {
+  color: #098239;
 }
 
 #sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item::before, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item::before {

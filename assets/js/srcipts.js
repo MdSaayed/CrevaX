@@ -94,18 +94,6 @@ function startCounter() {
   });
 }
 
-// Trigger the counter when the section is visible
-// const section = document.querySelector('#stats-section');
-// const observer = new IntersectionObserver(
-//   (entries) => {
-//       if (entries[0].isIntersecting) {
-//           startCounter();
-//           observer.disconnect(); // Run only once
-//       }
-//   },
-//   { threshold: 0.5 } // Trigger when 50% visible
-// );
-// observer.observe(section);
 
 document.addEventListener('DOMContentLoaded', () => {
     const section = document.querySelector('#stats-section');
@@ -294,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (password === '') {
             strengthStatus.textContent = 'Weak';
-            strengthStatus.style.color = '#737373';
+            strengthStatus.classList.remove('active');
             resetStrengthItems();
             return false;
         }
@@ -302,26 +290,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const isStrong = lengthRequirement && hasNumber && hasSpecialChar && hasUpperCase && hasLowerCase;
 
         strengthStatus.textContent = isStrong ? 'Strong' : 'Weak';
-        strengthStatus.style.color = isStrong ? '#098239' : '#737373';
+        strengthStatus.classList.toggle('active', isStrong);
 
         updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase);
 
         return isStrong;
     }
 
-    // Update Strength Item Colors
+    // Update Strength Item Classes
     function updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase) {
         const strengthArray = [lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase];
 
         strengthItems.forEach((item, index) => {
-            item.style.color = strengthArray[index] ? '#098239' : '#737373';
+            if (strengthArray[index]) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
         });
     }
 
-    // Reset Strength Items to #737373
+    // Reset Strength Items
     function resetStrengthItems() {
         strengthItems.forEach(item => {
-            item.style.color = '#737373';
+            item.classList.remove('active');
         });
     }
 
@@ -338,6 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
         validatePasswordStrength(passwordInput.value);
     });
 });
+
 
 
 

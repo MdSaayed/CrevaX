@@ -145,11 +145,16 @@
                         line-height: 21px;
                         list-style: none; 
                         padding: 0;
+                        &.active{
+                            color: $primary-color;
+                        }
                     
                         .strength-item {
                             position: relative; 
                             padding-left: 20px; 
-                    
+                            &.active{
+                                color: $primary-color;
+                            }
                             &::before {
                                 content: "\f00c"; 
                                 font-family: 'Font Awesome 6 Free'; 
