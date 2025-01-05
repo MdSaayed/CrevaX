@@ -162,17 +162,36 @@ const body = document.body;
 
  
 
-// Open Mobile Menu
-menuButton.addEventListener('click', () => {
-  navMenu.classList.add('active');  
-  document.body.style.overflow = 'hidden';
+document.addEventListener('DOMContentLoaded', () => {
+  const menuButton = document.getElementById('menu-button'); 
+  const navMenu = document.getElementById('nav-menu'); 
+
+  if (menuButton && navMenu) {
+      menuButton.addEventListener('click', () => {
+          navMenu.classList.add('active');  
+          document.body.style.overflow = 'hidden';
+      });
+  } else {
+      console.error('Menu button or navigation menu not found!');
+  }
 });
 
+
 // Close Mobile Menu
-closeButton.addEventListener('click', () => {
-  navMenu.classList.remove('active'); 
-   document.body.style.overflow = 'auto';
+document.addEventListener('DOMContentLoaded', () => {
+  const closeButton = document.getElementById('close-button'); // Replace with actual ID
+  const navMenu = document.getElementById('nav-menu'); // Replace with actual ID
+
+  if (closeButton && navMenu) {
+      closeButton.addEventListener('click', () => {
+          navMenu.classList.remove('active'); 
+          document.body.style.overflow = 'auto';
+      });
+  } else {
+      console.error('Close button or navigation menu not found!');
+  }
 });
+
 
 // On screen resize, ensure mobile menu is hidden on larger screens
 window.addEventListener('resize', () => {
@@ -183,12 +202,25 @@ window.addEventListener('resize', () => {
 });
 
 // Close Mobile Menu if clicked outside
-document.addEventListener('click', (event) => {
-    if (!navMenu.contains(event.target) && !menuButton.contains(event.target)) {
-      navMenu.classList.remove('active');  
-      body.style.overflow = 'auto';  
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  const navMenu = document.getElementById('nav-menu'); // Replace with actual ID
+  const menuButton = document.getElementById('menu-button'); // Replace with actual ID
+  const body = document.body;
+
+  if (!navMenu || !menuButton) {
+      console.error('Menu or button element not found!');
+      return; // Stop execution if elements are missing
+  }
+
+  // Close menu on outside click
+  document.addEventListener('click', (event) => {
+      if (!navMenu.contains(event.target) && !menuButton.contains(event.target)) {
+          navMenu.classList.remove('active');
+          body.style.overflow = 'auto';
+      }
   });
+});
+
 
   
 
@@ -201,5 +233,111 @@ document.addEventListener('click', (event) => {
     easing: 'ease-in-out',  
     once: false  
   });
+
+
+
+  // =============================form validatation ====================
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('signup-form');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email-signup');
+    const passwordInput = document.getElementById('password-signup');
+    const strengthStatus = document.getElementById('strength-status');
+    const strengthItems = document.querySelectorAll('.strength-item');
+
+    if (!form) {
+        console.error("Form element not found!");
+        return;
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        if (!validateName(nameInput.value)) {
+            alert('Please enter a valid name.');
+            return;
+        }
+
+        if (!validateEmail(emailInput.value)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        if (!validatePasswordStrength(passwordInput.value)) {
+            alert('Password does not meet the requirements.');
+            return;
+        }
+
+        alert('Form submitted successfully!');
+        form.submit();
+    });
+
+    // Name Validation
+    function validateName(name) {
+        return /^[a-zA-Z ]{2,30}$/.test(name);
+    }
+
+    // Email Validation
+    function validateEmail(email) {
+        email = email.trim();
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(email);
+    }
+
+    // Password Strength Validation
+    function validatePasswordStrength(password) {
+        const lengthRequirement = password.length >= 8;
+        const hasNumber = /\d/.test(password);
+        const hasSpecialChar = /[!@#$%^&*]/.test(password);
+        const hasUpperCase = /[A-Z]/.test(password);
+        const hasLowerCase = /[a-z]/.test(password);
+
+        if (password === '') {
+            strengthStatus.textContent = 'Weak';
+            strengthStatus.style.color = '#737373';
+            resetStrengthItems();
+            return false;
+        }
+
+        const isStrong = lengthRequirement && hasNumber && hasSpecialChar && hasUpperCase && hasLowerCase;
+
+        strengthStatus.textContent = isStrong ? 'Strong' : 'Weak';
+        strengthStatus.style.color = isStrong ? '#098239' : '#737373';
+
+        updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase);
+
+        return isStrong;
+    }
+
+    // Update Strength Item Colors
+    function updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase) {
+        const strengthArray = [lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase];
+
+        strengthItems.forEach((item, index) => {
+            item.style.color = strengthArray[index] ? '#098239' : '#737373';
+        });
+    }
+
+    // Reset Strength Items to #737373
+    function resetStrengthItems() {
+        strengthItems.forEach(item => {
+            item.style.color = '#737373';
+        });
+    }
+
+    // Live Password Strength Check
+    passwordInput.addEventListener('input', () => {
+        validatePasswordStrength(passwordInput.value);
+    });
+
+    nameInput.addEventListener('input', () => {
+        validatePasswordStrength(passwordInput.value);
+    });
+
+    emailInput.addEventListener('input', () => {
+        validatePasswordStrength(passwordInput.value);
+    });
+});
+
 
 

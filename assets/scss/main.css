@@ -89,7 +89,7 @@ table {
 }
 
 body {
-  font-family: 'GeneralSans', sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-weight: normal;
 }
 
@@ -1792,7 +1792,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: green;
 }
 
 #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn {

@@ -16,6 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 </head>
 <body>
     <main class="main">
@@ -54,10 +60,12 @@
                             <button id="signin-tab" class="tab-button active" data-target="signin-form">Sign In</button>
                             <button id="signup-tab" class="tab-button" data-target="signup-form">Sign Up</button>
                         </div>
+
+                        <!-- signin form -->
                         <form id="signin-form" class="auth-form active">
                             <div class="form-group flex flex-col mb-4">
-                                <label for="email" class="form-label">Email Id</label>
-                                <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                                <label for="email-signin" class="form-label">Email Id</label>
+                                <input type="email-signin" id="email-signin" class="form-input" placeholder="Enter your email" required>
                             </div>
                             <div class="form-group flex flex-col mb-4">
                                 <div class="flex justify-between items-center">
@@ -67,43 +75,47 @@
                                 <input type="password" id="password" class="form-input" placeholder="Enter Password" required>
                                 
                             </div>
-                            <ul class="password-strength">
-                                <li class="strength-item">Password Strength: <span id="strength-status">Weak</span></li>
-                                <li class="strength-item">Cannot contain your name or email address</li>
-                                <li class="strength-item">At least 8 characters</li>
-                                <li class="strength-item">Contains a number or symbol</li>
-                            </ul>
                             <button type="submit" class="sign-up-btn btn-primary">Sign In</button>
                             <div class="or-divider">OR</div>
                             <a href="#" class="sign-in-btn">Sign Up</a>
                         </form>
+
+                        <!-- signup form -->
                         <form id="signup-form" class="auth-form">
                             <div class="form-group flex flex-col mb-4">
-                                <label for="email" class="form-label">Name</label>
-                                <input type="name" id="name" class="form-input" placeholder="Enter your name" required>
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" class="form-input" placeholder="Enter your name" required>
                             </div>
                             <div class="form-group flex flex-col mb-4">
-                                <label for="email" class="form-label">Email Id</label>
-                                <input type="email" id="email" class="form-input" placeholder="Enter your email" required>
+                                <label for="email-signup" class="form-label">Email Id</label>
+                                <input type="email" id="email-signup" class="form-input" placeholder="Enter your email" required>
                             </div>
                             <div class="form-group flex flex-col mb-4">
                                 <div class="flex justify-between items-center">
-                                    <label for="password" class="form-label">Password</label>
+                                    <label for="password-signup" class="form-label">Password</label>
                                     <a href="#" class="forgot-password-link">Forgot Password?</a>
                                 </div>
-                                <input type="password" id="password" class="form-input" placeholder="Enter Password" required>
-                                
+                                <input type="password" id="password-signup" class="form-input" placeholder="Enter Password" required>
                             </div>
+                        
+                            <div class="password-strength-status">
+                                Password Strength: <span id="strength-status">Weak</span>
+                            </div>
+                        
+                            <!-- Password Strength List -->
                             <ul class="password-strength">
-                                <li class="strength-item">Password Strength: <span id="strength-status">Weak</span></li>
-                                <li class="strength-item">Cannot contain your name or email address</li>
                                 <li class="strength-item">At least 8 characters</li>
-                                <li class="strength-item">Contains a number or symbol</li>
+                                <li class="strength-item">Contains a number</li>
+                                <li class="strength-item">Contains a special character</li>
+                                <li class="strength-item">Contains an uppercase letter</li>
+                                <li class="strength-item">Contains a lowercase letter</li>
                             </ul>
+                           
                             <button type="submit" class="sign-up-btn btn-primary">Sign Up</button>
                             <div class="or-divider">OR</div>
                             <a href="#" class="sign-in-btn">Sign In</a>
                         </form>
+                        
                         <div  class="terms-message">
                             <p>By signing up, you accept </br> CrevaX's <a href="#" class="link">Terms of Use & Privacy Policy</a>.  </p>
                         </div>
