@@ -327,6 +327,10 @@ body {
           transform: rotate(45deg);
 }
 
+#brands, #pricing, #blogs, #cta, #footer {
+  background-color: #FAFDFB;
+}
+
 #footer .container .footer-content-area {
   background-color: #EBF5EF;
 }
@@ -740,6 +744,10 @@ body {
 .sub-menu > .has-dropdown:hover::after {
   content: '-';
   color: #FFFFFF !important;
+}
+
+#hero-section-home {
+  background-color: #FAFDFB;
 }
 
 #hero-section-home .hero-content-area .content {
