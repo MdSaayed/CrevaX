@@ -16,6 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
 </head>
 <body>
     <!-- header start here -->
@@ -86,523 +92,546 @@
     </header>
     <!-- header end here -->
 
- 
+    <main>
+        <!-- hero start here -->
+        <section id="hero-section-home" class="">
+            <div class="container py-0">
+                <div 
+                    class="hero-content-area rounded-3xl" 
+                    data-bg-img="./assets/img/hero/heroBg.png"
+                    data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+                >
+                    <div class="content min-h-[700px] md:min-h-[800px] py-28 px-6">
+                        <!-- Sub-title -->
+                        <div class="flex justify-center" data-aos="fade-up" data-aos-delay="300">
+                            <span class="hero-sub-title">Boost Customer Relationships with AirSync</span>
+                        </div>
+                        <!-- Title -->
+                        <h1 
+                            data-aos="fade-up" 
+                            data-aos-delay="400" 
+                            class="hero-title"
+                        >
+                            Revolutionize your CRM <br>experience with AirSync
+                        </h1>
+                        <!-- Description -->
+                        <p 
+                            data-aos="fade-up" 
+                            data-aos-delay="500" 
+                            class="heading-desc text-center mt-6 leading-[27px]"
+                        >
+                            Introducing AirSync: the all-in-one CRM solution for seamless customer relationship management. <br>
+                            Streamline workflow, boost productivity, and drive growth with our user-friendly platform.
+                        </p>
+                        <!-- Buttons -->
+                        <div 
+                            class="flex gap-4 justify-center my-8" 
+                            data-aos="fade-up" 
+                            data-aos-delay="600"
+                        >
+                            <button class="btn-primary">Get started</button>
+                            <button class="btn-secondary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Background Image -->
+                <div 
+                    class="hero-bg -mt-[5rem] lg:-mt-[20rem] px-0 md:p-6 lg:p-8" 
+                    data-aos="fade-up" 
+                    data-aos-delay="700"
+                >
+                    <img class="w-full" src="./assets/img/hero/Application Shell.png" alt="Application Shell">
+                </div>
+            </div>
+        </section>
+        <!-- hero end here -->
 
+        <!-- brands start here -->
+        <section id="brands">
+            <div class="container py-16">
+                <div class="brands-area">
+                    <div class="brand-heading mb-10">
+                        <h2 class="text-center text-2xl font-medium text-2xl " data-aos="fade-up" data-aos-duration="500">Used by the world's most average companies</h2>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6  md:gap-8 lg:gap-14 flex-wrap justify-between items-center" data-aos="fade-up" data-aos-duration="600">
+                        <div class="brand-logo">
+                            <img src="./assets/img/brands/CALIFORNIA-black.png" alt="">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="./assets/img/brands/Amsterdam-colored.png" alt="">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="./assets/img/brands/Norway-black.png" alt="">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="./assets/img/brands/Springfield-black.png" alt="">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="./assets/img/brands/delaware-colored.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brands end here -->
 
-
-    <!-- hero start here -->
-     <section id="hero-section-home" class="">
-        <div class="container py-0">
-            <div class="hero-content-area rounded-3xl" data-bg-img="./assets/img/hero/heroBg.png">
-                <div class="content min-h-[700px] md:min-h-[800px] py-28 px-6">
+        <!-- features start here -->
+        <section id="features">
+            <div class="container py-28">
+                <div class="section-heading">
                     <div class="flex justify-center">
-                        <span class="hero-sub-title">Boost Customer Relationships with AirSync</span>
+                        <span class="section-sub-title text-center text-[20px]" data-aos="fade-up" data-aos-duration="500">Boost Customer Relationships with AirSync</span>
                     </div>
-                    <h1 class="hero-title">
-                        Revolutionize your CRM <br>experience with AirSync
-                    </h1>
-                    <p class="heading-desc text-center mt-6  leading-[27px]">
-                        Introducing AirSync: the all-in-one CRM solution for seamless customer relationship management. <br>
-                        Streamline workflow, boost productivity, and drive growth with our user-friendly platform.
-                    </p>
-                    <div class="flex gap-4 justify-center my-8">
-                        <button class="btn-primary">Get started</button>
-                        <button class="btn-secondary">Learn more</button>
-                    </div>
+                    <h2 class="section-title text-center " data-aos="fade-up" data-aos-duration="600">Boost sales with advanced tools </br> for quicker closings.</h2>
                 </div>
-            </div>
-            <div class="hero-bg -mt-[5rem] lg:-mt-[20rem] px-0 md:p-6 lg:p-8">
-                <img class="w-full" src="./assets/img/hero/Application Shell.png" alt="Application Shell">
-            </div>
-        </div>
-     </section>
-    <!-- hero end here -->
-
-    <!-- brands start here -->
-     <section id="brands">
-        <div class="container py-16">
-            <div class="brands-area">
-                <div class="brand-heading mb-10">
-                    <h2 class="text-center text-2xl font-medium text-2xl ">Used by the world's most average companies</h2>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6  md:gap-8 lg:gap-14	flex-wrap justify-between items-center">
-                    <div class="brand-logo">
-                        <img src="./assets/img/brands/CALIFORNIA-black.png" alt="">
-                    </div>
-                    <div class="brand-logo">
-                        <img src="./assets/img/brands/Amsterdam-colored.png" alt="">
-                    </div>
-                    <div class="brand-logo">
-                        <img src="./assets/img/brands/Norway-black.png" alt="">
-                    </div>
-                    <div class="brand-logo">
-                        <img src="./assets/img/brands/Springfield-black.png" alt="">
-                    </div>
-                    <div class="brand-logo">
-                        <img src="./assets/img/brands/delaware-colored.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- brands end here -->
-
-    <!-- features start here -->
-    <section id="features">
-        <div class="container py-28">
-            <div class="section-heading">
-                <div class="flex justify-center">
-                    <span class="section-sub-title text-center text-[20px]">Boost Customer Relationships with AirSync</span>
-                </div>
-                <h2 class="section-title text-center ">Boost sales with advanced tools </br> for quicker closings.</h2>
-            </div>
-            <div class="features-area  grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-                <div class="features-item p-6 rounded-[24px]">
-                    <a href="feature-single.html" class="thumbnail">
-                        <h3 class="text-4xl font-medium mb-6">Analytics & Reporting</h3>
-                    </a>
-                    <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                    <div class=" mt-8">
+                <div class="features-area  grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                    <div class="features-item p-6 rounded-[24px]" data-aos="fade-up" data-aos-duration="700">
                         <a href="feature-single.html" class="thumbnail">
-                            <img class="w-full" src="./assets/img/features/feature-1.png" alt="">
+                            <h3 class="text-4xl font-medium mb-6">Analytics & Reporting</h3>
                         </a>
+                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class=" mt-8">
+                            <a href="feature-single.html" class="thumbnail">
+                                <img class="w-full" src="./assets/img/features/feature-1.png" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="features-item p-6 rounded-[24px]">
-                    <a href="feature-single.html" class="thumbnail">
-                        <h3 class="text-4xl font-medium mb-6">Centralized Customer Data</h3>
-                    </a>
-                    <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                    <div class=" mt-8">
+                    <div class="features-item p-6 rounded-[24px]" data-aos="fade-up" data-aos-duration="700">
                         <a href="feature-single.html" class="thumbnail">
-                            <img class="w-full" src="./assets/img/features/feature-2.png" alt="">
+                            <h3 class="text-4xl font-medium mb-6">Centralized Customer Data</h3>
                         </a>
+                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class=" mt-8">
+                            <a href="feature-single.html" class="thumbnail">
+                                <img class="w-full" src="./assets/img/features/feature-2.png" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="features-item p-6 rounded-[24px]">
-                    <a href="feature-single.html" class="thumbnail">
-                        <h3 class="text-4xl font-medium mb-6">Task & Workflow Automation</h3>
-                    </a>
-                    <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                    <div class=" mt-8">
+                    <div class="features-item p-6 rounded-[24px]" data-aos="fade-up" data-aos-duration="700">
                         <a href="feature-single.html" class="thumbnail">
-                            <img class="w-full" src="./assets/img/features/feature-3.png" alt="">
+                            <h3 class="text-4xl font-medium mb-6">Task & Workflow Automation</h3>
                         </a>
+                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class=" mt-8">
+                            <a href="feature-single.html" class="thumbnail">
+                                <img class="w-full" src="./assets/img/features/feature-3.png" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="features-item p-6 rounded-[24px]">
-                    <a href="feature-single.html" class="thumbnail">
-                        <h3 class="text-4xl font-medium mb-6">Customizable Dashboards</h3>
-                    </a>
-                    <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                    <div class=" mt-8">
+                    <div class="features-item p-6 rounded-[24px]" data-aos="fade-up" data-aos-duration="700">
                         <a href="feature-single.html" class="thumbnail">
-                            <img class="w-full" src="./assets/img/features/feature-4.png" alt="">
+                            <h3 class="text-4xl font-medium mb-6">Customizable Dashboards</h3>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- freatures end here -->
-
-    <!-- faq start here -->
-    <section id="faq">
-        <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
-                <!-- Section Heading -->
-                <div class="section-heading lg:col-span-1">
-                    <div class="flex justify-start">
-                        <span class="section-sub-title text-center text-[20px]">Faq</span>
-                    </div>
-                    <h2 class="section-title ">The answers to <br> your questions.</h2>
-                </div>
-
-                <!-- faq area -->
-                <div class="faq-area flex flex-col gap-4 lg:col-span-2">
-                    <!-- faw item -->
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What features does AirSync provide for CRM users?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-screen overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What support options are available for AirSync users?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What features does AirSync offer for managing customer data?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">How can AirSync help improve customer relationships?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What integrations does AirSync have with other tools?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What security measures does AirSync have in place for data protection?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- faq end here -->
-
-    <!-- testimonial start here -->
-     <section id="testimonial"> 
-        <div class="container">
-            <div class="section-heading">
-                <div class="flex justify-center">
-                    <span class="section-sub-title text-center text-[20px]">Testimonials</span>
-                </div>
-                <h2 class="section-title text-center ">Client Testimonials</h2>
-            </div>
-
-            <div class="testimonial-area grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                <div class="testimonial-item p-8 rounded-xl">
-                    <div class="star-rating flex gap-1 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="testimonial-content mb-4">
-                        <p class="font-medium">"AirSync is a CRM website that has revolutionized how we manage customer relationships at our company. The platform's features have greatly improved our efficiency and organization. Highly recommend AirSync!"</p>
-                    </div>
-                    <div class="testimonail-profile flex gap-4 items-start">
-                        <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
-                            <img src="./assets/img/testimonials/testimonial-1.png" alt="" class="w-full h-[56px] object-cover">
-                        </div>                        
-                        <div class="">
-                            <h3 class="text-xl">Justin Bayboro</h3>
-                            <p class="leading-[20px]">Position at Acme Innovations</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-8 rounded-xl">
-                    <div class="star-rating flex gap-1 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="testimonial-content mb-4">
-                        <p class="font-medium">"AirSync has transformed the way we operate our small business. Its CRM capabilities have streamlined our daily tasks and communication with customers. Thank you, AirSync, for making our work easier!"</p>
-                    </div>
-                    <div class="testimonail-profile flex item-start gap-4">
-                        <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
-                            <img src="./assets/img/testimonials/testimonial-2.png" alt="" class="w-full h-full object-cover">
-                        </div>                        
-                        <div class="word-wrap">
-                            <h3 class="text-xl">Abraham Linking</h3>
-                            <p class="leading-[20px]">Senior Developer at Tech Solutions Co.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-8 rounded-xl">
-                    <div class="star-rating flex gap-1 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="testimonial-content mb-4">
-                        <p class="font-medium">"Our experience with AirSync for managing customer relationships has been exceptional. The platform has simplified our meetings and planning, making our startup operations run smoothly. 5 stars for AirSync!"</p>
-                    </div>
-                    <div class="testimonail-profile flex gap-4 items-start">
-                        <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
-                            <img src="./assets/img/testimonials/testimonial-3.png" alt="" class="w-full h-full object-cover">
-                        </div>                        
-                        <div class="">
-                            <h3 class="text-xl">Muhammad  Abir</h3>
-                            <p class="leading-[20px]">Product Manager at Global Enterprises</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- testimonial end here -->
-
-    <!-- pricing start here -->
-     <section id="pricing">
-        <div class="container">
-            <div class="section-heading lg:col-span-1 flex flex-col items-center  mb-14">
-                <h2 class="section-title  text-center mb-6 max-w-[556px]">Powerful features for </br> Visionary Creators</h2>
-                <p class="text-center max-w-[556px]">AirSync offers flexible pricing plans for businesses of all sizes. Whether you're a small startup or a large enterprise</p>
-            </div>
-            <div class="flex items-center justify-center">
-                <div class="pricing-switcher p-2 flex-inline items-center justify-center gap-4 rounded-full">
-                    <button class="switcher-btn active" data-target="card1">Monthly</button>
-                    <button class="switcher-btn" data-target="card2">Annual (Save 30%)</button>
-                </div>
-            </div> 
-            <!-- monthly -->
-            <div id="card1" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16">
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
-                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$168.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Intuitive Task Creation</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Collaboration Tools</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Flexible Pricing Options</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Various Functionalities</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
-                    <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$300.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">200+ integrations</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Up to 20 individual users</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">40GB individual storage</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Advanced custom features</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
-                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$ 790.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Audit log and data tracking</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Unlimited individual accounts</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Basic chat and support services</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Personalized Priority Support</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-            </div>
-            <!-- yearly -->
-            <div id="card2" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16 hidden">
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
-                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$500.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Intuitive Task Creation</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Collaboration Tools</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Flexible Pricing Options</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Various Functionalities</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
-                    <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$700.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">200+ integrations</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Up to 20 individual users</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">40GB individual storage</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Advanced custom features</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
-                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$ 1000.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Audit log and data tracking</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Unlimited individual accounts</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Basic chat and support services</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Personalized Priority Support</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- pricing end here -->
-
-    <!-- blogs start here -->
-     <section id="blogs">
-        <div class="container py-28">
-            <div class="section-heading">
-                <div class="flex justify-center">
-                    <span class="section-sub-title text-center text-[20px]">Article and  Recurses</span>
-                </div>
-                <h2 class="section-title text-center ">Discover the AirSync Blog </br> for the Newest Updates</h2>
-            </div>
-            <div class="blog-area grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
-                <div class="blog-card flex flex-col gap-12 rounded-lg">
-                    <div class="thumbnail">
-                        <a href="blog-details.html">
-                            <img src="./assets/img/blog/blog-1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="blog-content rounded-lg p-6">
-                        <div class="meta flex gap-4">
-                            <div class="blog-cat">
-                                <span class=" px-2 py-[2px] rounded">Technology</span>
-                            </div>
-                            <div class="blog-date">
-                                <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
-                            </div>
-                        </div>
-                        <div class="mt-4 blog-title">
-                            <a href="blog-details.html">
-                                <p class="font-medium text-2xl">Stay ahead of the curve with the newest features on AirSync CRM Platform!</p>
+                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class=" mt-8">
+                            <a href="feature-single.html" class="thumbnail">
+                                <img class="w-full" src="./assets/img/features/feature-4.png" alt="">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="blog-card flex flex-col gap-12 rounded-lg">
-                    <div class="blog-content rounded-lg p-6 order-last md:order-first">
-                        <div class="meta flex gap-4">
-                            <div class="blog-cat">
-                                <span class=" px-2 py-[2px] rounded">Technology</span>
-                            </div>
-                            <div class="blog-date">
-                                <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+            </div>
+        </section>
+        <!-- freatures end here -->
+
+        <!-- faq start here -->
+        <section id="faq">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                    <!-- Section Heading -->
+                    <div class="section-heading lg:col-span-1">
+                        <div class="flex justify-start">
+                            <span class="section-sub-title text-center text-[20px]" data-aos="fade-right" data-aos-duration="500">Faq</span>
+                        </div>
+                        <h2 class="section-title "data-aos="fade-right" data-aos-duration="600">The answers to <br> your questions.</h2>
+                    </div>
+
+                    <!-- faq area -->
+                    <div class="faq-area flex flex-col gap-4 lg:col-span-2" data-aos="fade-left" data-aos-duration="1000">
+                        <!-- faw item -->
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What features does AirSync provide for CRM users?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-screen overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
                             </div>
                         </div>
-                        <div class="mt-4 blog-title">
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What support options are available for AirSync users?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What features does AirSync offer for managing customer data?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">How can AirSync help improve customer relationships?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What integrations does AirSync have with other tools?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What security measures does AirSync have in place for data protection?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq end here -->
+
+        <!-- testimonial start here -->
+        <section id="testimonial"> 
+            <div class="container">
+                <div class="section-heading">
+                    <div class="flex justify-center">
+                        <span class="section-sub-title text-center text-[20px]" data-aos="fade-up" data-aos-duration="500">Testimonials</span>
+                    </div>
+                    <h2 class="section-title text-center " data-aos="fade-up" data-aos-duration="600">Client Testimonials</h2>
+                </div>
+
+                <div class="testimonial-area grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12" data-aos="fade-up" data-aos-duration="700">
+                    <div class="testimonial-item p-8 rounded-xl">
+                        <div class="star-rating flex gap-1 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-content mb-4">
+                            <p class="font-medium">"AirSync is a CRM website that has revolutionized how we manage customer relationships at our company. The platform's features have greatly improved our efficiency and organization. Highly recommend AirSync!"</p>
+                        </div>
+                        <div class="testimonail-profile flex gap-4 items-start">
+                            <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
+                                <img src="./assets/img/testimonials/testimonial-1.png" alt="" class="w-full h-[56px] object-cover">
+                            </div>                        
+                            <div class="">
+                                <h3 class="text-xl">Justin Bayboro</h3>
+                                <p class="leading-[20px]">Position at Acme Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-8 rounded-xl">
+                        <div class="star-rating flex gap-1 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-content mb-4">
+                            <p class="font-medium">"AirSync has transformed the way we operate our small business. Its CRM capabilities have streamlined our daily tasks and communication with customers. Thank you, AirSync, for making our work easier!"</p>
+                        </div>
+                        <div class="testimonail-profile flex item-start gap-4">
+                            <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
+                                <img src="./assets/img/testimonials/testimonial-2.png" alt="" class="w-full h-full object-cover">
+                            </div>                        
+                            <div class="word-wrap">
+                                <h3 class="text-xl">Abraham Linking</h3>
+                                <p class="leading-[20px]">Senior Developer at Tech Solutions Co.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-8 rounded-xl">
+                        <div class="star-rating flex gap-1 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-content mb-4">
+                            <p class="font-medium">"Our experience with AirSync for managing customer relationships has been exceptional. The platform has simplified our meetings and planning, making our startup operations run smoothly. 5 stars for AirSync!"</p>
+                        </div>
+                        <div class="testimonail-profile flex gap-4 items-start">
+                            <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
+                                <img src="./assets/img/testimonials/testimonial-3.png" alt="" class="w-full h-full object-cover">
+                            </div>                        
+                            <div class="">
+                                <h3 class="text-xl">Muhammad  Abir</h3>
+                                <p class="leading-[20px]">Product Manager at Global Enterprises</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial end here -->
+
+        <!-- pricing start here -->
+        <section id="pricing">
+            <div class="container">
+                <div class="section-heading lg:col-span-1 flex flex-col items-center  mb-14">
+                    <h2 class="section-title  text-center mb-6 max-w-[556px]" data-aos="fade-up" data-aos-duration="500">Powerful features for </br> Visionary Creators</h2>
+                    <p class="text-center max-w-[556px]" data-aos="fade-up" data-aos-duration="600">AirSync offers flexible pricing plans for businesses of all sizes. Whether you're a small startup or a large enterprise</p>
+                </div>
+                <div class="flex items-center justify-center" data-aos="fade-up" data-aos-duration="700">
+                    <div class="pricing-switcher p-2 flex-inline items-center justify-center gap-4 rounded-full">
+                        <button class="switcher-btn active" data-target="card1">Monthly</button>
+                        <button class="switcher-btn" data-target="card2">Annual (Save 30%)</button>
+                    </div>
+                </div> 
+                <!-- monthly -->
+                <div id="card1" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16">
+                    <div class="card p-10 rounded-2xl" data-aos="fade-up" data-aos-duration="800">
+                        <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
+                        <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$168.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Intuitive Task Creation</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Collaboration Tools</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Flexible Pricing Options</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Various Functionalities</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
+                    <div class="card p-10 rounded-2xl" data-aos="fade-up" data-aos-duration="800">
+                        <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
+                        <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$300.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">200+ integrations</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Up to 20 individual users</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">40GB individual storage</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Advanced custom features</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
+                    <div class="card p-10 rounded-2xl" data-aos="fade-up" data-aos-duration="800">
+                        <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
+                        <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$ 790.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Audit log and data tracking</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Unlimited individual accounts</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Basic chat and support services</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Personalized Priority Support</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- yearly -->
+                <div id="card2" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16 hidden">
+                    <div class="card p-10 rounded-2xl" data-aos="fade-up" data-aos-duration="800">
+                        <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
+                        <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$500.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Intuitive Task Creation</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Collaboration Tools</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Flexible Pricing Options</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Various Functionalities</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
+                    <div class="card p-10 rounded-2xl" data-aos="fade-up" data-aos-duration="800">
+                        <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
+                        <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$700.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">200+ integrations</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Up to 20 individual users</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">40GB individual storage</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Advanced custom features</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
+                    <div class="card p-10 rounded-2xl" data-aos="fade-up" data-aos-duration="800">
+                        <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
+                        <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$ 1000.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Audit log and data tracking</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Unlimited individual accounts</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Basic chat and support services</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Personalized Priority Support</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing end here -->
+
+        <!-- blogs start here -->
+        <section id="blogs">
+            <div class="container py-28">
+                <div class="section-heading">
+                    <div class="flex justify-center">
+                        <span class="section-sub-title text-center text-[20px]" data-aos="fade-up" data-aos-duration="500">Article and  Recurses</span>
+                    </div>
+                    <h2 class="section-title text-center " data-aos="fade-up" data-aos-duration="600">Discover the AirSync Blog </br> for the Newest Updates</h2>
+                </div>
+                <div class="blog-area grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+                    <div class="blog-card flex flex-col gap-12 rounded-lg" data-aos="fade-up" data-aos-duration="700">
+                        <div class="thumbnail">
                             <a href="blog-details.html">
-                                <p class="font-medium text-2xl">Stay in the loop with the newest features and enhancements on the AirSync CRM website!</p>
+                                <img src="./assets/img/blog/blog-1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-content rounded-lg p-6">
+                            <div class="meta flex gap-4">
+                                <div class="blog-cat">
+                                    <span class=" px-2 py-[2px] rounded">Technology</span>
+                                </div>
+                                <div class="blog-date">
+                                    <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                                </div>
+                            </div>
+                            <div class="mt-4 blog-title">
+                                <a href="blog-details.html">
+                                    <p class="font-medium text-2xl">Stay ahead of the curve with the newest features on AirSync CRM Platform!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card flex flex-col gap-12 rounded-lg" data-aos="fade-up" data-aos-duration="700">
+                        <div class="blog-content rounded-lg p-6 order-last md:order-first">
+                            <div class="meta flex gap-4">
+                                <div class="blog-cat">
+                                    <span class=" px-2 py-[2px] rounded">Technology</span>
+                                </div>
+                                <div class="blog-date">
+                                    <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                                </div>
+                            </div>
+                            <div class="mt-4 blog-title">
+                                <a href="blog-details.html">
+                                    <p class="font-medium text-2xl">Stay in the loop with the newest features and enhancements on the AirSync CRM website!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbnail order-first md:order-last">
+                            <a href="blog-details.html">
+                                <img src="./assets/img/blog/blog-2.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="thumbnail order-first md:order-last">
-                        <a href="blog-details.html">
-                            <img src="./assets/img/blog/blog-2.png" alt="">
-                        </a>
+                </div>
+                <div class="blog-btn-area flex items-center justify-center gap-4 mt-14 md:mt-20" data-aos="fade-up" data-aos-duration="800">
+                    <div>
+                        <a class="btn-primary inline-block" href="blog.html">Browse all articles</a>
+                    </div>
+                    <div>
+                        <a class="btn-secondary inline-block" href="blog.html">Learn more</a>
                     </div>
                 </div>
             </div>
-            <div class="blog-btn-area flex items-center justify-center gap-4 mt-14 md:mt-20">
-                <div>
-                    <a class="btn-primary inline-block" href="blog.html">Browse all articles</a>
-                </div>
-                <div>
-                    <a class="btn-secondary inline-block" href="blog.html">Learn more</a>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- blogs end here -->
+        </section>
+        <!-- blogs end here -->
 
-    <!-- CTA start here -->
-     <section id="cta">
-        <div class="container">
-            <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
-                <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
-                <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
-                <div class="btn-area mx-auto mt-8">
-                    <a class="cta-btn inline-block" href="">Started 14 days free</a>
+        <!-- CTA start here -->
+        <section id="cta">
+            <div class="container">
+                <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
+                    <h3 class="text-center text-5xl font-medium leading-[57px]" data-aos="fade-up" data-aos-duration="700">Get ready to elevate your  </br> CRM experience </h3>
+                    <p class="max-w-[620px] text-center mt-4" data-aos="fade-up" data-aos-duration="800">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
+                    <div class="btn-area mx-auto mt-8" data-aos="fade-up" data-aos-duration="900">
+                        <a class="cta-btn inline-block" href="">Started 14 days free</a>
+                    </div>
+                    <div class="section-bg-one"></div>
+                    <div class="section-bg-two"></div>
                 </div>
-                <div class="section-bg w-[300px] h-[300px] md:w-[409px] w-[300px] h-[300px] md:h-[409px] rounded-full absolute -top-[12.5rem] -left-[10.5rem] z-20"></div>
-                <div class="section-bg w-[409px] h-[409px] rounded-full absolute -bottom-[12rem] -right-[7rem] z-20"></div>
             </div>
-        </div>
-     </section>
-    <!-- CTA end here -->
+        </section>
+        <!-- CTA end here -->
+    <main>
 
     <!-- footer start here -->
      <footer id="footer">

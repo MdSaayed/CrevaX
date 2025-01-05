@@ -16,6 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
 </head>
 <body>
     <!-- header start here -->
@@ -86,236 +92,237 @@
     </header>
     <!-- header end here -->
 
-    
-    <!-- pricing hero start here -->
-    <section id="hero-pricing">
-        <div class="container py-0">
-            <div class="content-area rounded-3xl" >
-                <div class="content min-h-[700px] pt-28 px-6" data-bg-img="./assets/img/about/background.png">
-                    <h2 class="section-title text-center text-5xl font-medium leading-[57px] mt-5"> Powerful Features for </br> Visionary Creators</h2>
-                    <p class="section-desc text-center mt-6">AirSync offers flexible pricing plans for businesses of all sizes. </br> Whether you're a small startup or a large enterprise</p>
+    <main>
+        <!-- pricing hero start here -->
+        <section id="hero-pricing">
+            <div class="container py-0">
+                <div class="content-area rounded-3xl" >
+                    <div class="content min-h-[700px] pt-28 px-6" data-bg-img="./assets/img/about/background.png">
+                        <h2 class="section-title text-center text-5xl font-medium leading-[57px] mt-5"> Powerful Features for </br> Visionary Creators</h2>
+                        <p class="section-desc text-center mt-6">AirSync offers flexible pricing plans for businesses of all sizes. </br> Whether you're a small startup or a large enterprise</p>
+                    </div>
                 </div>
             </div>
-        </div>
-     </section>
-    <!-- about hero end here --> 
+        </section>
+        <!-- about hero end here --> 
 
-    <!-- pricing start here -->
-    <section id="pricing" class="px-2 md:px-8">
-        <div class="container">
-            <div class="flex items-center justify-center">
-                <div class="pricing-switcher p-2 flex-inline items-center justify-center gap-4 rounded-full">
-                    <button class="switcher-btn active" data-target="card1">Monthly</button>
-                    <button class="switcher-btn" data-target="card2">Annual (Save 30%)</button>
+        <!-- pricing start here -->
+        <section id="pricing" class="px-2 md:px-8">
+            <div class="container">
+                <div class="flex items-center justify-center">
+                    <div class="pricing-switcher p-2 flex-inline items-center justify-center gap-4 rounded-full">
+                        <button class="switcher-btn active" data-target="card1">Monthly</button>
+                        <button class="switcher-btn" data-target="card2">Annual (Save 30%)</button>
+                    </div>
+                </div> 
+                <!-- monthly -->
+                <div id="card1" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16">
+                    <div class="card p-10 rounded-2xl">
+                        <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
+                        <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$168.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Intuitive Task Creation</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Collaboration Tools</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Flexible Pricing Options</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Various Functionalities</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
+                    <div class="card p-10 rounded-2xl">
+                        <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
+                        <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$300.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">200+ integrations</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Up to 20 individual users</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">40GB individual storage</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Advanced custom features</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
+                    <div class="card p-10 rounded-2xl">
+                        <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
+                        <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$ 790.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Audit log and data tracking</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Unlimited individual accounts</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Basic chat and support services</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Personalized Priority Support</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
+                    </div>
                 </div>
-            </div> 
-            <!-- monthly -->
-            <div id="card1" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16">
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
-                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$168.00 USD</span>
+                <!-- yearly -->
+                <div id="card2" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16 hidden">
+                    <div class="card p-10 rounded-2xl">
+                        <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
+                        <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$500.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Intuitive Task Creation</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Collaboration Tools</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Flexible Pricing Options</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Various Functionalities</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
                     </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Intuitive Task Creation</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Collaboration Tools</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Flexible Pricing Options</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Various Functionalities</span></li>
-                        </ul>
+                    <div class="card p-10 rounded-2xl">
+                        <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
+                        <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$700.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">200+ integrations</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Up to 20 individual users</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">40GB individual storage</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Advanced custom features</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
                     </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
-                    <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$300.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">200+ integrations</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Up to 20 individual users</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">40GB individual storage</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Advanced custom features</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
-                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$ 790.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Audit log and data tracking</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Unlimited individual accounts</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Basic chat and support services</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Personalized Priority Support</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
+                    <div class="card p-10 rounded-2xl">
+                        <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
+                        <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
+                        <div class="price my-6">
+                            <span class="text-4xl font-medium text-center block">$ 1000.00 USD</span>
+                        </div>
+                        <div class="pakage-features">
+                            <ul>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Audit log and data tracking</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Unlimited individual accounts</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Basic chat and support services</span></li>
+                                <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Personalized Priority Support</span></li>
+                            </ul>
+                        </div>
+                        <div class="mt-16">
+                            <a class="buy-now-btn" href="#">Started 14 days free</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- yearly -->
-            <div id="card2" class="pricing-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-16 hidden">
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Basic Plan</h3>
-                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$500.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Intuitive Task Creation</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Collaboration Tools</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Flexible Pricing Options</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Various Functionalities</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Standard Plan</h3>
-                    <p class="text-center mt-4">AirSync offers pricing plans for businesses. Find the perfect plan for you.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$700.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">200+ integrations</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Up to 20 individual users</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">40GB individual storage</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Advanced custom features</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-                <div class="card p-10 rounded-2xl">
-                    <h3 class="font-semibold text-xl text-center">Enterprise Plan</h3>
-                    <p class="text-center mt-4">AirSync provides pricing packages for businesses. We've got you covered.</p>
-                    <div class="price my-6">
-                        <span class="text-4xl font-medium text-center block">$ 1000.00 USD</span>
-                    </div>
-                    <div class="pakage-features">
-                        <ul>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Audit log and data tracking</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2"> Unlimited individual accounts</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Basic chat and support services</span></li>
-                            <li class="mb-3"><span><i class="fa-solid fa-check w-[21px] h-[21px]"></i></span><span class="features ml-2">Personalized Priority Support</span></li>
-                        </ul>
-                    </div>
-                    <div class="mt-16">
-                        <a class="buy-now-btn" href="#">Started 14 days free</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- pricing end here -->
+        </section>
+        <!-- pricing end here -->
 
-    <!-- pricing table start here -->
-    <div id="pricing-table" >
-        <div class="container mx-auto">
-            <table>
-            <thead>
-            
-            </thead>
-            <tbody>
-                <tr >
-                    <td>Email assistance</td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >Live analytics</td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >User insights</td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >Conversion funnel improvement</td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >Automated tasks</td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >AI-powered data forecasts</td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >Sophisticated charts</td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >Team objectives settings</td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >Conversion funnel enhancement</td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                </tr>
-                <tr >
-                    <td >Real-time team insights</td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/check.svg" alt=""></td>
-                    <td  ><img src="./assets/icons/close.svg" alt=""></td>
-                </tr>
-            </tbody>
-            </table>
-        </div>
-    </div>
-    <!-- pricing table end here -->
-
-    <!-- CTA start here -->
-     <section id="cta">
-        <div class="container">
-            <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
-                <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
-                <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
-                <div class="btn-area mx-auto mt-8">
-                    <a class="cta-btn inline-block" href="">Started 14 days free</a>
-                </div>
-                <div class="section-bg w-[300px] h-[300px] md:w-[409px] w-[300px] h-[300px] md:h-[409px] rounded-full absolute -top-[12.5rem] -left-[10.5rem] z-20"></div>
-                <div class="section-bg w-[409px] h-[409px] rounded-full absolute -bottom-[12rem] -right-[7rem] z-20"></div>
+        <!-- pricing table start here -->
+        <div id="pricing-table" >
+            <div class="container mx-auto">
+                <table>
+                <thead>
+                
+                </thead>
+                <tbody>
+                    <tr >
+                        <td>Email assistance</td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >Live analytics</td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >User insights</td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >Conversion funnel improvement</td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >Automated tasks</td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >AI-powered data forecasts</td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >Sophisticated charts</td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >Team objectives settings</td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >Conversion funnel enhancement</td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td >Real-time team insights</td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/check.svg" alt=""></td>
+                        <td  ><img src="./assets/icons/close.svg" alt=""></td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
         </div>
-     </section>
-    <!-- CTA end here -->
+        <!-- pricing table end here -->
+
+        <!-- CTA start here -->
+        <section id="cta">
+            <div class="container">
+                <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
+                    <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
+                    <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
+                    <div class="btn-area mx-auto mt-8">
+                        <a class="cta-btn inline-block" href="">Started 14 days free</a>
+                    </div>
+                    <div class="section-bg-one"></div>
+                    <div class="section-bg-two"></div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA end here -->
+     </main>
 
     <!-- footer start here -->
      <footer id="footer">

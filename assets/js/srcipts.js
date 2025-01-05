@@ -194,5 +194,12 @@ document.addEventListener('click', (event) => {
 
 
 
+  // ==========================ANIMATION=======================
+  AOS.init({
+    duration: 1000,  
+    offset: 200,  
+    easing: 'ease-in-out',  
+    once: false  
+  });
 
 

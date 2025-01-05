@@ -16,6 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
 </head>
 <body>
     <!-- header start here -->
@@ -86,276 +92,278 @@
     </header>
     <!-- header end here -->
 
-    <!-- hero start here -->
-     <section id="hero-section-features" data-bg-img="./assets/img/hero/heroBg.png">
-        <div class="container py-0">
-            <div class="hero-content-area" >
-                <div class="content">
+    <main>
+        <!-- hero start here -->
+        <section id="hero-section-features" data-bg-img="./assets/img/hero/heroBg.png">
+            <div class="container py-0">
+                <div class="hero-content-area" >
+                    <div class="content">
+                        <div class="flex justify-center">
+                            <span class="hero-sub-title">Enhance Customer Engagement with AirSync</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Boost Your CRM with<br>AirSync features
+                        </h1>
+                        <p class="heading-desc text-center mt-6  leading-[27px]">
+                            Discover advanced features designed to streamline your workflows and boost productivity. </br>Our tools enable smarter, faster, and more efficient operations.
+                        </p>
+                        <div class="flex gap-4 justify-center my-8">
+                            <button class="btn-primary">Get started</button>
+                            <button class="btn-secondary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero end here -->
+
+        <!-- features start here -->
+        <section id="features">
+            <div class="container py-28">
+                <div class="section-heading"> 
                     <div class="flex justify-center">
-                        <span class="hero-sub-title">Enhance Customer Engagement with AirSync</span>
+                        <span class="section-sub-title text-center text-[20px]">Boost Customer Relationships with AirSync</span>
                     </div>
-                    <h1 class="hero-title">
-                        Boost Your CRM with<br>AirSync features
-                    </h1>
-                    <p class="heading-desc text-center mt-6  leading-[27px]">
-                        Discover advanced features designed to streamline your workflows and boost productivity. </br>Our tools enable smarter, faster, and more efficient operations.
-                    </p>
-                    <div class="flex gap-4 justify-center my-8">
-                        <button class="btn-primary">Get started</button>
-                        <button class="btn-secondary">Learn more</button>
-                    </div>
+                    <h2 class="section-title text-center ">Boost sales with advanced tools </br> for quicker closings.</h2>
                 </div>
-            </div>
-        </div>
-     </section>
-    <!-- hero end here -->
-
-    <!-- features start here -->
-    <section id="features">
-        <div class="container py-28">
-            <div class="section-heading"> 
-                <div class="flex justify-center">
-                    <span class="section-sub-title text-center text-[20px]">Boost Customer Relationships with AirSync</span>
-                </div>
-                <h2 class="section-title text-center ">Boost sales with advanced tools </br> for quicker closings.</h2>
-            </div>
-            <div class="features-area  grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-                <div class="features-item p-6 rounded-[24px]">
-                    <a href="feature-single.html" class="thumbnail">
-                        <h3 class="text-4xl font-medium mb-6">Analytics & Reporting</h3>
-                    </a>
-                    <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                    <div class=" mt-8">
+                <div class="features-area  grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+                    <div class="features-item p-6 rounded-[24px]">
                         <a href="feature-single.html" class="thumbnail">
-                            <img class="w-full" src="./assets/img/features/feature-1.png" alt="">
+                            <h3 class="text-4xl font-medium mb-6">Analytics & Reporting</h3>
                         </a>
+                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class=" mt-8">
+                            <a href="feature-single.html" class="thumbnail">
+                                <img class="w-full" src="./assets/img/features/feature-1.png" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="features-item p-6 rounded-[24px]">
-                    <a href="feature-single.html" class="thumbnail">
-                        <h3 class="text-4xl font-medium mb-6">Centralized Customer Data</h3>
-                    </a>
-                    <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                    <div class=" mt-8">
+                    <div class="features-item p-6 rounded-[24px]">
                         <a href="feature-single.html" class="thumbnail">
-                            <img class="w-full" src="./assets/img/features/feature-2.png" alt="">
+                            <h3 class="text-4xl font-medium mb-6">Centralized Customer Data</h3>
                         </a>
+                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class=" mt-8">
+                            <a href="feature-single.html" class="thumbnail">
+                                <img class="w-full" src="./assets/img/features/feature-2.png" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="features-item p-6 rounded-[24px]">
-                    <a href="feature-single.html" class="thumbnail">
-                        <h3 class="text-4xl font-medium mb-6">Task & Workflow Automation</h3>
-                    </a>
-                    <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                    <div class=" mt-8">
+                    <div class="features-item p-6 rounded-[24px]">
                         <a href="feature-single.html" class="thumbnail">
-                            <img class="w-full" src="./assets/img/features/feature-3.png" alt="">
+                            <h3 class="text-4xl font-medium mb-6">Task & Workflow Automation</h3>
                         </a>
+                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class=" mt-8">
+                            <a href="feature-single.html" class="thumbnail">
+                                <img class="w-full" src="./assets/img/features/feature-3.png" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="features-item p-6 rounded-[24px]">
-                    <a href="feature-single.html" class="thumbnail">
-                        <h3 class="text-4xl font-medium mb-6">Customizable Dashboards</h3>
-                    </a>
-                    <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
-                    <div class=" mt-8">
+                    <div class="features-item p-6 rounded-[24px]">
                         <a href="feature-single.html" class="thumbnail">
-                            <img class="w-full" src="./assets/img/features/feature-4.png" alt="">
+                            <h3 class="text-4xl font-medium mb-6">Customizable Dashboards</h3>
                         </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- freatures end here -->
-
-    <!-- faq start here -->
-    <section id="faq">
-        <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
-                <!-- Section Heading -->
-                <div class="section-heading lg:col-span-1">
-                    <div class="flex justify-start">
-                        <span class="section-sub-title text-center text-[20px]">Faq</span>
-                    </div>
-                    <h2 class="section-title ">The answers to <br> your questions.</h2>
-                </div>
-
-                <!-- faq area -->
-                <div class="faq-area flex flex-col gap-4 lg:col-span-2">
-                    <!-- faw item -->
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What features does AirSync provide for CRM users?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-screen overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What support options are available for AirSync users?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What features does AirSync offer for managing customer data?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">How can AirSync help improve customer relationships?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What integrations does AirSync have with other tools?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What security measures does AirSync have in place for data protection?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                             class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                             AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- faq end here -->
-
-    <!-- blogs start here -->
-     <section id="blogs">
-        <div class="container py-28">
-            <div class="section-heading">
-                <div class="flex justify-center">
-                    <span class="section-sub-title text-center text-[20px]">Article and  Recurses</span>
-                </div>
-                <h2 class="section-title text-center ">Discover the AirSync Blog </br> for the Newest Updates</h2>
-            </div>
-            <div class="blog-area grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
-                <div class="blog-card flex flex-col gap-12 rounded-lg">
-                    <div class="thumbnail">
-                        <a href="blog-details.html">
-                            <img src="./assets/img/blog/blog-1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="blog-content rounded-lg p-6">
-                        <div class="meta flex gap-4">
-                            <div class="blog-cat">
-                                <span class=" px-2 py-[2px] rounded">Technology</span>
-                            </div>
-                            <div class="blog-date">
-                                <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
-                            </div>
-                        </div>
-                        <div class="mt-4 blog-title">
-                            <a href="blog-details.html">
-                                <p class="font-medium text-2xl">Stay ahead of the curve with the newest features on AirSync CRM Platform!</p>
+                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <div class=" mt-8">
+                            <a href="feature-single.html" class="thumbnail">
+                                <img class="w-full" src="./assets/img/features/feature-4.png" alt="">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="blog-card flex flex-col gap-12 rounded-lg">
-                    <div class="blog-content rounded-lg p-6 order-last md:order-first">
-                        <div class="meta flex gap-4">
-                            <div class="blog-cat">
-                                <span class=" px-2 py-[2px] rounded">Technology</span>
-                            </div>
-                            <div class="blog-date">
-                                <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+            </div>
+        </section>
+        <!-- freatures end here -->
+
+        <!-- faq start here -->
+        <section id="faq">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                    <!-- Section Heading -->
+                    <div class="section-heading lg:col-span-1">
+                        <div class="flex justify-start">
+                            <span class="section-sub-title text-center text-[20px]">Faq</span>
+                        </div>
+                        <h2 class="section-title ">The answers to <br> your questions.</h2>
+                    </div>
+
+                    <!-- faq area -->
+                    <div class="faq-area flex flex-col gap-4 lg:col-span-2">
+                        <!-- faw item -->
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What features does AirSync provide for CRM users?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-screen overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
                             </div>
                         </div>
-                        <div class="mt-4 blog-title">
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What support options are available for AirSync users?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What features does AirSync offer for managing customer data?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">How can AirSync help improve customer relationships?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What integrations does AirSync have with other tools?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What security measures does AirSync have in place for data protection?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq end here -->
+
+        <!-- blogs start here -->
+        <section id="blogs">
+            <div class="container py-28">
+                <div class="section-heading">
+                    <div class="flex justify-center">
+                        <span class="section-sub-title text-center text-[20px]">Article and  Recurses</span>
+                    </div>
+                    <h2 class="section-title text-center ">Discover the AirSync Blog </br> for the Newest Updates</h2>
+                </div>
+                <div class="blog-area grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+                    <div class="blog-card flex flex-col gap-12 rounded-lg">
+                        <div class="thumbnail">
                             <a href="blog-details.html">
-                                <p class="font-medium text-2xl">Stay in the loop with the newest features and enhancements on the AirSync CRM website!</p>
+                                <img src="./assets/img/blog/blog-1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-content rounded-lg p-6">
+                            <div class="meta flex gap-4">
+                                <div class="blog-cat">
+                                    <span class=" px-2 py-[2px] rounded">Technology</span>
+                                </div>
+                                <div class="blog-date">
+                                    <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                                </div>
+                            </div>
+                            <div class="mt-4 blog-title">
+                                <a href="blog-details.html">
+                                    <p class="font-medium text-2xl">Stay ahead of the curve with the newest features on AirSync CRM Platform!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card flex flex-col gap-12 rounded-lg">
+                        <div class="blog-content rounded-lg p-6 order-last md:order-first">
+                            <div class="meta flex gap-4">
+                                <div class="blog-cat">
+                                    <span class=" px-2 py-[2px] rounded">Technology</span>
+                                </div>
+                                <div class="blog-date">
+                                    <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                                </div>
+                            </div>
+                            <div class="mt-4 blog-title">
+                                <a href="blog-details.html">
+                                    <p class="font-medium text-2xl">Stay in the loop with the newest features and enhancements on the AirSync CRM website!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbnail order-first md:order-last">
+                            <a href="blog-details.html">
+                                <img src="./assets/img/blog/blog-2.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="thumbnail order-first md:order-last">
-                        <a href="blog-details.html">
-                            <img src="./assets/img/blog/blog-2.png" alt="">
-                        </a>
+                </div>
+                <div class="blog-btn-area flex items-center justify-center gap-4 mt-14 md:mt-20">
+                    <div>
+                        <a class="btn-primary inline-block" href="blog.html">Browse all articles</a>
+                    </div>
+                    <div>
+                        <a class="btn-secondary inline-block" href="blog.html">Learn more</a>
                     </div>
                 </div>
             </div>
-            <div class="blog-btn-area flex items-center justify-center gap-4 mt-14 md:mt-20">
-                <div>
-                    <a class="btn-primary inline-block" href="blog.html">Browse all articles</a>
-                </div>
-                <div>
-                    <a class="btn-secondary inline-block" href="blog.html">Learn more</a>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- blogs end here -->
+        </section>
+        <!-- blogs end here -->
 
-    <!-- CTA start here -->
-     <section id="cta">
-        <div class="container">
-            <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
-                <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
-                <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
-                <div class="btn-area mx-auto mt-8">
-                    <a class="cta-btn inline-block" href="">Started 14 days free</a>
+        <!-- CTA start here -->
+        <section id="cta">
+            <div class="container">
+                <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
+                    <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
+                    <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
+                    <div class="btn-area mx-auto mt-8">
+                        <a class="cta-btn inline-block" href="">Started 14 days free</a>
+                    </div>
+                    <div class="section-bg-one"></div>
+                    <div class="section-bg-two"></div>
                 </div>
-                <div class="section-bg w-[300px] h-[300px] md:w-[409px] w-[300px] h-[300px] md:h-[409px] rounded-full absolute -top-[12.5rem] -left-[10.5rem] z-20"></div>
-                <div class="section-bg w-[409px] h-[409px] rounded-full absolute -bottom-[12rem] -right-[7rem] z-20"></div>
             </div>
-        </div>
-     </section>
-    <!-- CTA end here -->
+        </section>
+        <!-- CTA end here -->
+     </main>
 
     <!-- footer start here -->
      <footer id="footer">

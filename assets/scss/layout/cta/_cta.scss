@@ -13,8 +13,34 @@
                 
             }
         }
-        .section-bg{
+        .section-bg-one {
             background-color: #0D3822;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: absolute;
+            top: -12.5rem;
+            left: -10.5rem;
+            z-index: 20;
         }
+
+        @media (min-width: 768px) {
+            .section-bg-one {
+                width: 409px;
+                height: 409px;
+            }
+        }
+
+        .section-bg-two {
+            background-color: #0D3822;
+            width: 409px;
+            height: 409px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -12rem;
+            right: -7rem;
+            z-index: 20;
+        }
+
     }
 } 

@@ -16,6 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
 </head>
 <body>
     <!-- header start here -->
@@ -86,357 +92,359 @@
     </header>
     <!-- header end here -->
 
-    <!-- job details start here -->
-    <section id="job-details" class="job-details-section">
-        <div class="container">
-            <div class="job-details-area grid grid-cols-1 gap-8 lg:gap-14">
-                <div class="lg:col-span-2">
+    <main>
+        <!-- job details start here -->
+        <section id="job-details" class="job-details-section">
+            <div class="container">
+                <div class="job-details-area grid grid-cols-1 gap-8 lg:gap-14">
+                    <div class="lg:col-span-2">
+                        <div>
+                            <h2 class="section-title job-title">Software Engineer</h2>
+                            <p class="section-desc">
+                                Mi tincidunt elit, id quisque ligula dia diam, amet. Vel etiam suspendisse morbi
+                                eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna,
+                                etiam. Mauris posuere vulputate arcu amet, vitae nisl, tellus tincidunt. At feugiat sapien varius id.
+                            </p>
+                            <p class="section-desc mt-4">
+                                Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat
+                                lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant
+                                diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie 
+                                aliquet sodales id est ac volutpat.Tristique odio senectus nam posuere ornare leo metus, ultrices. 
+                                Blandit duis ultrices vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes,
+                                sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie
+                                pellentesque. Arcu ultricies sed mauris vestibulum.
+                            </p>
+                        </div>
+                        <div class="job-responsibilities mt-16">
+                            <h3 class="section-title job-title">Job Responsibilities</h3>
+                            <p class="section-desc">
+                                Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies.
+                                Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque 
+                                amet nulla purus habitasse.
+                            </p>
+                            <ul class="section-desc mt-4">
+                                <li>There are many variations of passages of Lorem Ipsum available.</li>
+                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                <li>Requires a bachelor's degree in a related area.</li>
+                                <li>There are many variations of passages of Lorem Ipsum available.</li>
+                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                            </ul>
+                        </div>
+                        <div class="qualifications mt-16">
+                            <h3 class="section-title job-title">Qualifications</h3>
+                            <p class="section-desc">
+                                Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies.
+                                Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque 
+                                amet nulla purus habitasse.
+                            </p>
+                            <ul class="section-desc mt-4">
+                                <li>There are many variations of passages of Lorem Ipsum available.</li>
+                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                                <li>Requires a bachelor's degree in a related area.</li>
+                                <li>There are many variations of passages of Lorem Ipsum available.</li>
+                                <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="">
+                        <form id="contact-form" class="contact-form mx-auto w-full mt-16" method="post">
+                            <div class="form-group flex flex-col mb-4">
+                                <label for="first-name" class="form-label">First Name</label>
+                                <input type="text" id="first-name" class="form-input" name="first_name" placeholder="Enter your first name"  required>
+                            </div>
+                            <div class="form-group flex flex-col mb-4">
+                                <label for="last-name" class="form-label">Last Name</label>
+                                <input type="text" id="last-name" class="form-input" name="last_name" placeholder="Enter your last name"  required>
+                            </div>
+                            <div class="form-group flex flex-col mb-4">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-input" name="email" placeholder="Enter your email"  required>
+                            </div>
+                            <div class="form-group flex flex-col mb-4">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" class="form-textarea" name="message" rows="5"  placeholder="Type your message" required></textarea>
+                            </div>
+                            <div class="form-group checkbox-container">
+                                <input type="checkbox" id="accept-terms">
+                                <label class="checkmark" for="accept-terms"><span class="checkbox-label">I accept the Terms</span></label>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="btn-submit">Apply Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- job details end here -->
+
+        <!-- testimonial start here -->
+        <section id="testimonial"> 
+            <div class="container">
+                <div class="section-heading">
+                    <div class="flex justify-center">
+                        <span class="section-sub-title text-center text-[20px]">Testimonials</span>
+                    </div>
+                    <h2 class="section-title text-center ">Client Testimonials</h2>
+                </div>
+
+                <div class="testimonial-area grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <div class="testimonial-item p-8 rounded-xl">
+                        <div class="star-rating flex gap-1 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-content mb-4">
+                            <p class="font-medium">"AirSync is a CRM website that has revolutionized how we manage customer relationships at our company. The platform's features have greatly improved our efficiency and organization. Highly recommend AirSync!"</p>
+                        </div>
+                        <div class="testimonail-profile flex gap-4 items-start">
+                            <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
+                                <img src="./assets/img/testimonials/testimonial-1.png" alt="" class="w-full h-[56px] object-cover">
+                            </div>                        
+                            <div class="">
+                                <h3 class="text-xl">Justin Bayboro</h3>
+                                <p class="leading-[20px]">Position at Acme Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-8 rounded-xl">
+                        <div class="star-rating flex gap-1 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-content mb-4">
+                            <p class="font-medium">"AirSync has transformed the way we operate our small business. Its CRM capabilities have streamlined our daily tasks and communication with customers. Thank you, AirSync, for making our work easier!"</p>
+                        </div>
+                        <div class="testimonail-profile flex item-start gap-4">
+                            <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
+                                <img src="./assets/img/testimonials/testimonial-2.png" alt="" class="w-full h-full object-cover">
+                            </div>                        
+                            <div class="word-wrap">
+                                <h3 class="text-xl">Abraham Linking</h3>
+                                <p class="leading-[20px]">Senior Developer at Tech Solutions Co.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item p-8 rounded-xl">
+                        <div class="star-rating flex gap-1 mb-6">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="testimonial-content mb-4">
+                            <p class="font-medium">"Our experience with AirSync for managing customer relationships has been exceptional. The platform has simplified our meetings and planning, making our startup operations run smoothly. 5 stars for AirSync!"</p>
+                        </div>
+                        <div class="testimonail-profile flex gap-4 items-start">
+                            <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
+                                <img src="./assets/img/testimonials/testimonial-3.png" alt="" class="w-full h-full object-cover">
+                            </div>                        
+                            <div class="">
+                                <h3 class="text-xl">Muhammad  Abir</h3>
+                                <p class="leading-[20px]">Product Manager at Global Enterprises</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial end here -->
+
+        <!-- faq start here -->
+        <section id="faq">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                    <!-- Section Heading -->
+                    <div class="section-heading lg:col-span-1">
+                        <div class="flex justify-start">
+                            <span class="section-sub-title text-center text-[20px]">Faq</span>
+                        </div>
+                        <h2 class="section-title ">The answers to <br> your questions.</h2>
+                    </div>
+
+                    <!-- faq area -->
+                    <div class="faq-area flex flex-col gap-4 lg:col-span-2">
+                        <!-- faw item -->
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What features does AirSync provide for CRM users?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                    class="faq-answer max-h-screen overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                    AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What support options are available for AirSync users?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                    class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                    AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What features does AirSync offer for managing customer data?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                    class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                    AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">How can AirSync help improve customer relationships?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                    class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                    AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What integrations does AirSync have with other tools?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                    class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                    AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                        <div class="faq-item w-full rounded-lg p-4">
+                            <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
+                                <span class="text-start">What security measures does AirSync have in place for data protection?</span>
+                                <div>
+                                    <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
+                                        <i class="fas fa-arrow-right text-base text-white"></i>
+                                    </span>
+                                </div>
+                            </button>
+                            <div
+                                    class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
+                                    AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq end here -->
+
+        <!-- blogs start here -->
+        <section id="blogs">
+            <div class="container py-28">
+                <div class="section-heading">
+                    <div class="flex justify-center">
+                        <span class="section-sub-title text-center text-[20px]">Article and  Recurses</span>
+                    </div>
+                    <h2 class="section-title text-center ">Discover the AirSync Blog </br> for the Newest Updates</h2>
+                </div>
+                <div class="blog-area grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+                    <div class="blog-card flex flex-col gap-12 rounded-lg">
+                        <div class="thumbnail">
+                            <a href="blog-details.html">
+                                <img src="./assets/img/blog/blog-1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="blog-content rounded-lg p-6">
+                            <div class="meta flex gap-4">
+                                <div class="blog-cat">
+                                    <span class=" px-2 py-[2px] rounded">Technology</span>
+                                </div>
+                                <div class="blog-date">
+                                    <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                                </div>
+                            </div>
+                            <div class="mt-4 blog-title">
+                                <a href="blog-details.html">
+                                    <p class="font-medium text-2xl">Stay ahead of the curve with the newest features on AirSync CRM Platform!</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card flex flex-col gap-12 rounded-lg">
+                        <div class="blog-content rounded-lg p-6 order-last md:order-first">
+                            <div class="meta flex gap-4">
+                                <div class="blog-cat">
+                                    <span class=" px-2 py-[2px] rounded">Technology</span>
+                                </div>
+                                <div class="blog-date">
+                                    <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                                </div>
+                            </div>
+                            <div class="mt-4 blog-title">
+                                <a href="blog-details.html">
+                                    <p class="font-medium text-2xl">Stay in the loop with the newest features and enhancements on the AirSync CRM website!</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumbnail order-first md:order-last">
+                            <a href="blog-details.html">
+                                <img src="./assets/img/blog/blog-2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-btn-area flex items-center justify-center gap-4 mt-14 md:mt-20">
                     <div>
-                        <h2 class="section-title job-title">Software Engineer</h2>
-                        <p class="section-desc">
-                            Mi tincidunt elit, id quisque ligula dia diam, amet. Vel etiam suspendisse morbi
-                            eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna,
-                            etiam. Mauris posuere vulputate arcu amet, vitae nisl, tellus tincidunt. At feugiat sapien varius id.
-                        </p>
-                        <p class="section-desc mt-4">
-                            Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat
-                            lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant
-                            diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie 
-                            aliquet sodales id est ac volutpat.Tristique odio senectus nam posuere ornare leo metus, ultrices. 
-                            Blandit duis ultrices vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes,
-                            sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie
-                            pellentesque. Arcu ultricies sed mauris vestibulum.
-                        </p>
+                        <a class="btn-primary inline-block" href="blog.html">Browse all articles</a>
                     </div>
-                    <div class="job-responsibilities mt-16">
-                        <h3 class="section-title job-title">Job Responsibilities</h3>
-                        <p class="section-desc">
-                            Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies.
-                            Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque 
-                            amet nulla purus habitasse.
-                        </p>
-                        <ul class="section-desc mt-4">
-                            <li>There are many variations of passages of Lorem Ipsum available.</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                            <li>Requires a bachelor's degree in a related area.</li>
-                            <li>There are many variations of passages of Lorem Ipsum available.</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                        </ul>
+                    <div>
+                        <a class="btn-secondary inline-block" href="blog.html">Learn more</a>
                     </div>
-                    <div class="qualifications mt-16">
-                        <h3 class="section-title job-title">Qualifications</h3>
-                        <p class="section-desc">
-                            Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies.
-                            Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque 
-                            amet nulla purus habitasse.
-                        </p>
-                        <ul class="section-desc mt-4">
-                            <li>There are many variations of passages of Lorem Ipsum available.</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                            <li>Requires a bachelor's degree in a related area.</li>
-                            <li>There are many variations of passages of Lorem Ipsum available.</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="">
-                    <form id="contact-form" class="contact-form mx-auto w-full mt-16" method="post">
-                        <div class="form-group flex flex-col mb-4">
-                            <label for="first-name" class="form-label">First Name</label>
-                            <input type="text" id="first-name" class="form-input" name="first_name" placeholder="Enter your first name"  required>
-                        </div>
-                        <div class="form-group flex flex-col mb-4">
-                            <label for="last-name" class="form-label">Last Name</label>
-                            <input type="text" id="last-name" class="form-input" name="last_name" placeholder="Enter your last name"  required>
-                        </div>
-                        <div class="form-group flex flex-col mb-4">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" id="email" class="form-input" name="email" placeholder="Enter your email"  required>
-                        </div>
-                        <div class="form-group flex flex-col mb-4">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" class="form-textarea" name="message" rows="5"  placeholder="Type your message" required></textarea>
-                        </div>
-                          <div class="form-group checkbox-container">
-                            <input type="checkbox" id="accept-terms">
-                            <label class="checkmark" for="accept-terms"><span class="checkbox-label">I accept the Terms</span></label>
-                          </div>
-                        <div class="form-group ">
-                            <button type="submit" class="btn-submit">Apply Now</button>
-                        </div>
-                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- job details end here -->
+        </section>
+        <!-- blogs end here -->
 
-     <!-- testimonial start here -->
-     <section id="testimonial"> 
-        <div class="container">
-            <div class="section-heading">
-                <div class="flex justify-center">
-                    <span class="section-sub-title text-center text-[20px]">Testimonials</span>
-                </div>
-                <h2 class="section-title text-center ">Client Testimonials</h2>
-            </div>
-
-            <div class="testimonial-area grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-                <div class="testimonial-item p-8 rounded-xl">
-                    <div class="star-rating flex gap-1 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+        <!-- CTA start here -->
+        <section id="cta">
+            <div class="container">
+                <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
+                    <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
+                    <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
+                    <div class="btn-area mx-auto mt-8">
+                        <a class="cta-btn inline-block" href="">Started 14 days free</a>
                     </div>
-                    <div class="testimonial-content mb-4">
-                        <p class="font-medium">"AirSync is a CRM website that has revolutionized how we manage customer relationships at our company. The platform's features have greatly improved our efficiency and organization. Highly recommend AirSync!"</p>
-                    </div>
-                    <div class="testimonail-profile flex gap-4 items-start">
-                        <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
-                            <img src="./assets/img/testimonials/testimonial-1.png" alt="" class="w-full h-[56px] object-cover">
-                        </div>                        
-                        <div class="">
-                            <h3 class="text-xl">Justin Bayboro</h3>
-                            <p class="leading-[20px]">Position at Acme Innovations</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-8 rounded-xl">
-                    <div class="star-rating flex gap-1 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="testimonial-content mb-4">
-                        <p class="font-medium">"AirSync has transformed the way we operate our small business. Its CRM capabilities have streamlined our daily tasks and communication with customers. Thank you, AirSync, for making our work easier!"</p>
-                    </div>
-                    <div class="testimonail-profile flex item-start gap-4">
-                        <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
-                            <img src="./assets/img/testimonials/testimonial-2.png" alt="" class="w-full h-full object-cover">
-                        </div>                        
-                        <div class="word-wrap">
-                            <h3 class="text-xl">Abraham Linking</h3>
-                            <p class="leading-[20px]">Senior Developer at Tech Solutions Co.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-8 rounded-xl">
-                    <div class="star-rating flex gap-1 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="testimonial-content mb-4">
-                        <p class="font-medium">"Our experience with AirSync for managing customer relationships has been exceptional. The platform has simplified our meetings and planning, making our startup operations run smoothly. 5 stars for AirSync!"</p>
-                    </div>
-                    <div class="testimonail-profile flex gap-4 items-start">
-                        <div class="avatar w-[56px] h-[56px] overflow-hidden rounded-full flex-shrink-0">
-                            <img src="./assets/img/testimonials/testimonial-3.png" alt="" class="w-full h-full object-cover">
-                        </div>                        
-                        <div class="">
-                            <h3 class="text-xl">Muhammad  Abir</h3>
-                            <p class="leading-[20px]">Product Manager at Global Enterprises</p>
-                        </div>
-                    </div>
+                    <div class="section-bg-one"></div>
+                    <div class="section-bg-two"></div>
                 </div>
             </div>
-        </div>
-     </section>
-    <!-- testimonial end here -->
-
-    <!-- faq start here -->
-    <section id="faq">
-        <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
-                <!-- Section Heading -->
-                <div class="section-heading lg:col-span-1">
-                    <div class="flex justify-start">
-                        <span class="section-sub-title text-center text-[20px]">Faq</span>
-                    </div>
-                    <h2 class="section-title ">The answers to <br> your questions.</h2>
-                </div>
-
-                <!-- faq area -->
-                <div class="faq-area flex flex-col gap-4 lg:col-span-2">
-                    <!-- faw item -->
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What features does AirSync provide for CRM users?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                                class="faq-answer max-h-screen overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What support options are available for AirSync users?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What features does AirSync offer for managing customer data?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">How can AirSync help improve customer relationships?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What integrations does AirSync have with other tools?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                    <div class="faq-item w-full rounded-lg p-4">
-                        <button class="faq-question flex justify-between w-full font-medium text-xl leading-[28px] cursor-pointer gap-4">
-                            <span class="text-start">What security measures does AirSync have in place for data protection?</span>
-                            <div>
-                                <span class="faq-toggle-icon rounded-full w-[32px] h-[32px] flex justify-center items-center transform transition-transform -rotate-90 duration-300">
-                                    <i class="fas fa-arrow-right text-base text-white"></i>
-                                </span>
-                            </div>
-                        </button>
-                        <div
-                                class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                                AirSync seamlessly integrates with CRM systems, syncing customer data, tracking interactions, and managing leads efficiently. It offers automated data updates, custom reporting tools, and real-time analytics for CRM users.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- faq end here -->
-
-     <!-- blogs start here -->
-     <section id="blogs">
-        <div class="container py-28">
-            <div class="section-heading">
-                <div class="flex justify-center">
-                    <span class="section-sub-title text-center text-[20px]">Article and  Recurses</span>
-                </div>
-                <h2 class="section-title text-center ">Discover the AirSync Blog </br> for the Newest Updates</h2>
-            </div>
-            <div class="blog-area grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
-                <div class="blog-card flex flex-col gap-12 rounded-lg">
-                    <div class="thumbnail">
-                        <a href="blog-details.html">
-                            <img src="./assets/img/blog/blog-1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="blog-content rounded-lg p-6">
-                        <div class="meta flex gap-4">
-                            <div class="blog-cat">
-                                <span class=" px-2 py-[2px] rounded">Technology</span>
-                            </div>
-                            <div class="blog-date">
-                                <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
-                            </div>
-                        </div>
-                        <div class="mt-4 blog-title">
-                            <a href="blog-details.html">
-                                <p class="font-medium text-2xl">Stay ahead of the curve with the newest features on AirSync CRM Platform!</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-card flex flex-col gap-12 rounded-lg">
-                    <div class="blog-content rounded-lg p-6 order-last md:order-first">
-                        <div class="meta flex gap-4">
-                            <div class="blog-cat">
-                                <span class=" px-2 py-[2px] rounded">Technology</span>
-                            </div>
-                            <div class="blog-date">
-                                <p class="flex gap-2 items-center px-2 py-[2px] rounded"><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
-                            </div>
-                        </div>
-                        <div class="mt-4 blog-title">
-                            <a href="blog-details.html">
-                                <p class="font-medium text-2xl">Stay in the loop with the newest features and enhancements on the AirSync CRM website!</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="thumbnail order-first md:order-last">
-                        <a href="blog-details.html">
-                            <img src="./assets/img/blog/blog-2.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-btn-area flex items-center justify-center gap-4 mt-14 md:mt-20">
-                <div>
-                    <a class="btn-primary inline-block" href="blog.html">Browse all articles</a>
-                </div>
-                <div>
-                    <a class="btn-secondary inline-block" href="blog.html">Learn more</a>
-                </div>
-            </div>
-        </div>
-     </section>
-    <!-- blogs end here -->
-
-    <!-- CTA start here -->
-     <section id="cta">
-        <div class="container">
-            <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
-                <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
-                <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
-                <div class="btn-area mx-auto mt-8">
-                    <a class="cta-btn inline-block" href="">Started 14 days free</a>
-                </div>
-                <div class="section-bg w-[300px] h-[300px] md:w-[409px] w-[300px] h-[300px] md:h-[409px] rounded-full absolute -top-[12.5rem] -left-[10.5rem] z-20"></div>
-                <div class="section-bg w-[409px] h-[409px] rounded-full absolute -bottom-[12rem] -right-[7rem] z-20"></div>
-            </div>
-        </div>
-     </section>
-    <!-- CTA end here -->
+        </section>
+        <!-- CTA end here -->
+    </main>
 
     <!-- footer start here -->
     <footer id="footer">

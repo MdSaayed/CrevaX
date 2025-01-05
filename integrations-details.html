@@ -16,6 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- AOS animation  css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!--  AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
 </head>
 <body>
     <!-- header start here -->
@@ -86,64 +92,66 @@
     </header>
     <!-- header end here -->
 
-    <!-- integrations details start here -->
-     <section id="integrations-details">
-        <div class="container">
-            <!-- Integration Header -->
-            <div class="integration-header flex flex-col lg:flex-row  items-center lg:justify-between pt-16">
-                <div class="flex flex-col lg:flex-row gap-4 items-center lg:items-center">
-                    <img src="./assets/icons/wise.svg" alt="Wise Icon">
-                    <div class="integration-info text-center lg:text-left">
-                        <h2 class="integration-title">Wise</h2>
-                        <p class="integration-description">
-                            Optimize workflow with Slack integration in Galaxy. Receive live notifications and collaborate seamlessly with your team in your collaboration tool.
-                        </p>
+    <main>
+        <!-- integrations details start here -->
+        <section id="integrations-details">
+            <div class="container">
+                <!-- Integration Header -->
+                <div class="integration-header flex flex-col lg:flex-row  items-center lg:justify-between pt-16">
+                    <div class="flex flex-col lg:flex-row gap-4 items-center lg:items-center">
+                        <img src="./assets/icons/wise.svg" alt="Wise Icon">
+                        <div class="integration-info text-center lg:text-left">
+                            <h2 class="integration-title">Wise</h2>
+                            <p class="integration-description">
+                                Optimize workflow with Slack integration in Galaxy. Receive live notifications and collaborate seamlessly with your team in your collaboration tool.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="integration-action">
+                        <a href="#" class="btn-primary">Get Started</a>
                     </div>
                 </div>
-                <div class="integration-action">
-                    <a href="#" class="btn-primary">Get Started</a>
-                </div>
-            </div>
-            <!-- Integration Content -->
-            <div class="integration-content">
-                <div>
-                    <h3 class="content-title">Payment Gateways</h3>
-                    <p class="content-text my-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <!-- Integration Content -->
+                <div class="integration-content">
+                    <div>
+                        <h3 class="content-title">Payment Gateways</h3>
+                        <p class="content-text my-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <ul class="content-list">
+                        <li>Lorem ipsum dolor sit amet consectetur adipiscing elit ut eu sem integer vitae justo egestas</li>
+                        <li>Et odio pellentesque diam volutpat commodo pellentesque eu tincidunt tortor aliquam.</li>
+                        <li>Aliquet enim tortor at auctor urna nunc id cursus elit</li>
+                        <li>Aliquet enim tortor at auctor urna nunc id cursus.</li>
+                    </ul>
+                    <p class="content-text my-8">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua tellus pellentesque eu tincidunt tortor aliquam et tortor consequat id porta sed id semper risus in sodales et eu sem integer.
+                    </p>
+                    <p class="content-text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                     </p>
                 </div>
-                <ul class="content-list">
-                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit ut eu sem integer vitae justo egestas</li>
-                    <li>Et odio pellentesque diam volutpat commodo pellentesque eu tincidunt tortor aliquam.</li>
-                    <li>Aliquet enim tortor at auctor urna nunc id cursus elit</li>
-                    <li>Aliquet enim tortor at auctor urna nunc id cursus.</li>
-                </ul>
-                <p class="content-text my-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua tellus pellentesque eu tincidunt tortor aliquam et tortor consequat id porta sed id semper risus in sodales et eu sem integer.
-                </p>
-                <p class="content-text">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
             </div>
-        </div>
-     </section>
-    <!-- integrations details end here -->
+        </section>
+        <!-- integrations details end here -->
 
-    <!-- CTA start here -->
-     <section id="cta">
-        <div class="container">
-            <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
-                <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
-                <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
-                <div class="btn-area mx-auto mt-8">
-                    <a class="cta-btn inline-block" href="">Started 14 days free</a>
+        <!-- CTA start here -->
+        <section id="cta">
+            <div class="container">
+                <div class="cta-area rounded-3xl flex flex-col items-center justify-center max-w-[1050px] px-6 py-12 md:px-12 md:py-12 relative overflow-hidden">
+                    <h3 class="text-center text-5xl font-medium leading-[57px]">Get ready to elevate your  </br> CRM experience </h3>
+                    <p class="max-w-[620px] text-center mt-4">Enhance your business with our tailored solutions. Get the support you need to integrate new features seamlessly. Let's get started!</p>
+                    <div class="btn-area mx-auto mt-8">
+                        <a class="cta-btn inline-block" href="">Started 14 days free</a>
+                    </div>
+                    <div class="section-bg-one"></div>
+                    <div class="section-bg-two"></div>
                 </div>
-                <div class="section-bg w-[300px] h-[300px] md:w-[409px] w-[300px] h-[300px] md:h-[409px] rounded-full absolute -top-[12.5rem] -left-[10.5rem] z-20"></div>
-                <div class="section-bg w-[409px] h-[409px] rounded-full absolute -bottom-[12rem] -right-[7rem] z-20"></div>
             </div>
-        </div>
-     </section>
-    <!-- CTA end here -->
+        </section>
+        <!-- CTA end here -->
+     </main>
 
     <!-- footer start here -->
      <footer id="footer">
