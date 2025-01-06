@@ -1,5 +1,6 @@
 #faq{
     background-color: $background-light;
+    overflow-x: hidden;  
     .section-sub-title{
         @extend  .section-sub-title;
     }

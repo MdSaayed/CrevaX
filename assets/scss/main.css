@@ -829,6 +829,7 @@ body {
 
 #faq {
   background-color: #fafcfb;
+  overflow-x: hidden;
 }
 
 #faq .faq-area .faq-item {

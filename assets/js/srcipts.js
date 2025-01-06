@@ -143,192 +143,173 @@ tabButtons.forEach(button => {
 
 
 // ===================menu=========================================
-const menuButton = document.querySelector('.fa-bars');
-const closeButton = document.querySelector('.menu-close-btn');
-const navMenu = document.querySelector('nav');
-const body = document.body;
-
- 
-
 document.addEventListener('DOMContentLoaded', () => {
-  const menuButton = document.getElementById('menu-button'); 
-  const navMenu = document.getElementById('nav-menu'); 
+    // Selectors
+    const menuButton = document.querySelector('.fa-bars'); // Menu button
+    const closeButton = document.querySelector('.menu-close-btn'); // Close button
+    const navMenu = document.querySelector('nav'); // Navigation menu
 
-  if (menuButton && navMenu) {
-      menuButton.addEventListener('click', () => {
-          navMenu.classList.add('active');  
-          document.body.style.overflow = 'hidden';
-      });
-  } else {
-      console.error('Menu button or navigation menu not found!');
-  }
+    // Open Menu
+    if (menuButton && navMenu) {
+        menuButton.addEventListener('click', () => {
+            navMenu.classList.add('active'); // Add 'active' class
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    } else {
+        console.error('Menu button or navigation menu not found!');
+    }
+
+    // Close Menu
+    if (closeButton && navMenu) {
+        closeButton.addEventListener('click', () => {
+            navMenu.classList.remove('active'); // Remove 'active' class
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        });
+    } else {
+        console.error('Close button or navigation menu not found!');
+    }
+
+    // Hide menu on screen resize for larger screens
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 992) {
+            navMenu.classList.remove('active'); // Hide menu
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        }
+    });
 });
 
-
-// Close Mobile Menu
-document.addEventListener('DOMContentLoaded', () => {
-  const closeButton = document.getElementById('close-button'); // Replace with actual ID
-  const navMenu = document.getElementById('nav-menu'); // Replace with actual ID
-
-  if (closeButton && navMenu) {
-      closeButton.addEventListener('click', () => {
-          navMenu.classList.remove('active'); 
-          document.body.style.overflow = 'auto';
-      });
-  } else {
-      console.error('Close button or navigation menu not found!');
-  }
-});
-
-
-// On screen resize, ensure mobile menu is hidden on larger screens
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 992) {
-    navMenu.classList.remove('active');  
-    document.body.style.overflow = 'auto';
-  }
-});
 
 // Close Mobile Menu if clicked outside
 document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('nav-menu'); // Replace with actual ID
-  const menuButton = document.getElementById('menu-button'); // Replace with actual ID
   const body = document.body;
 
-  if (!navMenu || !menuButton) {
-      console.error('Menu or button element not found!');
+  if (!navMenu) {
       return; // Stop execution if elements are missing
   }
 
   // Close menu on outside click
   document.addEventListener('click', (event) => {
-      if (!navMenu.contains(event.target) && !menuButton.contains(event.target)) {
+      if (!navMenu.contains(event.target)) {
           navMenu.classList.remove('active');
           body.style.overflow = 'auto';
       }
   });
 });
 
-
-  
-
-
-
-  // ==========================ANIMATION=======================
-  AOS.init({
-    duration: 1000,  
-    offset: 200,  
-    easing: 'ease-in-out',  
-    once: false  
-  });
+// ==========================ANIMATION=======================
+AOS.init({
+duration: 1000,  
+offset: 200,  
+easing: 'ease-in-out',  
+once: false  
+});
 
 
+// =============================form validatation ====================
+document.addEventListener('DOMContentLoaded', () => {
+const form = document.getElementById('signup-form');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email-signup');
+const passwordInput = document.getElementById('password-signup');
+const strengthStatus = document.getElementById('strength-status');
+const strengthItems = document.querySelectorAll('.strength-item');
 
-  // =============================form validatation ====================
-  document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('signup-form');
-    const nameInput = document.getElementById('name');
-    const emailInput = document.getElementById('email-signup');
-    const passwordInput = document.getElementById('password-signup');
-    const strengthStatus = document.getElementById('strength-status');
-    const strengthItems = document.querySelectorAll('.strength-item');
+if (!form) {
+    return;
+}
 
-    if (!form) {
-        console.error("Form element not found!");
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    if (!validateName(nameInput.value)) {
+        alert('Please enter a valid name.');
         return;
     }
 
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        if (!validateName(nameInput.value)) {
-            alert('Please enter a valid name.');
-            return;
-        }
-
-        if (!validateEmail(emailInput.value)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-
-        if (!validatePasswordStrength(passwordInput.value)) {
-            alert('Password does not meet the requirements.');
-            return;
-        }
-
-        alert('Form submitted successfully!');
-        form.submit();
-    });
-
-    // Name Validation
-    function validateName(name) {
-        return /^[a-zA-Z ]{2,30}$/.test(name);
+    if (!validateEmail(emailInput.value)) {
+        alert('Please enter a valid email address.');
+        return;
     }
 
-    // Email Validation
-    function validateEmail(email) {
-        email = email.trim();
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return emailRegex.test(email);
+    if (!validatePasswordStrength(passwordInput.value)) {
+        alert('Password does not meet the requirements.');
+        return;
     }
 
-    // Password Strength Validation
-    function validatePasswordStrength(password) {
-        const lengthRequirement = password.length >= 8;
-        const hasNumber = /\d/.test(password);
-        const hasSpecialChar = /[!@#$%^&*]/.test(password);
-        const hasUpperCase = /[A-Z]/.test(password);
-        const hasLowerCase = /[a-z]/.test(password);
+    alert('Form submitted successfully!');
+    form.submit();
+});
 
-        if (password === '') {
-            strengthStatus.textContent = 'Weak';
-            strengthStatus.classList.remove('active');
-            resetStrengthItems();
-            return false;
-        }
+// Name Validation
+function validateName(name) {
+    return /^[a-zA-Z ]{2,30}$/.test(name);
+}
 
-        const isStrong = lengthRequirement && hasNumber && hasSpecialChar && hasUpperCase && hasLowerCase;
+// Email Validation
+function validateEmail(email) {
+    email = email.trim();
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+}
 
-        strengthStatus.textContent = isStrong ? 'Strong' : 'Weak';
-        strengthStatus.classList.toggle('active', isStrong);
+// Password Strength Validation
+function validatePasswordStrength(password) {
+    const lengthRequirement = password.length >= 8;
+    const hasNumber = /\d/.test(password);
+    const hasSpecialChar = /[!@#$%^&*]/.test(password);
+    const hasUpperCase = /[A-Z]/.test(password);
+    const hasLowerCase = /[a-z]/.test(password);
 
-        updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase);
-
-        return isStrong;
+    if (password === '') {
+        strengthStatus.textContent = 'Weak';
+        strengthStatus.classList.remove('active');
+        resetStrengthItems();
+        return false;
     }
 
-    // Update Strength Item Classes
-    function updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase) {
-        const strengthArray = [lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase];
+    const isStrong = lengthRequirement && hasNumber && hasSpecialChar && hasUpperCase && hasLowerCase;
 
-        strengthItems.forEach((item, index) => {
-            if (strengthArray[index]) {
-                item.classList.add('active');
-            } else {
-                item.classList.remove('active');
-            }
-        });
-    }
+    strengthStatus.textContent = isStrong ? 'Strong' : 'Weak';
+    strengthStatus.classList.toggle('active', isStrong);
 
-    // Reset Strength Items
-    function resetStrengthItems() {
-        strengthItems.forEach(item => {
+    updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase);
+
+    return isStrong;
+}
+
+// Update Strength Item Classes
+function updateStrengthItems(lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase) {
+    const strengthArray = [lengthRequirement, hasNumber, hasSpecialChar, hasUpperCase, hasLowerCase];
+
+    strengthItems.forEach((item, index) => {
+        if (strengthArray[index]) {
+            item.classList.add('active');
+        } else {
             item.classList.remove('active');
-        });
-    }
-
-    // Live Password Strength Check
-    passwordInput.addEventListener('input', () => {
-        validatePasswordStrength(passwordInput.value);
+        }
     });
+}
 
-    nameInput.addEventListener('input', () => {
-        validatePasswordStrength(passwordInput.value);
+// Reset Strength Items
+function resetStrengthItems() {
+    strengthItems.forEach(item => {
+        item.classList.remove('active');
     });
+}
 
-    emailInput.addEventListener('input', () => {
-        validatePasswordStrength(passwordInput.value);
-    });
+// Live Password Strength Check
+passwordInput.addEventListener('input', () => {
+    validatePasswordStrength(passwordInput.value);
+});
+
+nameInput.addEventListener('input', () => {
+    validatePasswordStrength(passwordInput.value);
+});
+
+emailInput.addEventListener('input', () => {
+    validatePasswordStrength(passwordInput.value);
+});
 });
 
 
