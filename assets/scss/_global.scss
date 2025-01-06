@@ -1,3 +1,17 @@
 #brands,#blogs,#cta,#footer{
     background-color: $mint-white;
 }
+
+.list{
+    list-style-type: disc;  
+    padding-left: 20px;    
+    margin-bottom: 2rem;
+    li::marker {
+        color: $soft-gray;      
+    }
+    li{
+        color: $dark-gray;
+        line-height: 24px; 
+        font-size: 16px;
+    }
+}

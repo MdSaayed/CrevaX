@@ -98,6 +98,7 @@ body {
   font-weight: 500;
   line-height: 57px;
   margin-top: 20px;
+  color: #171717;
 }
 
 .section-sub-title, #hero-section-home .hero-content-area .hero-sub-title, #hero-section-features .hero-content-area .hero-sub-title, #features .section-sub-title, #feature-details .section-heading .section-sub-title, #faq .section-sub-title, #testimonial .section-sub-title {
@@ -329,6 +330,22 @@ body {
 
 #brands, #blogs, #cta, #footer {
   background-color: #FAFDFB;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 2rem;
+}
+
+.list li::marker {
+  color: #737373;
+}
+
+.list li {
+  color: #404040;
+  line-height: 24px;
+  font-size: 16px;
 }
 
 #footer .container .footer-content-area {
@@ -1577,6 +1594,52 @@ body {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
+}
+
+#terms-condition {
+  background-color: #FAFDFB;
+}
+
+#terms-condition .content-area {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+#terms-condition .content-area .section-header {
+  margin-bottom: 2.5rem;
+}
+
+#terms-condition .content-area .section-header .section-title {
+  margin-bottom: 1rem;
+  font-size: 3.2rem;
+  line-height: 70px;
+}
+
+#terms-condition .content-area .section-header .section-desc {
+  font-size: 18px;
+}
+
+#terms-condition .content-area .terms {
+  margin-left: 5px;
+}
+
+#terms-condition .content-area .terms li {
+  margin-top: 5px;
+}
+
+#terms-condition .content-area .privacy-policy-footer {
+  margin-top: 20px;
+}
+
+#terms-condition .content-area .privacy-policy-footer p {
+  color: #737373;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#terms-condition .content-area .privacy-policy-footer .privacy-policy-update {
+  margin: 20px 0;
 }
 
 #sign-in .container, #sign-up .container {
