@@ -93,7 +93,7 @@ body {
   font-weight: normal;
 }
 
-.section-title {
+.section-title, .license-section .license-container .license-header .license-title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -127,7 +127,7 @@ body {
   }
 }
 
-.btn, #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn, .btn-primary {
+.btn, #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .btn-primary {
   font-weight: 400;
   line-height: 24px;
   color: #F5FAF7;
@@ -138,7 +138,7 @@ body {
   cursor: pointer;
 }
 
-.btn:hover, #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, .btn-primary:hover {
+.btn:hover, #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, .btn-primary:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
@@ -186,7 +186,7 @@ body {
   color: #171717;
 }
 
-.section-desc {
+.section-desc, .license-section .license-container .license-header .license-description {
   color: #404040;
 }
 
@@ -348,31 +348,31 @@ body {
   font-size: 16px;
 }
 
-#footer .container .footer-content-area {
+#footer .container .footer-content-area, #footer .license-section .license-container .footer-content-area, .license-section #footer .license-container .footer-content-area {
   background-color: #EBF5EF;
 }
 
-#footer .container .footer-content-area h3 {
+#footer .container .footer-content-area h3, #footer .license-section .license-container .footer-content-area h3, .license-section #footer .license-container .footer-content-area h3 {
   color: #171717;
 }
 
-#footer .container .footer-content-area p {
+#footer .container .footer-content-area p, #footer .license-section .license-container .footer-content-area p, .license-section #footer .license-container .footer-content-area p {
   color: #737373;
 }
 
-#footer .container .footer-content-area .newslatter input {
+#footer .container .footer-content-area .newslatter input, #footer .license-section .license-container .footer-content-area .newslatter input, .license-section #footer .license-container .footer-content-area .newslatter input {
   border: 1px solid #C2E0CE;
   height: 48px;
   -webkit-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
 
-#footer .container .footer-content-area .newslatter input:focus {
+#footer .container .footer-content-area .newslatter input:focus, #footer .license-section .license-container .footer-content-area .newslatter input:focus, .license-section #footer .license-container .footer-content-area .newslatter input:focus {
   border: 1px solid #098239;
   outline: none;
 }
 
-#footer .container .footer-content-area .newslatter .btn, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #footer #sign-in .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #sign-in #footer .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #footer #sign-up .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #sign-up #footer .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #footer #sign-in .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #sign-in #footer .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #footer #sign-in .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #sign-in #footer .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #footer #sign-up .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #sign-up #footer .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #footer #sign-up .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #sign-up #footer .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn {
+#footer .container .footer-content-area .newslatter .btn, #footer .license-section .license-container .footer-content-area .newslatter .btn, .license-section #footer .license-container .footer-content-area .newslatter .btn, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #footer #sign-in .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #sign-in #footer .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #footer .license-section .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .container .auth-panel .form-panel .tab-buttons #footer .license-section .license-container .footer-content-area .newslatter .tab-button, .license-section #footer .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .container .auth-panel .form-panel .tab-buttons .license-section #footer .license-container .footer-content-area .newslatter .tab-button, #footer .container .footer-content-area .newslatter #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons #footer .container .footer-content-area .newslatter .tab-button, #footer #sign-in .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #sign-in #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #footer #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #sign-in #footer .license-section .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #sign-in .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .license-section #footer .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #footer .container .footer-content-area .newslatter .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons #footer .container .footer-content-area .newslatter .tab-button, #footer .license-section #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #footer .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, .license-section #footer #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-in #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, .license-section #footer #sign-in .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, .license-section #sign-in #footer .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #footer #sign-up .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #sign-up #footer .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #footer .license-section .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons #footer .license-section .license-container .footer-content-area .newslatter .tab-button, .license-section #footer .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons .license-section #footer .license-container .footer-content-area .newslatter .tab-button, #footer .container .footer-content-area .newslatter #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons #footer .container .footer-content-area .newslatter .tab-button, #footer #sign-up .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #sign-up #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #footer #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #sign-up #footer .license-section .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #sign-up .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .license-section #footer .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #footer .container .footer-content-area .newslatter .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons #footer .container .footer-content-area .newslatter .tab-button, #footer .license-section #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, #footer .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, .license-section #footer #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-up #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button, .license-section #footer #sign-up .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, .license-section #sign-up #footer .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #footer #sign-in .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #sign-in #footer .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #footer .license-section .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signup-form #footer .license-section .license-container .footer-content-area .newslatter .sign-up-btn, .license-section #footer .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signup-form .license-section #footer .license-container .footer-content-area .newslatter .sign-up-btn, #footer .container .footer-content-area .newslatter #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form #footer .container .footer-content-area .newslatter .sign-up-btn, #footer #sign-in .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #footer #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #sign-in #footer .license-section .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #sign-in .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .license-section #footer .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #footer .container .footer-content-area .newslatter .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form #footer .container .footer-content-area .newslatter .sign-up-btn, #footer .license-section #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #footer .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, .license-section #footer #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-in #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #footer #sign-in .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, .license-section #sign-in #footer .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #footer #sign-in .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #sign-in #footer .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #footer .license-section .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form #footer .license-section .license-container .footer-content-area .newslatter .sign-up-btn, .license-section #footer .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form .license-section #footer .license-container .footer-content-area .newslatter .sign-up-btn, #footer .container .footer-content-area .newslatter #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form #footer .container .footer-content-area .newslatter .sign-up-btn, #footer #sign-in .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #footer #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #sign-in #footer .license-section .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #sign-in .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .license-section #footer .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #footer .container .footer-content-area .newslatter .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form #footer .container .footer-content-area .newslatter .sign-up-btn, #footer .license-section #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #footer .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, .license-section #footer #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-in #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #footer #sign-in .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, .license-section #sign-in #footer .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #footer #sign-up .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #sign-up #footer .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #footer .license-section .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form #footer .license-section .license-container .footer-content-area .newslatter .sign-up-btn, .license-section #footer .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form .license-section #footer .license-container .footer-content-area .newslatter .sign-up-btn, #footer .container .footer-content-area .newslatter #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form #footer .container .footer-content-area .newslatter .sign-up-btn, #footer #sign-up .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #footer #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #sign-up #footer .license-section .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #sign-up .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .license-section #footer .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #footer .container .footer-content-area .newslatter .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form #footer .container .footer-content-area .newslatter .sign-up-btn, #footer .license-section #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, #footer .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, .license-section #footer #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-up #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #footer #sign-up .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, .license-section #sign-up #footer .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #footer #sign-up .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #sign-up #footer .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #footer .license-section .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form #footer .license-section .license-container .footer-content-area .newslatter .sign-up-btn, .license-section #footer .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form .license-section #footer .license-container .footer-content-area .newslatter .sign-up-btn, #footer .container .footer-content-area .newslatter #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form #footer .container .footer-content-area .newslatter .sign-up-btn, #footer #sign-up .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #footer #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #sign-up #footer .license-section .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #sign-up .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .license-section #footer .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, #footer .container .footer-content-area .newslatter .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form #footer .container .footer-content-area .newslatter .sign-up-btn, #footer .license-section #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, #footer .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, .license-section #footer #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-up #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #footer #sign-up .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn, .license-section #sign-up #footer .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn {
   font-weight: 400;
   line-height: 24px;
   color: #F5FAF7;
@@ -383,7 +383,7 @@ body {
   cursor: pointer;
 }
 
-#footer .container .footer-content-area .newslatter .btn:hover, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #footer #sign-in .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #sign-in #footer .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #footer #sign-up .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #sign-up #footer .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #footer #sign-in .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-in #footer .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #footer #sign-in .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-in #footer .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #footer #sign-up .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-up #footer .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #footer #sign-up .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-up #footer .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover {
+#footer .container .footer-content-area .newslatter .btn:hover, #footer .license-section .license-container .footer-content-area .newslatter .btn:hover, .license-section #footer .license-container .footer-content-area .newslatter .btn:hover, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #footer #sign-in .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #sign-in #footer .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #footer .license-section .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .container .auth-panel .form-panel .tab-buttons #footer .license-section .license-container .footer-content-area .newslatter .tab-button:hover, .license-section #footer .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .container .auth-panel .form-panel .tab-buttons .license-section #footer .license-container .footer-content-area .newslatter .tab-button:hover, #footer .container .footer-content-area .newslatter #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons #footer .container .footer-content-area .newslatter .tab-button:hover, #footer #sign-in .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #footer #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #sign-in #footer .license-section .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #sign-in .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .license-section #footer .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #footer .container .footer-content-area .newslatter .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons #footer .container .footer-content-area .newslatter .tab-button:hover, #footer .license-section #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #footer .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, .license-section #footer #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-in #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #footer #sign-in .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, .license-section #sign-in #footer .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #footer #sign-up .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #sign-up #footer .container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #footer .license-section .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .container .auth-panel .form-panel .tab-buttons #footer .license-section .license-container .footer-content-area .newslatter .tab-button:hover, .license-section #footer .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .container .auth-panel .form-panel .tab-buttons .license-section #footer .license-container .footer-content-area .newslatter .tab-button:hover, #footer .container .footer-content-area .newslatter #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons #footer .container .footer-content-area .newslatter .tab-button:hover, #footer #sign-up .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #footer #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #sign-up #footer .license-section .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #sign-up .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .license-section #footer .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #footer .container .footer-content-area .newslatter .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons #footer .container .footer-content-area .newslatter .tab-button:hover, #footer .license-section #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, #footer .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, .license-section #footer #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-up #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #footer #sign-up .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, .license-section #sign-up #footer .license-container .auth-panel .form-panel .tab-buttons .footer-content-area .newslatter .tab-button:hover, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #footer #sign-in .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-in #footer .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #footer .license-section .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signup-form #footer .license-section .license-container .footer-content-area .newslatter .sign-up-btn:hover, .license-section #footer .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signup-form .license-section #footer .license-container .footer-content-area .newslatter .sign-up-btn:hover, #footer .container .footer-content-area .newslatter #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form #footer .container .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-in .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #footer #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-in #footer .license-section .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-in .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .license-section #footer .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #footer .container .footer-content-area .newslatter .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form #footer .container .footer-content-area .newslatter .sign-up-btn:hover, #footer .license-section #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #footer .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, .license-section #footer #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #sign-in #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #footer #sign-in .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, .license-section #sign-in #footer .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-in .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #footer #sign-in .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-in #footer .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #footer .license-section .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signin-form #footer .license-section .license-container .footer-content-area .newslatter .sign-up-btn:hover, .license-section #footer .license-container .footer-content-area .newslatter #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signin-form .license-section #footer .license-container .footer-content-area .newslatter .sign-up-btn:hover, #footer .container .footer-content-area .newslatter #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form #footer .container .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-in .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #footer #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-in #footer .license-section .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-in .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in .license-section #footer .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #footer .container .footer-content-area .newslatter .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form #footer .container .footer-content-area .newslatter .sign-up-btn:hover, #footer .license-section #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #footer .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, .license-section #footer #sign-in .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #sign-in #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #footer #sign-in .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, .license-section #sign-in #footer .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #footer #sign-up .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-up #footer .container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #footer .license-section .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signup-form #footer .license-section .license-container .footer-content-area .newslatter .sign-up-btn:hover, .license-section #footer .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signup-form .license-section #footer .license-container .footer-content-area .newslatter .sign-up-btn:hover, #footer .container .footer-content-area .newslatter #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form #footer .container .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-up .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #footer #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-up #footer .license-section .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-up .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .license-section #footer .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #footer .container .footer-content-area .newslatter .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form #footer .container .footer-content-area .newslatter .sign-up-btn:hover, #footer .license-section #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, #footer .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, .license-section #footer #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #sign-up #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #footer #sign-up .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, .license-section #sign-up #footer .license-container .auth-panel .form-panel #signup-form .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-up .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up #footer .container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #footer #sign-up .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-up #footer .container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #footer .license-section .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signin-form #footer .license-section .license-container .footer-content-area .newslatter .sign-up-btn:hover, .license-section #footer .license-container .footer-content-area .newslatter #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signin-form .license-section #footer .license-container .footer-content-area .newslatter .sign-up-btn:hover, #footer .container .footer-content-area .newslatter #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form #footer .container .footer-content-area .newslatter .sign-up-btn:hover, #footer #sign-up .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up #footer .license-section .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #footer #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-up #footer .license-section .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #sign-up .license-section #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .license-section #footer .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, #footer .container .footer-content-area .newslatter .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form #footer .container .footer-content-area .newslatter .sign-up-btn:hover, #footer .license-section #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, #footer .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, .license-section #footer #sign-up .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #sign-up #footer .license-container .footer-content-area .newslatter .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #footer #sign-up .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover, .license-section #sign-up #footer .license-container .auth-panel .form-panel #signin-form .footer-content-area .newslatter .sign-up-btn:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
@@ -391,29 +391,29 @@ body {
   transition: 0.5s ease;
 }
 
-#footer .container .footer-content-area .links h3 {
+#footer .container .footer-content-area .links h3, #footer .license-section .license-container .footer-content-area .links h3, .license-section #footer .license-container .footer-content-area .links h3 {
   color: #171717;
 }
 
-#footer .container .footer-content-area .links h4 {
+#footer .container .footer-content-area .links h4, #footer .license-section .license-container .footer-content-area .links h4, .license-section #footer .license-container .footer-content-area .links h4 {
   color: #404040;
 }
 
-#footer .container .footer-content-area .links li {
+#footer .container .footer-content-area .links li, #footer .license-section .license-container .footer-content-area .links li, .license-section #footer .license-container .footer-content-area .links li {
   color: #171717;
   margin-bottom: 16px;
 }
 
-#footer .container .footer-content-area .links .icon-wrapper {
+#footer .container .footer-content-area .links .icon-wrapper, #footer .license-section .license-container .footer-content-area .links .icon-wrapper, .license-section #footer .license-container .footer-content-area .links .icon-wrapper {
   background-color: #FAFDFB;
 }
 
-#footer .container .footer-content-area .copyright-text {
+#footer .container .footer-content-area .copyright-text, #footer .license-section .license-container .footer-content-area .copyright-text, .license-section #footer .license-container .footer-content-area .copyright-text {
   position: relative;
   padding-top: 32px;
 }
 
-#footer .container .footer-content-area .copyright-text::before {
+#footer .container .footer-content-area .copyright-text::before, #footer .license-section .license-container .footer-content-area .copyright-text::before, .license-section #footer .license-container .footer-content-area .copyright-text::before {
   content: '';
   position: absolute;
   top: 0;
@@ -424,41 +424,41 @@ body {
   background: linear-gradient(90deg, rgba(2, 0, 36, 0) 25%, #098239 50%, rgba(0, 212, 255, 0) 75%);
 }
 
-#footer .container .footer-content-area .copyright-text p {
+#footer .container .footer-content-area .copyright-text p, #footer .license-section .license-container .footer-content-area .copyright-text p, .license-section #footer .license-container .footer-content-area .copyright-text p {
   color: #404040;
 }
 
-#footer .container .footer-content-area .copyright-text a {
+#footer .container .footer-content-area .copyright-text a, #footer .license-section .license-container .footer-content-area .copyright-text a, .license-section #footer .license-container .footer-content-area .copyright-text a {
   color: #098239;
 }
 
-.container {
+.container, .license-section .license-container {
   max-width: 1440px !important;
   margin: 0 auto;
   padding: 80px;
 }
 
 @media (max-width: 1200px) {
-  .container {
+  .container, .license-section .license-container {
     max-width: 100%;
     padding: 60px;
   }
 }
 
 @media (max-width: 992px) {
-  .container {
+  .container, .license-section .license-container {
     padding: 60px;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container, .license-section .license-container {
     padding: 60px 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
+  .container, .license-section .license-container {
     padding: 60px 10px;
   }
 }
@@ -468,12 +468,12 @@ body {
   background-color: #FAFDFB;
 }
 
-#header-area .container {
+#header-area .container, #header-area .license-section .license-container, .license-section #header-area .license-container {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-#header-area .container nav ul {
+#header-area .container nav ul, #header-area .license-section .license-container nav ul, .license-section #header-area .license-container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,37 +486,37 @@ body {
   gap: 24px;
 }
 
-#header-area .container nav ul li {
+#header-area .container nav ul li, #header-area .license-section .license-container nav ul li, .license-section #header-area .license-container nav ul li {
   color: #737373;
   font-weight: 400;
   line-height: 100px;
   position: relative;
 }
 
-#header-area .container nav ul li:hover {
+#header-area .container nav ul li:hover, #header-area .license-section .license-container nav ul li:hover, .license-section #header-area .license-container nav ul li:hover {
   color: #098239;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul li:hover {
+  #header-area .container nav ul li:hover, #header-area .license-section .license-container nav ul li:hover, .license-section #header-area .license-container nav ul li:hover {
     color: #FFFFFF;
   }
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul li:hover {
+  #header-area .container nav ul li:hover, #header-area .license-section .license-container nav ul li:hover, .license-section #header-area .license-container nav ul li:hover {
     color: #FFFFFF !important;
   }
 }
 
-#header-area .container nav ul li.has-dropdown {
+#header-area .container nav ul li.has-dropdown, #header-area .license-section .license-container nav ul li.has-dropdown, .license-section #header-area .license-container nav ul li.has-dropdown {
   position: relative;
   margin-right: 20px;
 }
 
-#header-area .container nav ul li.has-dropdown::after {
+#header-area .container nav ul li.has-dropdown::after, #header-area .license-section .license-container nav ul li.has-dropdown::after, .license-section #header-area .license-container nav ul li.has-dropdown::after {
   content: '+';
   position: absolute;
   right: -20px;
@@ -531,19 +531,19 @@ body {
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul li.has-dropdown::after {
+  #header-area .container nav ul li.has-dropdown::after, #header-area .license-section .license-container nav ul li.has-dropdown::after, .license-section #header-area .license-container nav ul li.has-dropdown::after {
     right: 20px;
     color: #FFFFFF !important;
     top: 23px;
   }
 }
 
-#header-area .container nav ul li.has-dropdown:hover::after {
+#header-area .container nav ul li.has-dropdown:hover::after, #header-area .license-section .license-container nav ul li.has-dropdown:hover::after, .license-section #header-area .license-container nav ul li.has-dropdown:hover::after {
   content: '-';
   color: #098239;
 }
 
-#header-area .container nav ul li.has-dropdown .dropdown {
+#header-area .container nav ul li.has-dropdown .dropdown, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -563,29 +563,29 @@ body {
   z-index: 1000;
 }
 
-#header-area .container nav ul li.has-dropdown .dropdown li {
+#header-area .container nav ul li.has-dropdown .dropdown li, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li {
   color: #404040;
   line-height: 30px !important;
   width: 100%;
   padding: 5px 15px;
 }
 
-#header-area .container nav ul li.has-dropdown .dropdown li:not(:first-child) {
+#header-area .container nav ul li.has-dropdown .dropdown li:not(:first-child), #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li:not(:first-child), .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li:not(:first-child) {
   border-top: 1px solid #EBF5EF;
 }
 
-#header-area .container nav ul li.has-dropdown .dropdown li:hover {
+#header-area .container nav ul li.has-dropdown .dropdown li:hover, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li:hover, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li:hover {
   background-color: #098239;
   color: #FFFFFF;
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul li.has-dropdown .dropdown li:hover {
+  #header-area .container nav ul li.has-dropdown .dropdown li:hover, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li:hover, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
 }
 
-#header-area .container nav ul li.has-dropdown .dropdown li .dropdown {
+#header-area .container nav ul li.has-dropdown .dropdown li .dropdown, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li .dropdown, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li .dropdown {
   left: 100%;
   top: 0;
   opacity: 0;
@@ -595,7 +595,7 @@ body {
   margin-left: 10px;
 }
 
-#header-area .container nav ul li.has-dropdown .dropdown li .dropdown::before {
+#header-area .container nav ul li.has-dropdown .dropdown li .dropdown::before, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li .dropdown::before, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li .dropdown::before {
   content: "";
   position: absolute;
   left: -11px;
@@ -606,12 +606,12 @@ body {
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul li.has-dropdown .dropdown li .dropdown::before {
+  #header-area .container nav ul li.has-dropdown .dropdown li .dropdown::before, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li .dropdown::before, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li .dropdown::before {
     display: none;
   }
 }
 
-#header-area .container nav ul li.has-dropdown .dropdown li:hover > .dropdown {
+#header-area .container nav ul li.has-dropdown .dropdown li:hover > .dropdown, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li:hover > .dropdown, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li:hover > .dropdown {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s ease, visibility 0s 0s;
@@ -619,7 +619,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul li.has-dropdown .dropdown li {
+  #header-area .container nav ul li.has-dropdown .dropdown li, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown li, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown li {
     padding: 10px 20px !important;
     margin: 5px 0px;
     border: 0 !important;
@@ -630,7 +630,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul li.has-dropdown .dropdown {
+  #header-area .container nav ul li.has-dropdown .dropdown, #header-area .license-section .license-container nav ul li.has-dropdown .dropdown, .license-section #header-area .license-container nav ul li.has-dropdown .dropdown {
     position: static;
     background-color: #000;
     display: none;
@@ -640,7 +640,7 @@ body {
   }
 }
 
-#header-area .container nav ul li.has-dropdown:hover > .dropdown {
+#header-area .container nav ul li.has-dropdown:hover > .dropdown, #header-area .license-section .license-container nav ul li.has-dropdown:hover > .dropdown, .license-section #header-area .license-container nav ul li.has-dropdown:hover > .dropdown {
   opacity: 1 !important;
   visibility: visible !important;
   display: block !important;
@@ -649,7 +649,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul li {
+  #header-area .container nav ul li, #header-area .license-section .license-container nav ul li, .license-section #header-area .license-container nav ul li {
     width: 100%;
     color: #FFFFFF;
     text-align: left !important;
@@ -663,7 +663,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav ul {
+  #header-area .container nav ul, #header-area .license-section .license-container nav ul, .license-section #header-area .license-container nav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -673,12 +673,12 @@ body {
   }
 }
 
-#header-area .container nav .menu-close-btn {
+#header-area .container nav .menu-close-btn, #header-area .license-section .license-container nav .menu-close-btn, .license-section #header-area .license-container nav .menu-close-btn {
   display: none;
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav .menu-close-btn {
+  #header-area .container nav .menu-close-btn, #header-area .license-section .license-container nav .menu-close-btn, .license-section #header-area .license-container nav .menu-close-btn {
     display: block;
     position: absolute;
     top: 15px;
@@ -689,7 +689,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  #header-area .container nav {
+  #header-area .container nav, #header-area .license-section .license-container nav, .license-section #header-area .license-container nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -716,32 +716,32 @@ body {
     opacity: 0;
     z-index: 100;
   }
-  #header-area .container nav.active {
+  #header-area .container nav.active, #header-area .license-section .license-container nav.active, .license-section #header-area .license-container nav.active {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     opacity: 1;
   }
 }
 
-#header-area .container .header-btn-area .login-btn {
+#header-area .container .header-btn-area .login-btn, #header-area .license-section .license-container .header-btn-area .login-btn, .license-section #header-area .license-container .header-btn-area .login-btn {
   color: #737373;
   font-weight: 400;
   line-height: 24px;
 }
 
 @media (max-width: 768px) {
-  #header-area .container .header-btn-area .login-btn {
+  #header-area .container .header-btn-area .login-btn, #header-area .license-section .license-container .header-btn-area .login-btn, .license-section #header-area .license-container .header-btn-area .login-btn {
     display: none;
   }
 }
 
-#header-area .container .header-btn-area .fa-bars {
+#header-area .container .header-btn-area .fa-bars, #header-area .license-section .license-container .header-btn-area .fa-bars, .license-section #header-area .license-container .header-btn-area .fa-bars {
   display: none;
   font-size: 25px;
 }
 
 @media (max-width: 992px) {
-  #header-area .container .header-btn-area .fa-bars {
+  #header-area .container .header-btn-area .fa-bars, #header-area .license-section .license-container .header-btn-area .fa-bars, .license-section #header-area .license-container .header-btn-area .fa-bars {
     display: block;
   }
 }
@@ -795,7 +795,7 @@ body {
   background-color: #FFFFFF;
 }
 
-#features .section-title {
+#features .section-title, #features .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #features .license-title {
   font-size: 2.8rem;
 }
 
@@ -1014,7 +1014,7 @@ body {
   }
 }
 
-#pricing-details .pricing-details-area .section-desc {
+#pricing-details .pricing-details-area .section-desc, #pricing-details .pricing-details-area .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #pricing-details .pricing-details-area .license-description {
   color: #737373;
 }
 
@@ -1065,7 +1065,7 @@ body {
   font-size: 16px;
 }
 
-#pricing-details .pricing-cards .btn, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn {
+#pricing-details .pricing-cards .btn, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button, #pricing-details .pricing-cards #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button, #pricing-details .pricing-cards .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button, #pricing-details .pricing-cards #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button, #pricing-details .pricing-cards .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn, #pricing-details .pricing-cards .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn {
   font-weight: 400;
   line-height: 24px;
   color: #F5FAF7;
@@ -1078,7 +1078,7 @@ body {
   text-align: center;
 }
 
-#pricing-details .pricing-cards .btn:hover, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button:hover, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button:hover, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn:hover {
+#pricing-details .pricing-cards .btn:hover, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button:hover, #pricing-details .pricing-cards #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button:hover, #pricing-details .pricing-cards .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button:hover, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button:hover, #pricing-details .pricing-cards #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button:hover, #pricing-details .pricing-cards .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons #pricing-details .pricing-cards .tab-button:hover, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in .container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-up-btn:hover, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn:hover, #pricing-details .pricing-cards .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-up-btn:hover, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form #pricing-details .pricing-cards .sign-up-btn:hover {
   color: #098239;
   background-color: transparent;
   border: 1px solid #098239;
@@ -1487,13 +1487,13 @@ body {
   }
 }
 
-#stats-section .section-heading-area .section-title {
+#stats-section .section-heading-area .section-title, #stats-section .section-heading-area .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #stats-section .section-heading-area .license-title {
   font-size: 2.5rem;
   line-height: 48px;
   text-align: center;
 }
 
-#job-details .job-details-area .section-title {
+#job-details .job-details-area .section-title, #job-details .job-details-area .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #job-details .job-details-area .license-title {
   font-size: 2.3rem;
   margin-bottom: 15px;
 }
@@ -1629,13 +1629,13 @@ body {
   margin-bottom: 2.5rem;
 }
 
-#terms-condition .content-area .section-header .section-title {
+#terms-condition .content-area .section-header .section-title, #terms-condition .content-area .section-header .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #terms-condition .content-area .section-header .license-title {
   margin-bottom: 1rem;
   font-size: 3.2rem;
   line-height: 70px;
 }
 
-#terms-condition .content-area .section-header .section-desc {
+#terms-condition .content-area .section-header .section-desc, #terms-condition .content-area .section-header .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #terms-condition .content-area .section-header .license-description {
   font-size: 18px;
 }
 
@@ -1662,23 +1662,23 @@ body {
   margin: 20px 0;
 }
 
-#sign-in .container, #sign-up .container {
+#sign-in .container, #sign-in .license-section .license-container, .license-section #sign-in .license-container, #sign-up .container, #sign-up .license-section .license-container, .license-section #sign-up .license-container {
   padding: 0;
 }
 
-#sign-in .container .auth-panel, #sign-up .container .auth-panel {
+#sign-in .container .auth-panel, #sign-in .license-section .license-container .auth-panel, .license-section #sign-in .license-container .auth-panel, #sign-up .container .auth-panel, #sign-up .license-section .license-container .auth-panel, .license-section #sign-up .license-container .auth-panel {
   padding: 2rem;
   min-height: 100lvh;
 }
 
-#sign-in .container .auth-panel .welcome-panel, #sign-up .container .auth-panel .welcome-panel {
+#sign-in .container .auth-panel .welcome-panel, #sign-in .license-section .license-container .auth-panel .welcome-panel, .license-section #sign-in .license-container .auth-panel .welcome-panel, #sign-up .container .auth-panel .welcome-panel, #sign-up .license-section .license-container .auth-panel .welcome-panel, .license-section #sign-up .license-container .auth-panel .welcome-panel {
   background-color: #012C16;
   border-radius: 20px;
   height: 100%;
   padding: 4rem 3rem;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content, #sign-up .container .auth-panel .welcome-panel .welcome-content {
+#sign-in .container .auth-panel .welcome-panel .welcome-content, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content, #sign-up .container .auth-panel .welcome-panel .welcome-content, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1695,17 +1695,17 @@ body {
           justify-content: space-between;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .section-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .section-title {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .section-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .section-title, #sign-in .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .license-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .section-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .section-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .license-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title {
   color: #FFFFFF;
   text-align: center;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-up .container .auth-panel .welcome-panel .welcome-content .section-desc {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-desc, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-in .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .license-description, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, #sign-up .container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-desc, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-up .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .license-description, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description {
   color: #F5FAF7;
   text-align: center;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .section-title {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title {
   font-size: 2rem;
   line-height: 48px;
   font-weight: 500;
@@ -1713,12 +1713,12 @@ body {
   margin-bottom: 12px;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description {
   color: #FAFAFA;
   text-align: center;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .navigation-dots, #sign-up .container .auth-panel .welcome-panel .welcome-content .navigation-dots {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .navigation-dots, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots, #sign-up .container .auth-panel .welcome-panel .welcome-content .navigation-dots, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1732,7 +1732,7 @@ body {
   margin-top: 3.5rem;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot, #sign-up .container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot, #sign-up .container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot {
   background-color: #FFFFFF;
   width: 8px;
   height: 8px;
@@ -1740,7 +1740,7 @@ body {
   display: block;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot.active, #sign-up .container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot.active {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot.active, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot.active, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot.active, #sign-up .container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot.active, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot.active, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .navigation-dots .dot.active {
   display: block;
   width: 24px;
   height: 8px;
@@ -1748,18 +1748,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  #sign-in .container .auth-panel, #sign-up .container .auth-panel {
+  #sign-in .container .auth-panel, #sign-in .license-section .license-container .auth-panel, .license-section #sign-in .license-container .auth-panel, #sign-up .container .auth-panel, #sign-up .license-section .license-container .auth-panel, .license-section #sign-up .license-container .auth-panel {
     padding: 1rem;
   }
 }
 
-#sign-in .container .auth-panel .form-panel, #sign-up .container .auth-panel .form-panel {
+#sign-in .container .auth-panel .form-panel, #sign-in .license-section .license-container .auth-panel .form-panel, .license-section #sign-in .license-container .auth-panel .form-panel, #sign-up .container .auth-panel .form-panel, #sign-up .license-section .license-container .auth-panel .form-panel, .license-section #sign-up .license-container .auth-panel .form-panel {
   padding: 2rem 7rem;
   position: relative;
   height: 100vh;
 }
 
-#sign-in .container .auth-panel .form-panel .tab-buttons, #sign-up .container .auth-panel .form-panel .tab-buttons {
+#sign-in .container .auth-panel .form-panel .tab-buttons, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons, #sign-up .container .auth-panel .form-panel .tab-buttons, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons {
   background-color: #EBF5EF;
   border-radius: 8px;
   padding: 5px;
@@ -1772,7 +1772,7 @@ body {
   gap: 5px;
 }
 
-#sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button {
+#sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button {
   width: 50%;
   border-radius: 8px;
   background-color: transparent;
@@ -1781,26 +1781,26 @@ body {
   padding: 6px 8px;
 }
 
-#sign-in .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button:hover {
+#sign-in .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button:hover, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button:hover {
   border: none !important;
   background-color: #098239;
   color: #F5FAF7;
 }
 
-#sign-in .container .auth-panel .form-panel .tab-buttons .tab-button.active, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button.active {
+#sign-in .container .auth-panel .form-panel .tab-buttons .tab-button.active, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button.active, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button.active, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button.active, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button.active, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button.active {
   background-color: #098239;
   color: #F5FAF7;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form, #sign-in .container .auth-panel .form-panel #signin-form, #sign-up .container .auth-panel .form-panel #signup-form, #sign-up .container .auth-panel .form-panel #signin-form {
+#sign-in .container .auth-panel .form-panel #signup-form, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form, #sign-in .container .auth-panel .form-panel #signin-form, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form, #sign-up .container .auth-panel .form-panel #signup-form, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form, #sign-up .container .auth-panel .form-panel #signin-form, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form {
   display: none;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form.active, #sign-in .container .auth-panel .form-panel #signin-form.active, #sign-up .container .auth-panel .form-panel #signup-form.active, #sign-up .container .auth-panel .form-panel #signin-form.active {
+#sign-in .container .auth-panel .form-panel #signup-form.active, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form.active, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form.active, #sign-in .container .auth-panel .form-panel #signin-form.active, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form.active, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form.active, #sign-up .container .auth-panel .form-panel #signup-form.active, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form.active, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form.active, #sign-up .container .auth-panel .form-panel #signin-form.active, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form.active, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form.active {
   display: block;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form label, #sign-in .container .auth-panel .form-panel #signin-form label, #sign-up .container .auth-panel .form-panel #signup-form label, #sign-up .container .auth-panel .form-panel #signin-form label {
+#sign-in .container .auth-panel .form-panel #signup-form label, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form label, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form label, #sign-in .container .auth-panel .form-panel #signin-form label, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form label, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form label, #sign-up .container .auth-panel .form-panel #signup-form label, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form label, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form label, #sign-up .container .auth-panel .form-panel #signin-form label, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form label, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form label {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
@@ -1808,62 +1808,62 @@ body {
   margin-bottom: 10px;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form input, #sign-in .container .auth-panel .form-panel #signin-form input, #sign-up .container .auth-panel .form-panel #signup-form input, #sign-up .container .auth-panel .form-panel #signin-form input {
+#sign-in .container .auth-panel .form-panel #signup-form input, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form input, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form input, #sign-in .container .auth-panel .form-panel #signin-form input, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form input, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form input, #sign-up .container .auth-panel .form-panel #signup-form input, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form input, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form input, #sign-up .container .auth-panel .form-panel #signin-form input, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form input, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form input {
   padding: 10px 14px;
   border-radius: 5px;
   outline: 2px solid #098239;
   background-color: #EBF5EF;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form input::-webkit-input-placeholder, #sign-in .container .auth-panel .form-panel #signin-form input::-webkit-input-placeholder, #sign-up .container .auth-panel .form-panel #signup-form input::-webkit-input-placeholder, #sign-up .container .auth-panel .form-panel #signin-form input::-webkit-input-placeholder {
+#sign-in .container .auth-panel .form-panel #signup-form input::-webkit-input-placeholder, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form input::-webkit-input-placeholder, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form input::-webkit-input-placeholder, #sign-in .container .auth-panel .form-panel #signin-form input::-webkit-input-placeholder, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form input::-webkit-input-placeholder, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form input::-webkit-input-placeholder, #sign-up .container .auth-panel .form-panel #signup-form input::-webkit-input-placeholder, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form input::-webkit-input-placeholder, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form input::-webkit-input-placeholder, #sign-up .container .auth-panel .form-panel #signin-form input::-webkit-input-placeholder, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form input::-webkit-input-placeholder, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form input::-webkit-input-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #737373;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form input:-ms-input-placeholder, #sign-in .container .auth-panel .form-panel #signin-form input:-ms-input-placeholder, #sign-up .container .auth-panel .form-panel #signup-form input:-ms-input-placeholder, #sign-up .container .auth-panel .form-panel #signin-form input:-ms-input-placeholder {
+#sign-in .container .auth-panel .form-panel #signup-form input:-ms-input-placeholder, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form input:-ms-input-placeholder, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form input:-ms-input-placeholder, #sign-in .container .auth-panel .form-panel #signin-form input:-ms-input-placeholder, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form input:-ms-input-placeholder, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form input:-ms-input-placeholder, #sign-up .container .auth-panel .form-panel #signup-form input:-ms-input-placeholder, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form input:-ms-input-placeholder, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form input:-ms-input-placeholder, #sign-up .container .auth-panel .form-panel #signin-form input:-ms-input-placeholder, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form input:-ms-input-placeholder, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form input:-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #737373;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form input::-ms-input-placeholder, #sign-in .container .auth-panel .form-panel #signin-form input::-ms-input-placeholder, #sign-up .container .auth-panel .form-panel #signup-form input::-ms-input-placeholder, #sign-up .container .auth-panel .form-panel #signin-form input::-ms-input-placeholder {
+#sign-in .container .auth-panel .form-panel #signup-form input::-ms-input-placeholder, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form input::-ms-input-placeholder, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form input::-ms-input-placeholder, #sign-in .container .auth-panel .form-panel #signin-form input::-ms-input-placeholder, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form input::-ms-input-placeholder, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form input::-ms-input-placeholder, #sign-up .container .auth-panel .form-panel #signup-form input::-ms-input-placeholder, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form input::-ms-input-placeholder, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form input::-ms-input-placeholder, #sign-up .container .auth-panel .form-panel #signin-form input::-ms-input-placeholder, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form input::-ms-input-placeholder, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form input::-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #737373;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form input::placeholder, #sign-in .container .auth-panel .form-panel #signin-form input::placeholder, #sign-up .container .auth-panel .form-panel #signup-form input::placeholder, #sign-up .container .auth-panel .form-panel #signin-form input::placeholder {
+#sign-in .container .auth-panel .form-panel #signup-form input::placeholder, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form input::placeholder, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form input::placeholder, #sign-in .container .auth-panel .form-panel #signin-form input::placeholder, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form input::placeholder, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form input::placeholder, #sign-up .container .auth-panel .form-panel #signup-form input::placeholder, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form input::placeholder, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form input::placeholder, #sign-up .container .auth-panel .form-panel #signin-form input::placeholder, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form input::placeholder, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form input::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #737373;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form input:focus, #sign-in .container .auth-panel .form-panel #signin-form input:focus, #sign-up .container .auth-panel .form-panel #signup-form input:focus, #sign-up .container .auth-panel .form-panel #signin-form input:focus {
+#sign-in .container .auth-panel .form-panel #signup-form input:focus, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form input:focus, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form input:focus, #sign-in .container .auth-panel .form-panel #signin-form input:focus, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form input:focus, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form input:focus, #sign-up .container .auth-panel .form-panel #signup-form input:focus, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form input:focus, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form input:focus, #sign-up .container .auth-panel .form-panel #signin-form input:focus, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form input:focus, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form input:focus {
   outline: 2px solid #098239;
   -webkit-box-shadow: 0px 2px 4px 2px #465FF11A;
           box-shadow: 0px 2px 4px 2px #465FF11A;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .forgot-password-link, #sign-in .container .auth-panel .form-panel #signin-form .forgot-password-link, #sign-up .container .auth-panel .form-panel #signup-form .forgot-password-link, #sign-up .container .auth-panel .form-panel #signin-form .forgot-password-link {
+#sign-in .container .auth-panel .form-panel #signup-form .forgot-password-link, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .forgot-password-link, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .forgot-password-link, #sign-in .container .auth-panel .form-panel #signin-form .forgot-password-link, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .forgot-password-link, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .forgot-password-link, #sign-up .container .auth-panel .form-panel #signup-form .forgot-password-link, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .forgot-password-link, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .forgot-password-link, #sign-up .container .auth-panel .form-panel #signin-form .forgot-password-link, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .forgot-password-link, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .forgot-password-link {
   font-size: 12px;
   line-height: 18px;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form textarea, #sign-in .container .auth-panel .form-panel #signin-form textarea, #sign-up .container .auth-panel .form-panel #signup-form textarea, #sign-up .container .auth-panel .form-panel #signin-form textarea {
+#sign-in .container .auth-panel .form-panel #signup-form textarea, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form textarea, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form textarea, #sign-in .container .auth-panel .form-panel #signin-form textarea, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form textarea, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form textarea, #sign-up .container .auth-panel .form-panel #signup-form textarea, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form textarea, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form textarea, #sign-up .container .auth-panel .form-panel #signin-form textarea, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form textarea, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form textarea {
   padding: 10px;
   border-radius: 5px;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form textarea:focus, #sign-in .container .auth-panel .form-panel #signin-form textarea:focus, #sign-up .container .auth-panel .form-panel #signup-form textarea:focus, #sign-up .container .auth-panel .form-panel #signin-form textarea:focus {
+#sign-in .container .auth-panel .form-panel #signup-form textarea:focus, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form textarea:focus, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form textarea:focus, #sign-in .container .auth-panel .form-panel #signin-form textarea:focus, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form textarea:focus, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form textarea:focus, #sign-up .container .auth-panel .form-panel #signup-form textarea:focus, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form textarea:focus, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form textarea:focus, #sign-up .container .auth-panel .form-panel #signin-form textarea:focus, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form textarea:focus, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form textarea:focus {
   outline: 2px solid #098239;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .password-strength, #sign-in .container .auth-panel .form-panel #signin-form .password-strength, #sign-up .container .auth-panel .form-panel #signup-form .password-strength, #sign-up .container .auth-panel .form-panel #signin-form .password-strength {
+#sign-in .container .auth-panel .form-panel #signup-form .password-strength, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .password-strength, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .password-strength, #sign-in .container .auth-panel .form-panel #signin-form .password-strength, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .password-strength, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .password-strength, #sign-up .container .auth-panel .form-panel #signup-form .password-strength, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .password-strength, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .password-strength, #sign-up .container .auth-panel .form-panel #signin-form .password-strength, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .password-strength, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .password-strength {
   color: #404040;
   font-size: 14px;
   line-height: 21px;
@@ -1871,20 +1871,20 @@ body {
   padding: 0;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .password-strength.active, #sign-in .container .auth-panel .form-panel #signin-form .password-strength.active, #sign-up .container .auth-panel .form-panel #signup-form .password-strength.active, #sign-up .container .auth-panel .form-panel #signin-form .password-strength.active {
+#sign-in .container .auth-panel .form-panel #signup-form .password-strength.active, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .password-strength.active, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .password-strength.active, #sign-in .container .auth-panel .form-panel #signin-form .password-strength.active, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .password-strength.active, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .password-strength.active, #sign-up .container .auth-panel .form-panel #signup-form .password-strength.active, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .password-strength.active, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .password-strength.active, #sign-up .container .auth-panel .form-panel #signin-form .password-strength.active, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .password-strength.active, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .password-strength.active {
   color: #098239;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item {
+#sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item {
   position: relative;
   padding-left: 20px;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item.active, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item.active {
+#sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item.active, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item.active, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item.active, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item.active, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item.active, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item.active, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item.active {
   color: #098239;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item::before, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item::before {
+#sign-in .container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, #sign-in .container .auth-panel .form-panel #signin-form .password-strength .strength-item::before, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item::before, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item::before, #sign-up .container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .password-strength .strength-item::before, #sign-up .container .auth-panel .form-panel #signin-form .password-strength .strength-item::before, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item::before, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .password-strength .strength-item::before {
   content: "\f00c";
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
@@ -1893,13 +1893,13 @@ body {
   top: 0;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn {
+#sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-up-btn {
   width: 100%;
   margin-top: 25px;
   font-weight: 500;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .sign-in-btn, #sign-in .container .auth-panel .form-panel #signin-form .sign-in-btn, #sign-up .container .auth-panel .form-panel #signup-form .sign-in-btn, #sign-up .container .auth-panel .form-panel #signin-form .sign-in-btn {
+#sign-in .container .auth-panel .form-panel #signup-form .sign-in-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-in-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-in-btn, #sign-in .container .auth-panel .form-panel #signin-form .sign-in-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-in-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-in-btn, #sign-up .container .auth-panel .form-panel #signup-form .sign-in-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-in-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-in-btn, #sign-up .container .auth-panel .form-panel #signin-form .sign-in-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-in-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-in-btn {
   font-weight: 400;
   line-height: 24px;
   color: #098239;
@@ -1914,7 +1914,7 @@ body {
   font-weight: 500;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .sign-in-btn:hover, #sign-in .container .auth-panel .form-panel #signin-form .sign-in-btn:hover, #sign-up .container .auth-panel .form-panel #signup-form .sign-in-btn:hover, #sign-up .container .auth-panel .form-panel #signin-form .sign-in-btn:hover {
+#sign-in .container .auth-panel .form-panel #signup-form .sign-in-btn:hover, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-in-btn:hover, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-in-btn:hover, #sign-in .container .auth-panel .form-panel #signin-form .sign-in-btn:hover, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-in-btn:hover, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-in-btn:hover, #sign-up .container .auth-panel .form-panel #signup-form .sign-in-btn:hover, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-in-btn:hover, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-in-btn:hover, #sign-up .container .auth-panel .form-panel #signin-form .sign-in-btn:hover, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-in-btn:hover, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-in-btn:hover {
   color: #F5FAF7;
   background-color: #098239;
   border: 1px solid #098239;
@@ -1922,7 +1922,7 @@ body {
   transition: 0.5s ease;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .or-divider, #sign-in .container .auth-panel .form-panel #signin-form .or-divider, #sign-up .container .auth-panel .form-panel #signup-form .or-divider, #sign-up .container .auth-panel .form-panel #signin-form .or-divider {
+#sign-in .container .auth-panel .form-panel #signup-form .or-divider, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .or-divider, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .or-divider, #sign-in .container .auth-panel .form-panel #signin-form .or-divider, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .or-divider, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .or-divider, #sign-up .container .auth-panel .form-panel #signup-form .or-divider, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .or-divider, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .or-divider, #sign-up .container .auth-panel .form-panel #signin-form .or-divider, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .or-divider, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .or-divider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1936,7 +1936,7 @@ body {
   margin: 20px 20px;
 }
 
-#sign-in .container .auth-panel .form-panel #signup-form .or-divider::before, #sign-in .container .auth-panel .form-panel #signup-form .or-divider::after, #sign-in .container .auth-panel .form-panel #signin-form .or-divider::before, #sign-in .container .auth-panel .form-panel #signin-form .or-divider::after, #sign-up .container .auth-panel .form-panel #signup-form .or-divider::before, #sign-up .container .auth-panel .form-panel #signup-form .or-divider::after, #sign-up .container .auth-panel .form-panel #signin-form .or-divider::before, #sign-up .container .auth-panel .form-panel #signin-form .or-divider::after {
+#sign-in .container .auth-panel .form-panel #signup-form .or-divider::before, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .or-divider::before, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .or-divider::before, #sign-in .container .auth-panel .form-panel #signup-form .or-divider::after, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .or-divider::after, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .or-divider::after, #sign-in .container .auth-panel .form-panel #signin-form .or-divider::before, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .or-divider::before, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .or-divider::before, #sign-in .container .auth-panel .form-panel #signin-form .or-divider::after, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .or-divider::after, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .or-divider::after, #sign-up .container .auth-panel .form-panel #signup-form .or-divider::before, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .or-divider::before, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .or-divider::before, #sign-up .container .auth-panel .form-panel #signup-form .or-divider::after, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .or-divider::after, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .or-divider::after, #sign-up .container .auth-panel .form-panel #signin-form .or-divider::before, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .or-divider::before, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .or-divider::before, #sign-up .container .auth-panel .form-panel #signin-form .or-divider::after, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .or-divider::after, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .or-divider::after {
   content: "";
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1945,7 +1945,7 @@ body {
   margin: 0 10px;
 }
 
-#sign-in .container .auth-panel .form-panel .terms-message, #sign-up .container .auth-panel .form-panel .terms-message {
+#sign-in .container .auth-panel .form-panel .terms-message, #sign-in .license-section .license-container .auth-panel .form-panel .terms-message, .license-section #sign-in .license-container .auth-panel .form-panel .terms-message, #sign-up .container .auth-panel .form-panel .terms-message, #sign-up .license-section .license-container .auth-panel .form-panel .terms-message, .license-section #sign-up .license-container .auth-panel .form-panel .terms-message {
   margin-top: 2rem;
   font-size: 14px;
   font-weight: normal;
@@ -1954,18 +1954,18 @@ body {
   color: #404040;
 }
 
-#sign-in .container .auth-panel .form-panel .terms-message a, #sign-up .container .auth-panel .form-panel .terms-message a {
+#sign-in .container .auth-panel .form-panel .terms-message a, #sign-in .license-section .license-container .auth-panel .form-panel .terms-message a, .license-section #sign-in .license-container .auth-panel .form-panel .terms-message a, #sign-up .container .auth-panel .form-panel .terms-message a, #sign-up .license-section .license-container .auth-panel .form-panel .terms-message a, .license-section #sign-up .license-container .auth-panel .form-panel .terms-message a {
   color: #171717;
 }
 
 @media (max-width: 1024px) {
-  #sign-in .container .auth-panel .form-panel, #sign-up .container .auth-panel .form-panel {
+  #sign-in .container .auth-panel .form-panel, #sign-in .license-section .license-container .auth-panel .form-panel, .license-section #sign-in .license-container .auth-panel .form-panel, #sign-up .container .auth-panel .form-panel, #sign-up .license-section .license-container .auth-panel .form-panel, .license-section #sign-up .license-container .auth-panel .form-panel {
     padding: 4rem 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  #sign-in .container .auth-panel .form-panel, #sign-up .container .auth-panel .form-panel {
+  #sign-in .container .auth-panel .form-panel, #sign-in .license-section .license-container .auth-panel .form-panel, .license-section #sign-in .license-container .auth-panel .form-panel, #sign-up .container .auth-panel .form-panel, #sign-up .license-section .license-container .auth-panel .form-panel, .license-section #sign-up .license-container .auth-panel .form-panel {
     padding: 4rem 1rem;
   }
 }
@@ -2018,5 +2018,157 @@ body {
   line-height: 28px;
   color: #171717;
   text-align: center;
+}
+
+/* ========================
+   License Section Styles
+======================== */
+.license-section {
+  background-color: #FAFDFB;
+  font-family: 'Inter', sans-serif;
+}
+
+.license-section .license-container .license-header {
+  max-width: 1000px;
+  text-align: left;
+  margin: 0 auto;
+  border-bottom: 1px solid #6155C852;
+  padding-bottom: 4rem;
+}
+
+.license-section .license-container .license-header .license-title {
+  color: #171717;
+  margin-bottom: 10px;
+}
+
+.license-section .license-container .license-illustration {
+  padding: 4rem 0;
+}
+
+.license-section .license-container .license-illustration .illustration-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.license-section .license-container .license-illustration .illustration-item .illustration-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.license-section .license-container .license-illustration .illustration-item .illustration-caption {
+  font-size: 1.5rem;
+  color: #171717;
+  font-weight: 500;
+}
+
+.license-section .license-container .license-illustration .illustration-item .illustration-caption .illustration-credit {
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
+}
+
+.license-section .license-container .license-typography {
+  margin-bottom: 40px;
+}
+
+.license-section .license-container .license-typography .typography-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #171717;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.license-section .license-container .license-typography .typography-info {
+  font-size: 1rem;
+  color: #666;
+}
+
+.license-section .license-container .license-typography .typography-info .typography-link {
+  color: #098239;
+  text-decoration: underline;
+}
+
+.license-section .license-container .license-typography .typography-info .typography-link:hover {
+  color: #065224;
+}
+
+.license-section .license-container .license-typography .typography-info .typography-download {
+  color: #098239;
+  font-weight: 500;
+}
+
+.license-section .license-container .license-typography .typography-info .typography-download:hover {
+  text-decoration: underline;
+}
+
+.license-section .license-container .license-iconography {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.license-section .license-container .license-iconography .iconography-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #098239;
+  margin-bottom: 10px;
+}
+
+.license-section .license-container .license-iconography .iconography-info {
+  font-size: 1rem;
+  color: #666;
+}
+
+.license-section .license-container .license-iconography .iconography-info .iconography-link {
+  color: #098239;
+  text-decoration: underline;
+}
+
+.license-section .license-container .license-iconography .iconography-info .iconography-link:hover {
+  color: #065224;
+}
+
+.license-section .license-container .license-iconography .iconography-image {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.license-section .license-container .license-photography .photography-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #098239;
+  margin-bottom: 10px;
+}
+
+.license-section .license-container .license-photography .photography-list {
+  margin-bottom: 10px;
+}
+
+.license-section .license-container .license-photography .photography-list .photography-link {
+  color: #098239;
+  text-decoration: underline;
+}
+
+.license-section .license-container .license-photography .photography-list .photography-link:hover {
+  color: #065224;
+}
+
+.license-section .license-container .license-photography .photography-note {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=main.css.map */

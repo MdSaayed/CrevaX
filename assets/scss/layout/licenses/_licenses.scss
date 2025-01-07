@@ -1,0 +1,161 @@
+/* ========================
+   License Section Styles
+======================== */
+
+$secondary-color: #666; // Secondary text color
+// Link color
+$background-color: #f9f9f9; // Background color
+$border-color: #e0e0e0; // Border color
+
+.license-section {
+    background-color: $mint-white;    
+    font-family: 'Inter', sans-serif;
+
+    .license-container {
+        @extend .container;
+        .license-header { 
+            max-width: 1000px;
+            text-align: left;
+            margin: 0 auto;
+            border-bottom: 1px solid #6155C852;
+            padding-bottom:4rem;
+
+            .license-title {
+                @extend .section-title;
+                color: $dark-neutral;
+                margin-bottom: 10px;
+            }
+
+            .license-description {
+                @extend .section-desc;
+            }
+        }
+
+        // Illustration Section
+        .license-illustration {
+           padding: 4rem 0;
+            .illustration-item {
+                display: flex;
+                justify-content: space-between;
+                .illustration-image {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                }
+
+                .illustration-caption {
+                    font-size: 1.5rem;
+                    color: $dark-neutral;
+                    font-weight: 500;
+
+                    .illustration-credit {
+                        font-size: 18px;
+                        color: $dark-gray;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+
+        // Typography Section
+        .license-typography {
+            margin-bottom: 40px;
+
+            .typography-heading {
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: $dark-neutral;
+                line-height:30px;
+                margin-bottom: 10px;
+            }
+
+            .typography-info {
+                font-size: 1rem;
+                color: $secondary-color;
+
+                .typography-link {
+                    color: $primary-color;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: darken($primary-color, 10%);
+                    }
+                }
+
+                .typography-download {
+                    color: $primary-color;
+                    font-weight: 500;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        // Iconography Section
+        .license-iconography {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content:space-between;
+
+            .iconography-heading {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $primary-color;
+                margin-bottom: 10px;
+            }
+
+            .iconography-info {
+                font-size: 1rem;
+                color: $secondary-color;
+
+                .iconography-link {
+                    color: $primary-color;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: darken($primary-color, 10%);
+                    }
+                }
+            }
+
+            .iconography-image {
+                margin-top: 20px;
+                max-width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        // Photography Section
+        .license-photography {
+            .photography-heading {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: $primary-color;
+                margin-bottom: 10px;
+            }
+
+            .photography-list {
+                margin-bottom: 10px;
+
+                .photography-link {
+                    color: $primary-color;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: darken($primary-color, 10%);
+                    }
+                }
+            }
+
+            .photography-note {
+                font-size: 1rem;
+                color: $secondary-color;
+                line-height: 1.6;
+            }
+        }
+    }
+}
+ 
