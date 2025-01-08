@@ -2,11 +2,6 @@
    License Section Styles
 ======================== */
 
-$secondary-color: #666; // Secondary text color
-// Link color
-$background-color: #f9f9f9; // Background color
-$border-color: #e0e0e0; // Border color
-
 .license-section {
     background-color: $mint-white;    
     font-family: 'Inter', sans-serif;
@@ -37,6 +32,7 @@ $border-color: #e0e0e0; // Border color
             .illustration-item {
                 display: flex;
                 justify-content: space-between;
+                gap:2rem;
                 .illustration-image {
                     max-width: 100%;
                     height: auto;
@@ -54,6 +50,9 @@ $border-color: #e0e0e0; // Border color
                         font-weight: normal;
                     }
                 }
+                @media (max-width:946px) {
+                    flex-direction: column;      
+                }
             }
         }
 
@@ -70,8 +69,9 @@ $border-color: #e0e0e0; // Border color
             }
 
             .typography-info {
-                font-size: 1rem;
-                color: $secondary-color;
+                font-size: 18px;
+                color: $dark-gray;
+                font-weight: normal;
 
                 .typography-link {
                     color: $primary-color;
@@ -98,17 +98,22 @@ $border-color: #e0e0e0; // Border color
             margin-bottom: 40px;
             display: flex;
             justify-content:space-between;
+            gap:2rem;
+            border-bottom: 1px solid #6155C852;
+            padding:5rem 0;
 
             .iconography-heading {
                 font-size: 1.5rem;
-                font-weight: 600;
-                color: $primary-color;
+                font-weight: 500;
+                color: $dark-neutral;
+                line-height:30px;
                 margin-bottom: 10px;
             }
 
             .iconography-info {
-                font-size: 1rem;
-                color: $secondary-color;
+                font-size: 18px;
+                color: $dark-gray;
+                font-weight: normal;
 
                 .iconography-link {
                     color: $primary-color;
@@ -121,10 +126,12 @@ $border-color: #e0e0e0; // Border color
             }
 
             .iconography-image {
-                margin-top: 20px;
                 max-width: 100%;
                 border-radius: 8px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            @media (max-width:946px) {
+                flex-direction: column;       
             }
         }
 
@@ -132,13 +139,17 @@ $border-color: #e0e0e0; // Border color
         .license-photography {
             .photography-heading {
                 font-size: 1.5rem;
-                font-weight: 600;
-                color: $primary-color;
+                font-weight: 500;
+                color: $dark-neutral;
+                line-height:30px;
                 margin-bottom: 10px;
             }
 
             .photography-list {
                 margin-bottom: 10px;
+                color:$dark-gray;
+                font-size: 18px;
+                font-weight: normal;
 
                 .photography-link {
                     color: $primary-color;
@@ -151,9 +162,9 @@ $border-color: #e0e0e0; // Border color
             }
 
             .photography-note {
-                font-size: 1rem;
-                color: $secondary-color;
-                line-height: 1.6;
+                font-size: 18px;
+                color: $dark-gray;
+                font-weight: normal;
             }
         }
     }

@@ -18,26 +18,50 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// faq
-document.querySelectorAll('.faq-question').forEach(item => {
-    item.addEventListener('click', event => {
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+// Set the first item active by default
+const firstAnswer = document.querySelector('.faq-answer.active');
+if (firstAnswer) {
+    firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px'; // Set height dynamically
+}
+
+// Add click event listeners for toggle
+faqQuestions.forEach(item => {
+    item.addEventListener('click', () => {
         const faqItem = item.parentElement;
         const answer = faqItem.querySelector('.faq-answer');
         const icon = item.querySelector('.faq-toggle-icon i');
-        icon.style.transition = 'transform 300ms ease-in-out';
 
-        // Toggle the answer visibility
-        if (answer.classList.contains('max-h-0')) {
-            answer.classList.remove('max-h-0');
-            answer.classList.add('max-h-screen');
-            icon.style.transform = 'rotate(180deg)';
+        // Close other answers
+        document.querySelectorAll('.faq-answer').forEach(ans => {
+            if (ans !== answer) {
+                ans.style.maxHeight = '0';
+                ans.classList.remove('active');
+            }
+        });
+
+        // Reset other icons
+        document.querySelectorAll('.faq-toggle-icon i').forEach(icn => {
+            if (icn !== icon) {
+                icn.classList.remove('active');
+            }
+        });
+
+        // Toggle the current answer
+        if (answer.classList.contains('active')) {
+            answer.style.maxHeight = '0'; // Collapse
+            answer.classList.remove('active');
+            icon.classList.remove('active'); // Rotate back
         } else {
-            answer.classList.remove('max-h-screen');
-            answer.classList.add('max-h-0');
-            icon.style.transform = 'rotate(0deg)';
+            answer.style.maxHeight = answer.scrollHeight + 'px'; // Expand
+            answer.classList.add('active');
+            icon.classList.add('active'); // Rotate
         }
     });
 });
+
+
 
 
 // pricing swither

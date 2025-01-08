@@ -1,6 +1,8 @@
 #footer{
     .container{
         .footer-content-area{
+            border-radius: 0.5rem;  
+            padding: 5rem 2rem; 
             h3{
                 color: $dark-neutral;
             }
@@ -61,6 +63,15 @@
                 a{
                     color:$primary-color;
                 }
+            }
+          
+            @media (min-width: 768px) { 
+              padding-left: 3rem;  
+              padding-right: 3rem;  
+            }
+          
+            @media (min-width: 1024px) { 
+              padding: 5rem;   
             }
             
         }

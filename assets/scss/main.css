@@ -101,7 +101,7 @@ body {
   color: #171717;
 }
 
-.section-sub-title, #hero-section-home .hero-content-area .hero-sub-title, #hero-section-features .hero-content-area .hero-sub-title, #features .section-sub-title, #feature-details .section-heading .section-sub-title, #faq .section-sub-title, #testimonial .section-sub-title {
+.section-sub-title, #hero-section-home .hero-content-area .hero-sub-title, #hero-section-features .hero-content-area .hero-sub-title, #features .section-sub-title, #feature-details .section-heading .section-sub-title, #testimonial .section-sub-title {
   color: #737373;
   border: 1px solid #C2E0CE;
   font-weight: 500;
@@ -349,6 +349,8 @@ body {
 }
 
 #footer .container .footer-content-area, #footer .license-section .license-container .footer-content-area, .license-section #footer .license-container .footer-content-area {
+  border-radius: 0.5rem;
+  padding: 5rem 2rem;
   background-color: #EBF5EF;
 }
 
@@ -430,6 +432,19 @@ body {
 
 #footer .container .footer-content-area .copyright-text a, #footer .license-section .license-container .footer-content-area .copyright-text a, .license-section #footer .license-container .footer-content-area .copyright-text a {
   color: #098239;
+}
+
+@media (min-width: 768px) {
+  #footer .container .footer-content-area, #footer .license-section .license-container .footer-content-area, .license-section #footer .license-container .footer-content-area {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #footer .container .footer-content-area, #footer .license-section .license-container .footer-content-area, .license-section #footer .license-container .footer-content-area {
+    padding: 5rem;
+  }
 }
 
 .container, .license-section .license-container {
@@ -832,12 +847,132 @@ body {
   overflow-x: hidden;
 }
 
-#faq .faq-area .faq-item {
-  background-color: #F5FAF7;
+#faq .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr;
+      grid-template-columns: 3fr;
+  gap: 4rem;
 }
 
-#faq .faq-area .faq-item .faq-toggle-icon {
+#faq .grid-container .section-heading .sub-title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+@media (min-width: 1024px) {
+  #faq .grid-container .section-heading {
+    grid-column: span 1;
+  }
+}
+
+#faq .grid-container .faq-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+#faq .grid-container .faq-area .faq-item {
+  background-color: #F5FAF7;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+#faq .grid-container .faq-area .faq-item .faq-question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 28px;
+  cursor: pointer;
+  gap: 1rem;
+  text-align: left;
+}
+
+#faq .grid-container .faq-area .faq-item .faq-toggle-icon {
   background-color: #098239;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+#faq .grid-container .faq-area .faq-item .faq-toggle-icon i {
+  font-size: 1rem;
+  color: #FFFFFF;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#faq .grid-container .faq-area .faq-item .faq-toggle-icon i.active {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#faq .grid-container .faq-area .faq-item .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  color: #737373;
+  -webkit-transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+#faq .grid-container .faq-area .faq-item .faq-answer.active {
+  opacity: 1 !important;
+}
+
+#faq .grid-container .faq-area .faq-item .faq-answer p {
+  margin-top: 10px;
+}
+
+@media (min-width: 1024px) {
+  #faq .grid-container .faq-area {
+    grid-column: span 2;
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #faq .grid-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 #testimonial {
@@ -2052,6 +2187,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 2rem;
 }
 
 .license-section .license-container .license-illustration .illustration-item .illustration-image {
@@ -2072,6 +2208,15 @@ body {
   font-weight: normal;
 }
 
+@media (max-width: 946px) {
+  .license-section .license-container .license-illustration .illustration-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .license-section .license-container .license-typography {
   margin-bottom: 40px;
 }
@@ -2085,8 +2230,9 @@ body {
 }
 
 .license-section .license-container .license-typography .typography-info {
-  font-size: 1rem;
-  color: #666;
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
 }
 
 .license-section .license-container .license-typography .typography-info .typography-link {
@@ -2115,18 +2261,23 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid #6155C852;
+  padding: 5rem 0;
 }
 
 .license-section .license-container .license-iconography .iconography-heading {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #098239;
+  font-weight: 500;
+  color: #171717;
+  line-height: 30px;
   margin-bottom: 10px;
 }
 
 .license-section .license-container .license-iconography .iconography-info {
-  font-size: 1rem;
-  color: #666;
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
 }
 
 .license-section .license-container .license-iconography .iconography-info .iconography-link {
@@ -2139,22 +2290,34 @@ body {
 }
 
 .license-section .license-container .license-iconography .iconography-image {
-  margin-top: 20px;
   max-width: 100%;
   border-radius: 8px;
   -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 946px) {
+  .license-section .license-container .license-iconography {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .license-section .license-container .license-photography .photography-heading {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #098239;
+  font-weight: 500;
+  color: #171717;
+  line-height: 30px;
   margin-bottom: 10px;
 }
 
 .license-section .license-container .license-photography .photography-list {
   margin-bottom: 10px;
+  color: #404040;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .license-section .license-container .license-photography .photography-list .photography-link {
@@ -2167,8 +2330,8 @@ body {
 }
 
 .license-section .license-container .license-photography .photography-note {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
+  font-size: 18px;
+  color: #404040;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main.css.map */
