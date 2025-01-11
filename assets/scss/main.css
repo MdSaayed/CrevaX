@@ -245,38 +245,6 @@ body {
   border-radius: 50%;
 }
 
-.pricing-switcher {
-  background-color: #EBF5EF;
-}
-
-.pricing-switcher .switcher-btn {
-  font-family: 'Inter', sans-serif;
-  border: none;
-  background: none;
-  color: #404040;
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.pricing-switcher .switcher-btn.active {
-  background-color: #098239;
-  color: #F5FAF7;
-}
-
-.pricing-switcher .switcher-btn:hover {
-  background-color: #098239;
-  color: #F5FAF7;
-}
-
-@media (max-width: 310px) {
-  .pricing-switcher .switcher-btn {
-    padding: 4px 12px;
-  }
-}
-
 /* Normalize styles */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -1177,52 +1145,209 @@ body {
   color: #404040;
 }
 
-#pricing .pricing-cards .card {
-  background-color: #F5FAF7;
-  border: 1px solid rgba(64, 64, 64, 0.12);
+#ub-pricing.pricing-sec-padding {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-#pricing .pricing-cards .card:hover {
+@media (min-width: 768px) {
+  #ub-pricing.pricing-sec-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+#ub-pricing .section-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+#ub-pricing .section-heading .section-title, #ub-pricing .section-heading .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-pricing .section-heading .license-title {
+  margin-bottom: 1.5rem;
+  max-width: 556px;
+}
+
+#ub-pricing .section-heading .section-desc, #ub-pricing .section-heading .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #ub-pricing .section-heading .license-description {
+  text-align: center;
+  max-width: 556px;
+}
+
+@media (min-width: 1024px) {
+  #ub-pricing .section-heading {
+    grid-column: span 1;
+  }
+}
+
+#ub-pricing .pricing-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#ub-pricing .pricing-switcher .switcher-wrapper {
+  background-color: #EBF5EF;
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  border-radius: 9999px;
+}
+
+#ub-pricing .pricing-switcher .switcher-wrapper .switcher-btn {
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background: none;
+  color: #404040;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#ub-pricing .pricing-switcher .switcher-wrapper .switcher-btn.active {
+  background-color: #098239;
+  color: #F5FAF7;
+}
+
+#ub-pricing .pricing-switcher .switcher-wrapper .switcher-btn:hover {
+  background-color: #098239;
+  color: #F5FAF7;
+}
+
+@media (max-width: 310px) {
+  #ub-pricing .pricing-switcher .switcher-wrapper .switcher-btn {
+    padding: 4px 12px;
+  }
+}
+
+#ub-pricing .pricing-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+#ub-pricing .pricing-cards .card {
+  background-color: #F5FAF7;
+  border: 1px solid rgba(64, 64, 64, 0.12);
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+#ub-pricing .pricing-cards .card:hover {
   background-color: #012C16;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-#pricing .pricing-cards .card:hover h3, #pricing .pricing-cards .card:hover p, #pricing .pricing-cards .card:hover .features {
-  color: #FAFAFA;
+#ub-pricing .pricing-cards .card:hover h3, #ub-pricing .pricing-cards .card:hover p, #ub-pricing .pricing-cards .card:hover span {
+  color: #FAFAFA !important;
 }
 
-#pricing .pricing-cards .card:hover .price span {
-  color: #FAFAFA;
-}
-
-#pricing .pricing-cards .card:hover .fa-check {
+#ub-pricing .pricing-cards .card:hover .fa-check {
   color: #FAFDFB;
 }
 
-#pricing .pricing-cards .card:hover .buy-now-btn {
+#ub-pricing .pricing-cards .card:hover .buy-now-btn {
   background-color: #F5FAF7;
 }
 
-#pricing .pricing-cards .card h3, #pricing .pricing-cards .card p {
+#ub-pricing .pricing-cards .card h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
   color: #737373;
 }
 
-#pricing .pricing-cards .card .price span {
+#ub-pricing .pricing-cards .card p {
+  text-align: center;
+  margin-top: 1rem;
+  color: #737373;
+  line-height: 24px;
+}
+
+#ub-pricing .pricing-cards .card .price-wrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#ub-pricing .pricing-cards .card .price-wrapper .price {
   color: #171717;
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-align: center;
+  display: block;
 }
 
-#pricing .pricing-cards .card .features {
+#ub-pricing .pricing-cards .card .features-wrapper li {
+  margin-bottom: 0.75rem;
+}
+
+#ub-pricing .pricing-cards .card .features-wrapper li i {
+  width: 21px;
+  height: 21px;
+}
+
+#ub-pricing .pricing-cards .card .features-wrapper li .features {
   color: #3E4557;
+  margin-left: 0.5rem;
 }
 
-#pricing .pricing-cards .card .buy-now-btn {
+#ub-pricing .pricing-cards .card .btn-wrapper {
+  margin-top: 4rem;
+}
+
+#ub-pricing .pricing-cards .card .btn-wrapper .buy-now-btn {
   text-decoration: none;
   display: block;
   background-color: #DFEFE5;
   padding: 12px 5px;
   border-radius: 32px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  #ub-pricing .pricing-cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #ub-pricing .pricing-cards {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+#ub-pricing #card2 {
+  display: none;
 }
 
 #hero-pricing .content-area {
