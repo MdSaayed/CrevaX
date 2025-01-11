@@ -67,6 +67,8 @@
 
 .team-member-card{
     .team-member-image{
+        display:flex;
+        justify-content:center;
         background-color:$light-mint-green;
         border-radius: 16px;
         position: relative;
@@ -79,8 +81,14 @@
     .team-member-content{
         background-color: $white;
         box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.20);
+        margin-top: -2rem; 
+        border-radius: 0.5rem;  
+        padding: 0.5rem; 
+        margin-left: 0.5rem; 
+        margin-right: 0.5rem; 
+          
         .team-member-info{
-            border-bottom: 1px solid $light-mint-green;
+            border-bottom: 1px solid $light-mint-green; 
             padding-bottom: 5px;
             .team-member-name{
                 font-weight: 500;
@@ -94,13 +102,27 @@
                 font-size: 14px;
             }
         }
-        .team-member-social-links img {
-            background: $primary-color;
-            width: 26px;
-            padding: 4px;
-            height: 26px;
-            border-radius: 50%;
+
+        .team-member-social-links{
+            display: flex;
+            justify-content: center;  
+            margin-top: 1.5rem; 
+            > * + * {
+                margin-left: 0.5rem; 
+              }
+            img {
+                background: $primary-color;
+                width: 26px;
+                padding: 4px;
+                height: 26px;
+                border-radius: 50%;
+            }
         }
+        @media (min-width: 768px) {  
+            padding: 1rem; 
+            margin-left: 1rem; 
+            margin-right: 1rem;   
+          }
     }   
 }
 

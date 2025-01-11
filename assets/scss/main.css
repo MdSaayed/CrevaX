@@ -197,11 +197,17 @@ body {
   color: #171717;
 }
 
-.section-desc, .license-section .license-container .license-header .license-description {
+.section-desc, #ub-team-details .details-area .content .list-item li, .license-section .license-container .license-header .license-description {
   color: #404040;
 }
 
 .team-member-card .team-member-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #C2E0CE;
   border-radius: 16px;
   position: relative;
@@ -217,6 +223,11 @@ body {
   background-color: #FFFFFF;
   -webkit-box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.2);
           box-shadow: 6.751px 6.751px 33.757px 0px rgba(160, 178, 194, 0.2);
+  margin-top: -2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .team-member-card .team-member-content .team-member-info {
@@ -237,12 +248,34 @@ body {
   font-size: 14px;
 }
 
+.team-member-card .team-member-content .team-member-social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.team-member-card .team-member-content .team-member-social-links > * + * {
+  margin-left: 0.5rem;
+}
+
 .team-member-card .team-member-content .team-member-social-links img {
   background: #098239;
   width: 26px;
   padding: 4px;
   height: 26px;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .team-member-card .team-member-content {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 /* Normalize styles */
@@ -972,7 +1005,7 @@ body {
   padding-right: 1.5rem;
 }
 
-#hero-section-home .container .hero-content-area .content .section-desc, #hero-section-home .license-section .license-container .hero-content-area .content .section-desc, .license-section #hero-section-home .license-container .hero-content-area .content .section-desc, #hero-section-home .container .hero-content-area .content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #hero-section-home .container .hero-content-area .content .license-description, #hero-section-home .license-section .license-container .hero-content-area .content .license-header .license-description, #hero-section-home .license-section .license-container .license-header .hero-content-area .content .license-description, .license-section #hero-section-home .license-container .hero-content-area .content .license-header .license-description, .license-section #hero-section-home .license-container .license-header .hero-content-area .content .license-description {
+#hero-section-home .container .hero-content-area .content .section-desc, #hero-section-home .license-section .license-container .hero-content-area .content .section-desc, .license-section #hero-section-home .license-container .hero-content-area .content .section-desc, #hero-section-home .container .hero-content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area #hero-section-home .container .hero-content-area .content .list-item li, #hero-section-home .license-section .license-container .hero-content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area #hero-section-home .license-section .license-container .hero-content-area .content .list-item li, .license-section #hero-section-home .license-container .hero-content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .license-section #hero-section-home .license-container .hero-content-area .content .list-item li, #hero-section-home .container .hero-content-area .content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #hero-section-home .container .hero-content-area .content .license-description, #hero-section-home .license-section .license-container .hero-content-area .content .license-header .license-description, #hero-section-home .license-section .license-container .license-header .hero-content-area .content .license-description, .license-section #hero-section-home .license-container .hero-content-area .content .license-header .license-description, .license-section #hero-section-home .license-container .license-header .hero-content-area .content .license-description {
   margin-top: 1.5rem;
   line-height: 27px;
   text-align: center;
@@ -1372,7 +1405,7 @@ body {
   max-width: 556px;
 }
 
-#ub-pricing .section-heading .section-desc, #ub-pricing .section-heading .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #ub-pricing .section-heading .license-description {
+#ub-pricing .section-heading .section-desc, #ub-pricing .section-heading #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #ub-pricing .section-heading li, #ub-pricing .section-heading .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #ub-pricing .section-heading .license-description {
   text-align: center;
   max-width: 556px;
 }
@@ -1648,7 +1681,7 @@ body {
   }
 }
 
-#pricing-details .pricing-details-area .section-desc, #pricing-details .pricing-details-area .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #pricing-details .pricing-details-area .license-description {
+#pricing-details .pricing-details-area .section-desc, #pricing-details .pricing-details-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #pricing-details .pricing-details-area li, #pricing-details .pricing-details-area .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #pricing-details .pricing-details-area .license-description {
   color: #737373;
 }
 
@@ -1990,18 +2023,103 @@ body {
   font-size: 18px;
 }
 
-#team-details .details-area {
+#ub-team .container .section-heading, #ub-team .license-section .license-container .section-heading, .license-section #ub-team .license-container .section-heading {
+  margin-bottom: 5rem;
+}
+
+#ub-team .container .team-members-container, #ub-team .license-section .license-container .team-members-container, .license-section #ub-team .license-container .team-members-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  /* grid-cols-1 */
+  gap: 1.5rem;
+  /* gap-6 */
+}
+
+@media (min-width: 768px) {
+  #ub-team .container .team-members-container, #ub-team .license-section .license-container .team-members-container, .license-section #ub-team .license-container .team-members-container {
+    /* md breakpoint */
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    /* md:grid-cols-2 */
+    gap: 2rem;
+    /* md:gap-8 */
+  }
+}
+
+@media (min-width: 1024px) {
+  #ub-team .container .team-members-container, #ub-team .license-section .license-container .team-members-container, .license-section #ub-team .license-container .team-members-container {
+    /* lg breakpoint */
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    /* lg:grid-cols-3 */
+    gap: 3rem;
+    /* lg:gap-12 */
+  }
+}
+
+@media (min-width: 1280px) {
+  #ub-team .container .team-members-container, #ub-team .license-section .license-container .team-members-container, .license-section #ub-team .license-container .team-members-container {
+    /* xl breakpoint */
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    /* xl:grid-cols-4 */
+  }
+}
+
+#ub-team-details .details-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  padding: 2rem;
   border: 1px solid #DFE6FB;
   border-radius: 30px;
 }
 
-#team-details .details-area ul {
+@media (min-width: 1024px) {
+  #ub-team-details .details-area {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    padding-right: 12rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #ub-team-details .details-area {
+    padding: 3rem;
+  }
+}
+
+#ub-team-details .details-area .content .section-title, #ub-team-details .details-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-team-details .details-area .content .license-title {
+  text-align: left;
+}
+
+#ub-team-details .details-area .content .section-desc, #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #ub-team-details .details-area .content .license-description {
+  margin-top: 1rem;
+}
+
+#ub-team-details .details-area .content .list-item {
+  margin-top: 2.5rem;
   list-style-type: disc;
   padding-left: 20px;
 }
 
-#team-details .details-area ul li::marker {
+#ub-team-details .details-area .content .list-item li {
+  margin-bottom: 0.5rem;
+}
+
+#ub-team-details .details-area .content .list-item li::marker {
   color: #DFE6FB;
+}
+
+@media (min-width: 1024px) {
+  #ub-team-details .details-area .content {
+    grid-column: span 2;
+  }
 }
 
 #stats-section {
@@ -2459,7 +2577,7 @@ body {
   line-height: 70px;
 }
 
-#terms-condition .content-area .section-header .section-desc, #terms-condition .content-area .section-header .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #terms-condition .content-area .section-header .license-description {
+#terms-condition .content-area .section-header .section-desc, #terms-condition .content-area .section-header #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #terms-condition .content-area .section-header li, #terms-condition .content-area .section-header .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #terms-condition .content-area .section-header .license-description {
   font-size: 18px;
 }
 
@@ -2524,7 +2642,7 @@ body {
   text-align: center;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-desc, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-in .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .license-description, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, #sign-up .container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-desc, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-up .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .license-description, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-desc, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-in .container .auth-panel .welcome-panel .welcome-content #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #sign-in .container .auth-panel .welcome-panel .welcome-content li, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content li, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content li, #sign-in .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .license-description, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, #sign-up .container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-desc, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .section-desc, #sign-up .container .auth-panel .welcome-panel .welcome-content #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #sign-up .container .auth-panel .welcome-panel .welcome-content li, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content li, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content li, #sign-up .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .license-description, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-description, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-description {
   color: #F5FAF7;
   text-align: center;
 }
@@ -2537,7 +2655,7 @@ body {
   margin-bottom: 12px;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section li, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section li, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section li, #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-desc, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section li, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section li, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section li, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-description, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-description, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-description {
   color: #FAFAFA;
   text-align: center;
 }
