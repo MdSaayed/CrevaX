@@ -1,6 +1,7 @@
 #footer{
     .container{
         .footer-content-area{
+            background-color: $light-normal;     
             border-radius: 0.5rem;  
             padding: 5rem 2rem; 
             h3{
@@ -9,40 +10,142 @@
             p{
                 color: $soft-gray;
             }
-            background-color: $light-normal;     
             .newslatter{ 
-                input {
-                    border: 1px solid $light-mint-green; 
-                    height: 48px;  
-                    transition: border-color 0.3s ease;  
-                    &:focus {
-                        border: 1px solid $primary-color;  
-                        outline: none;  
+                display: grid;  
+                grid-template-columns: repeat(1, 1fr);  
+                gap: 1.5rem;  
+                justify-content: space-between;  
+                align-items: center;  
+
+                .footer-heading-wrapper {
+                    text-align: center;  
+
+                    h3{
+                        font-weight: 500;  
+                        font-size: 1.5rem;  
+                        line-height: 2rem;  
+                        margin-bottom: 0.5rem;  
+                    }
+                    @media (min-width: 1024px) {  
+                      text-align: left;  
                     }
                 }
-                .btn{
-                    @include btn();    
-                }  
+                .input-wrapper {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 1rem;
+
+                    input {
+                        border: 1px solid $light-mint-green; 
+                        transition: border-color 0.3s ease;  
+                        border-radius: 100px; 
+                        background-color: transparent;  
+                        padding-left: 1rem; // px-4
+                        padding-right: 1rem; // px-4
+                      
+                        &:focus {
+                            border: 1px solid $primary-color;  
+                            outline: none;  
+                        }
+                    }
+                    input[type="email"] {
+                        width: 100%;
+                    }
+                    .btn{
+                        @include btn();    
+                    }  
+                  }
+                
+                 @media (min-width: 1024px) {  
+                    grid-template-columns: repeat(2, 1fr);  
+                    gap: 3.5rem; 
+                }
             } 
-            .links{
-                h3{
-                    color: $dark-neutral;
+            .links {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-top: 4rem; // mt-16
+                gap: 2rem; // gap-8
+
+                .fooer-col-one{
+                    ul{
+                        margin-top: 2rem;
+                        li{
+                            display: flex;
+                            align-items: center; // items-center
+                            gap: 1rem; // gap-4
+
+                            .icon-wrapper {
+                                padding: 5px; // p-[5px]
+                                border-radius: 0.5rem; // rounded-lg
+                                background-color: $mint-white;
+
+                                img {
+                                    width: 1.5rem; // w-6
+                                    height: 1.5rem; // h-6
+                                  }
+                                  
+                            }
+                            .text-wrapper{
+                                h4{
+                                    color:$dark-gray;
+                                    font-weight: 500; // font-medium
+                                    font-size: 1.25rem; // text-xl
+                                }
+                            }
+                              
+                        }
+                    }
                 }
-                h4{
-                    color:$dark-gray;
+                
+                .fooer-col-two{
+                    h3{
+                        color: $dark-neutral;
+                        font-weight: 500; // font-medium
+                        font-size: 1.5rem; // text-2xl
+                    }
+                    .grid-container {
+                        margin-top: 2rem; // mt-8
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr); // grid-cols-2
+                        grid-template-rows: 1fr repeat(3, 1fr); // grid-rows-[1fr_repeat(3,1fr)]
+                        column-gap: 2rem; // gap-x-8
+                        justify-content: space-between; // justify-between
+
+                        @media (max-width: 640px) { // sm breakpoint
+                            grid-template-columns: 1fr repeat(1, 1fr); // sm:grid-cols-[1fr_repeat(2,1fr)]
+                        }
+                      }
+
                 }
+
+                .fooer-col-three{
+                    h3{
+                        color: $dark-neutral;
+                        font-weight: 500; // font-medium
+                        font-size: 1.5rem; // text-2xl
+                    }
+                    ul{
+                        margin-top: 2rem;
+                    }
+                }
+               
                 li{
                     color: $dark-neutral;
                     margin-bottom: 16px;
                 }
-                .icon-wrapper{
-                    background-color: $mint-white;
-                }
             }
             .copyright-text {
                 position: relative;
+                display: flex;
+                justify-content: center; // justify-center
+                flex-wrap: wrap; // flex-wrap
+                gap: 1rem; // gap-4
                 padding-top: 32px;
-            
+                align-items: center; // items-center
+                margin-top: 3rem; // mt-12
+                                  
                 &::before {
                     content: ''; 
                     position: absolute;
@@ -59,9 +162,30 @@
                 }
                 p{
                     color:$dark-gray;
+                    text-align: center; // text-center
+
+                    .company-name {
+                        font-weight: 500;  
+                    }
+
+                    .divider {
+                    margin-left: 0.5rem; // mx-2
+                    margin-right: 0.5rem; // mx-2
+                    }
+
+                    @media (min-width: 768px) { // md breakpoint
+                      text-align: left; // md:text-left
+                    }
                 }
                 a{
-                    color:$primary-color;
+                    color:$primary-color;  
+                    &.hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                @media (min-width: 768px) { // md breakpoint
+                    justify-content: space-between; // md:justify-between
                 }
             }
           
@@ -70,7 +194,7 @@
               padding-right: 3rem;  
             }
           
-            @media (min-width: 1024px) { 
+            @media (min-width: 1024px) {   
               padding: 5rem;   
             }
             
