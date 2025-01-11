@@ -9,16 +9,47 @@
     }
 }
 
-#features{
+#ub-features{
     background-color: $white;
-    .section-title {
-        font-size: 2.8rem; 
-    }
-    .section-sub-title{
-        @extend  .section-sub-title;
-    }
-    .features-item{
-        background: $light-color;
+    .container{
+        padding-top: 7rem;  
+        padding-bottom: 7rem;
+
+        .section-heading{
+            .section-title {
+                font-size: 2.8rem; 
+            }
+        }
+
+        .features-area {
+            display: grid;
+            grid-template-columns: 1fr;  
+            gap: 2rem; 
+            margin-top: 4rem;
+          
+            .features-item{
+                background: $light-color;
+                padding: 1.5rem;  
+                border-radius: 1.5rem;
+
+                .feature-title {
+                    font-size: 2.25rem; 
+                    font-weight: 500;    
+                    margin-bottom: 1.5rem; 
+                  }
+                .feature-thumbnail {
+                    margin-top: 2rem; 
+                    img {
+                        width: 100%;  
+                    }
+                }
+                
+              }
+              
+            @media (min-width: 768px) { 
+              grid-template-columns: repeat(2, 1fr);
+            }
+        } 
     }
 }
 
