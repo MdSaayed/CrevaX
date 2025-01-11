@@ -1,11 +1,88 @@
-#blogs {
-    .blog-card{
-        background-color: $white;
-        .blog-content{
-            border: 1px solid rgba($dark-gray, 0.08); // 8% = 0.08
-            
-        }
-       
+#ub-blogs {
+    &.ub-blogs {
+        margin-top: -23rem; 
     }
-}
+    .container{
+        padding-top: 7rem;  
+        padding-bottom: 7rem;  
 
+        .blog-area {
+            display: grid;
+            grid-template-columns: 1fr;  
+            gap: 2rem;  
+            margin-top: 5rem;  
+
+            .blog-card {
+                background-color: $white;
+                display: flex;
+                flex-direction: column;  
+                gap: 3rem;  
+                border-radius: 0.5rem;
+
+                .blog-content {
+                    border: 1px solid rgba($dark-gray, 0.08);  
+                    border-radius: 0.5rem;  
+                    padding: 1.5rem; 
+
+                    .meta {
+                        display: flex;  
+                        gap: 1rem;
+                    }
+
+                    .blog-cat span {
+                        padding-left: 0.5rem; 
+                        padding-right: 0.5rem;  
+                        padding-top: 2px; 
+                        padding-bottom: 2px;  
+                        border-radius: 0.25rem;  
+                    }
+
+                    .blog-date p {
+                        display: flex;  
+                        gap: 0.5rem;  
+                        align-items: center;  
+                        padding: 2px 0.5rem;
+                        border-radius: 0.25rem;  
+                    }
+
+                    .blog-title {
+                        margin-top: 1rem;
+                    }
+                }
+
+                // Order change only for mobile devices (up to 767px)
+                @media (max-width: 767px) {
+                    &:nth-child(2) {
+                        .blog-content {
+                            order: 2; // Second blog content will come second
+                        }
+
+                        .thumbnail {
+                            order: 1; // Second blog thumbnail will come first
+                        }
+                    }
+                }
+            }
+
+            @media (min-width: 768px) {  
+                grid-template-columns: repeat(2, 1fr);  
+            }
+        }
+
+        .blog-btn-area {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: 1rem;  
+            margin-top: 3.5rem;  
+            .btn-primary,.btn-secondary{
+                display:inline-block;
+            }
+        
+            @media (min-width: 768px) {
+                margin-top: 5rem;  
+            }
+        }
+        
+    }  
+}

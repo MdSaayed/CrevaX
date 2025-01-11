@@ -4,6 +4,11 @@
     line-height: 57px;
     margin-top: 20px; 
     color: $dark-neutral;
+    text-align:center;
+}
+.sub-title-wrapper{
+    display: flex;
+    justify-content:center;
 }
 .section-sub-title{
     color:$soft-gray ;
@@ -12,7 +17,8 @@
     padding: 3px 20px;
     border-radius: 50px;
     text-align: center;
-    font-size: 20px;
+    text-align: center;  
+    font-size: 1.25rem;
 }
 .hero-title{
     font-family: $font-family-heading;
