@@ -1125,24 +1125,99 @@ body {
   background-color: #F5FAF7;
 }
 
-#testimonial .testimonial-item {
+#testimonial .testimonial-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+#testimonial .testimonial-area .testimonial-item {
   background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-#testimonial .testimonial-item .testimonial-content p {
-  color: #404040;
+#testimonial .testimonial-area .testimonial-item .star-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
 }
 
-#testimonial .testimonial-item .star-rating i {
+#testimonial .testimonial-area .testimonial-item .star-rating i {
   color: #C2E0CE;
 }
 
-#testimonial .testimonial-item .testimonail-profile h3 {
+#testimonial .testimonial-area .testimonial-item .testimonial-content {
+  margin-bottom: 1rem;
+}
+
+#testimonial .testimonial-area .testimonial-item .testimonial-content p {
+  color: #404040;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#testimonial .testimonial-area .testimonial-item .testimonail-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 20px;
+}
+
+#testimonial .testimonial-area .testimonial-item .testimonail-profile h3, #testimonial .testimonial-area .testimonial-item .testimonail-profile p {
   color: #404040;
 }
 
-#testimonial .testimonial-item .testimonail-profile p {
-  color: #404040;
+#testimonial .testimonial-area .testimonial-item .testimonail-profile .avatar {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+#testimonial .testimonial-area .testimonial-item .testimonail-profile .avatar img {
+  width: 100%;
+  height: 56px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#testimonial .testimonial-area .testimonial-item .testimonail-profile .profile-info .bio-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+#testimonial .testimonial-area .testimonial-item .testimonail-profile .profile-info .bio-position {
+  line-height: 24px;
+  color: #4B5563;
+  font-size: 16;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  #testimonial .testimonial-area {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #testimonial .testimonial-area {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 #ub-pricing.pricing-sec-padding {
