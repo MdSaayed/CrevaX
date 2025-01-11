@@ -1399,14 +1399,46 @@ body {
 #cta .cta-area {
   margin: 0 auto;
   background-color: #012C16;
+  border-radius: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1050px;
+  padding: 6rem 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
-#cta .cta-area h3, #cta .cta-area p {
+#cta .cta-area h3 {
   color: #FAFAFA;
   z-index: 9999;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.5625rem;
+}
+
+#cta .cta-area p {
+  color: #FAFAFA;
+  z-index: 9999;
+  max-width: 620px;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 #cta .cta-area .btn-area {
+  margin: 0 auto;
+  margin-top: 2rem;
   z-index: 9999;
 }
 
@@ -1419,6 +1451,7 @@ body {
   padding: 8px 15px;
   border-radius: 50px;
   cursor: pointer;
+  display: inline-block;
 }
 
 #cta .cta-area .btn-area .cta-btn:hover {
@@ -1456,6 +1489,12 @@ body {
   bottom: -12rem;
   right: -7rem;
   z-index: 20;
+}
+
+@media (min-width: 768px) {
+  #cta .cta-area {
+    padding: 3rem;
+  }
 }
 
 #latest-post .blog-filter a {
