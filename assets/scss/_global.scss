@@ -15,3 +15,44 @@
         font-size: 16px;
     }
 }
+
+.pricing-switcher {
+    display: flex;  
+    align-items: center;  
+    justify-content: center; 
+
+    .switcher-wrapper {
+        background-color: $light-normal;
+        padding: 0.5rem;  
+        display: inline-flex;  
+        align-items: center;  
+        justify-content: center;  
+        gap: 1rem;  
+        border-radius: 9999px;    
+
+        .switcher-btn {
+            font-family: 'Inter', sans-serif;
+            border: none;
+            background: none;
+            color: $dark-gray;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 8px 15px;
+            border-radius: 50px;
+            cursor: pointer;
+    
+            &.active {
+            background-color: $primary-color; 
+            color: $light-color;
+            }
+    
+            &:hover {
+            background-color:$primary-color;
+            color: $light-color;
+            }
+            @media (max-width: 310px) {
+                    padding: 4px 12px;
+            }
+        }
+    }
+    
+}

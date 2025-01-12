@@ -1,25 +1,68 @@
+#hero-section-integrations{
+    .container{
+        .hero-content-area{
+            .content {
+                padding-left: 1.5rem;  
+                padding-right: 1.5rem; 
+
+                .section-desc {
+                    text-align: center;
+                    margin-top: 1.5rem;  
+                    line-height: 27px;  
+                  }
+                  
+              }
+              
+        }
+    }
+}
+
+
 #integrations{
-    .integration-card-area{
-        .integration-card{
-            background-color: $light-normal;
-            padding: 32px;
-            border-radius: 20px;
-            h3{
-                font-weight: 500;
-                font-size: 2rem;
-                line-height: 48px;
-                color: $dark-neutral;
-                margin: 18px 0;
+    .container{
+        padding-top:0;
+
+        .integration-card-area{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);  
+            gap: 1.5rem;  
+
+            .integration-card{
+                background-color: $light-normal; 
+                padding: 32px;
+                border-radius: 20px;
+
+                .icon-wrapper {
+                    margin-bottom: 1rem;  
+                    color: #012C16;  
+                  }
+                  
+                h3{
+                    font-weight: 500;
+                    font-size: 2rem;
+                    line-height: 48px;
+                    color: $dark-neutral;
+                    margin: 18px 0;
+                }
+                p{
+                    color: $dark-gray;
+                    font-weight: normal;
+                    font-size: 18;
+                    line-height: 27px;
+                    margin-top: -4px;
+                }
+                @media (max-width: 768px) { 
+                    padding: 24px;
+                }
             }
-            p{
-                color: $dark-gray;
-                font-weight: normal;
-                font-size: 18;
-                line-height: 27px;
-                margin-top: -4px;
-            }
-            @media (max-width: 768px) { 
-                padding: 24px;
+
+            @media (min-width: 640px) {  
+                grid-template-columns: repeat(2, 1fr);  
+              }
+            
+            @media (min-width: 1024px) {  
+            grid-template-columns: repeat(3, 1fr);  
+            gap: 2rem; 
             }
         }
     }

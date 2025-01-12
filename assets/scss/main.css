@@ -360,6 +360,62 @@ body {
   font-size: 16px;
 }
 
+.pricing-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pricing-switcher .switcher-wrapper {
+  background-color: #EBF5EF;
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  border-radius: 9999px;
+}
+
+.pricing-switcher .switcher-wrapper .switcher-btn {
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background: none;
+  color: #404040;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.pricing-switcher .switcher-wrapper .switcher-btn.active {
+  background-color: #098239;
+  color: #F5FAF7;
+}
+
+.pricing-switcher .switcher-wrapper .switcher-btn:hover {
+  background-color: #098239;
+  color: #F5FAF7;
+}
+
+@media (max-width: 310px) {
+  .pricing-switcher .switcher-wrapper .switcher-btn {
+    padding: 4px 12px;
+  }
+}
+
 #footer .container .footer-content-area, #footer .license-section .license-container .footer-content-area, .license-section #footer .license-container .footer-content-area {
   background-color: #EBF5EF;
   border-radius: 0.5rem;
@@ -1416,62 +1472,6 @@ body {
   }
 }
 
-#ub-pricing .pricing-switcher {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#ub-pricing .pricing-switcher .switcher-wrapper {
-  background-color: #EBF5EF;
-  padding: 0.5rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
-  border-radius: 9999px;
-}
-
-#ub-pricing .pricing-switcher .switcher-wrapper .switcher-btn {
-  font-family: 'Inter', sans-serif;
-  border: none;
-  background: none;
-  color: #404040;
-  -webkit-transition: color 0.3s, background-color 0.3s;
-  transition: color 0.3s, background-color 0.3s;
-  padding: 8px 15px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-#ub-pricing .pricing-switcher .switcher-wrapper .switcher-btn.active {
-  background-color: #098239;
-  color: #F5FAF7;
-}
-
-#ub-pricing .pricing-switcher .switcher-wrapper .switcher-btn:hover {
-  background-color: #098239;
-  color: #F5FAF7;
-}
-
-@media (max-width: 310px) {
-  #ub-pricing .pricing-switcher .switcher-wrapper .switcher-btn {
-    padding: 4px 12px;
-  }
-}
-
 #ub-pricing .pricing-cards {
   display: -ms-grid;
   display: grid;
@@ -1706,30 +1706,85 @@ body {
   }
 }
 
-#pricing-details .pricing-details-area .section-desc, #pricing-details .pricing-details-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #pricing-details .pricing-details-area li, #pricing-details .pricing-details-area .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #pricing-details .pricing-details-area .license-description {
+#pricing-details .pricing-details-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+#pricing-details .pricing-details-area .content .section-title, #pricing-details .pricing-details-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #pricing-details .pricing-details-area .content .license-title {
+  margin-top: 0;
+  text-align: left;
+}
+
+#pricing-details .pricing-details-area .content .section-desc, #pricing-details .pricing-details-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area #pricing-details .pricing-details-area .content .list-item li, #pricing-details .pricing-details-area .content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #pricing-details .pricing-details-area .content .license-description {
   color: #737373;
 }
 
-#pricing-details .pricing-details-area ul {
+#pricing-details .pricing-details-area .content .list-disc {
+  margin-top: 0.5rem;
+  list-style-type: disc;
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 2rem;
 }
 
-#pricing-details .pricing-details-area ul li::marker {
+#pricing-details .pricing-details-area .content .list-disc li::marker {
   color: #DFE6FB;
 }
 
-#pricing-details .pricing-details-area .section-separator {
+#pricing-details .pricing-details-area .content .list-disc .section-desc, #pricing-details .pricing-details-area #ub-team-details .details-area .content .list-disc .list-item li, #ub-team-details .details-area #pricing-details .pricing-details-area .content .list-disc .list-item li, #pricing-details .pricing-details-area #ub-team-details .details-area .content .list-item .list-disc li, #ub-team-details .details-area #pricing-details .pricing-details-area .content .list-item .list-disc li, #pricing-details .pricing-details-area .content .list-disc .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #pricing-details .pricing-details-area .content .list-disc .license-description {
+  margin-bottom: 0.5rem;
+}
+
+#pricing-details .pricing-details-area .content .section-separator {
   padding: 1.5rem 0;
   border-top: 1px solid #C2E0CE;
 }
 
-#pricing-details .pricing-details-area .section-separator .feature-sub-title {
+#pricing-details .pricing-details-area .content .section-separator .feature-sub-title {
   color: #404040;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
+}
+
+#pricing-details .pricing-details-area .content .section-separator .section-desc, #pricing-details .pricing-details-area #ub-team-details .details-area .content .section-separator .list-item li, #ub-team-details .details-area #pricing-details .pricing-details-area .content .section-separator .list-item li, #pricing-details .pricing-details-area #ub-team-details .details-area .content .list-item .section-separator li, #ub-team-details .details-area #pricing-details .pricing-details-area .content .list-item .section-separator li, #pricing-details .pricing-details-area .content .section-separator .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #pricing-details .pricing-details-area .content .section-separator .license-description {
+  margin-top: 0.5rem;
+}
+
+#pricing-details .pricing-details-area .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pricing-details .pricing-details-area .flex-container .pricing-switcher {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  #pricing-details .pricing-details-area .flex-container {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  #pricing-details .pricing-details-area {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 #pricing-details .pricing-cards {
@@ -2230,13 +2285,41 @@ body {
   }
 }
 
-#integrations .integration-card-area .integration-card {
+#hero-section-integrations .container .hero-content-area .content, #hero-section-integrations .license-section .license-container .hero-content-area .content, .license-section #hero-section-integrations .license-container .hero-content-area .content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#hero-section-integrations .container .hero-content-area .content .section-desc, #hero-section-integrations .license-section .license-container .hero-content-area .content .section-desc, .license-section #hero-section-integrations .license-container .hero-content-area .content .section-desc, #hero-section-integrations .container .hero-content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area #hero-section-integrations .container .hero-content-area .content .list-item li, #hero-section-integrations .license-section .license-container .hero-content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area #hero-section-integrations .license-section .license-container .hero-content-area .content .list-item li, .license-section #hero-section-integrations .license-container .hero-content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .license-section #hero-section-integrations .license-container .hero-content-area .content .list-item li, #hero-section-integrations .container .hero-content-area .content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #hero-section-integrations .container .hero-content-area .content .license-description, #hero-section-integrations .license-section .license-container .hero-content-area .content .license-header .license-description, #hero-section-integrations .license-section .license-container .license-header .hero-content-area .content .license-description, .license-section #hero-section-integrations .license-container .hero-content-area .content .license-header .license-description, .license-section #hero-section-integrations .license-container .license-header .hero-content-area .content .license-description {
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 27px;
+}
+
+#integrations .container, #integrations .license-section .license-container, .license-section #integrations .license-container {
+  padding-top: 0;
+}
+
+#integrations .container .integration-card-area, #integrations .license-section .license-container .integration-card-area, .license-section #integrations .license-container .integration-card-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+#integrations .container .integration-card-area .integration-card, #integrations .license-section .license-container .integration-card-area .integration-card, .license-section #integrations .license-container .integration-card-area .integration-card {
   background-color: #EBF5EF;
   padding: 32px;
   border-radius: 20px;
 }
 
-#integrations .integration-card-area .integration-card h3 {
+#integrations .container .integration-card-area .integration-card .icon-wrapper, #integrations .license-section .license-container .integration-card-area .integration-card .icon-wrapper, .license-section #integrations .license-container .integration-card-area .integration-card .icon-wrapper {
+  margin-bottom: 1rem;
+  color: #012C16;
+}
+
+#integrations .container .integration-card-area .integration-card h3, #integrations .license-section .license-container .integration-card-area .integration-card h3, .license-section #integrations .license-container .integration-card-area .integration-card h3 {
   font-weight: 500;
   font-size: 2rem;
   line-height: 48px;
@@ -2244,7 +2327,7 @@ body {
   margin: 18px 0;
 }
 
-#integrations .integration-card-area .integration-card p {
+#integrations .container .integration-card-area .integration-card p, #integrations .license-section .license-container .integration-card-area .integration-card p, .license-section #integrations .license-container .integration-card-area .integration-card p {
   color: #404040;
   font-weight: normal;
   font-size: 18;
@@ -2253,8 +2336,23 @@ body {
 }
 
 @media (max-width: 768px) {
-  #integrations .integration-card-area .integration-card {
+  #integrations .container .integration-card-area .integration-card, #integrations .license-section .license-container .integration-card-area .integration-card, .license-section #integrations .license-container .integration-card-area .integration-card {
     padding: 24px;
+  }
+}
+
+@media (min-width: 640px) {
+  #integrations .container .integration-card-area, #integrations .license-section .license-container .integration-card-area, .license-section #integrations .license-container .integration-card-area {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #integrations .container .integration-card-area, #integrations .license-section .license-container .integration-card-area, .license-section #integrations .license-container .integration-card-area {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
 
