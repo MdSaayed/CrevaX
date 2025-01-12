@@ -86,3 +86,87 @@
         
     }  
 }
+
+#ub-blog-details{
+    .container {
+        padding-top: 7rem;  
+        padding-bottom: 7rem; 
+        
+        .section-heading{
+            .meta {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1rem;  
+                gap: 1rem;  
+
+                span,p {
+                    padding-left: 1rem;  
+                    padding-right: 1rem;  
+                    padding-top: 0.25rem;  
+                    padding-bottom: 0.25rem;  
+                    border-radius: 0.25rem;  
+                    }
+                    
+                
+                .blog-date{
+                    p {
+                        display: flex;
+                        gap: 0.5rem; 
+                        align-items: center; 
+                        span{
+                            padding:0;
+                        }
+                      }
+                    img{
+                        width:12px; 
+                    }
+                }
+              }
+              
+        }
+        .blog-area {
+            margin-top: 4rem;  
+
+            .thumbnail {
+                padding: 1.5rem;  
+                border-radius: 1.5rem; 
+                img{
+                    width:100%;
+                }
+            }
+            .blog-content {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                    .text-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.5rem;  
+
+                        h3 {
+                            font-weight: 500;  
+                            font-size: 1.875rem;  
+                            color: $dark-neutral ; 
+                          }
+                          
+                    }
+                  
+                
+                    @media (min-width: 768px) {  
+                        padding-left: 6rem;  
+                        padding-right: 6rem; 
+                    }
+            }
+              
+              
+        }
+          
+        
+        @media (min-width: 768px) { 
+          padding-left: 7rem; 
+          padding-right: 7rem; 
+        }
+      }
+      
+}

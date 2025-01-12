@@ -93,7 +93,7 @@ body {
   font-weight: normal;
 }
 
-.section-title, .license-section .license-container .license-header .license-title {
+.section-title, .job-title, .license-section .license-container .license-header .license-title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -111,18 +111,37 @@ body {
           justify-content: center;
 }
 
-.section-sub-title, #hero-section-home .container .hero-content-area .hero-sub-title, #hero-section-home .license-section .license-container .hero-content-area .hero-sub-title, .license-section #hero-section-home .license-container .hero-content-area .hero-sub-title, #hero-section-features .hero-content-area .hero-sub-title, #feature-details .section-heading .section-sub-title, #ub-testimonial .section-sub-title {
+.section-sub-title, .section-sub-title-with-bulet, #hero-section-home .container .hero-content-area .hero-sub-title, #hero-section-home .license-section .license-container .hero-content-area .hero-sub-title, .license-section #hero-section-home .license-container .hero-content-area .hero-sub-title, #ub-testimonial .section-sub-title {
   color: #737373;
   border: 1px solid #C2E0CE;
   font-weight: 500;
   padding: 3px 20px;
   border-radius: 50px;
   text-align: center;
-  text-align: center;
   font-size: 1.25rem;
 }
 
-.hero-title, #hero-section-features .hero-content-area .hero-title {
+.section-sub-title-with-bulet {
+  background-color: #FFFFFF;
+  border: 1px solid #F3F7FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.circle-icon {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #4382FF;
+  border-radius: 50%;
+}
+
+.hero-title {
   font-family: "GeneralSans", sans-serif;
   font-weight: 500;
   line-height: 120%;
@@ -133,9 +152,23 @@ body {
 }
 
 @media (min-width: 768px) {
-  .hero-title, #hero-section-features .hero-content-area .hero-title {
+  .hero-title {
     font-size: 3.5rem;
   }
+}
+
+.hero-desc {
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 27px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #404040;
+  font-weight: normal;
+}
+
+.job-title {
+  text-align: left;
 }
 
 .btn, #sign-in .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-in .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .container .auth-panel .form-panel .tab-buttons .tab-button, #sign-up .license-section .license-container .auth-panel .form-panel .tab-buttons .tab-button, .license-section #sign-up .license-container .auth-panel .form-panel .tab-buttons .tab-button, #sign-in .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-in .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-in .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-in .license-container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signup-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signup-form .sign-up-btn, #sign-up .container .auth-panel .form-panel #signin-form .sign-up-btn, #sign-up .license-section .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .license-section #sign-up .license-container .auth-panel .form-panel #signin-form .sign-up-btn, .btn-primary {
@@ -420,6 +453,26 @@ body {
   .pricing-switcher .switcher-wrapper .switcher-btn {
     padding: 4px 12px;
   }
+}
+
+.btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-page .breadcrumb {
+  margin-top: -96px;
+}
+
+#blog-breadcrumb .custom-padding {
+  padding-bottom: 17rem !important;
 }
 
 #footer .container .footer-content-area, #footer .license-section .license-container .footer-content-area, .license-section #footer .license-container .footer-content-area {
@@ -1118,12 +1171,25 @@ body {
   margin-top: -90px;
 }
 
-#hero-section-features .hero-content-area {
+#hero-section-features .container, #hero-section-features .license-section .license-container, .license-section #hero-section-features .license-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#hero-section-features .container .hero-content-area, #hero-section-features .license-section .license-container .hero-content-area, .license-section #hero-section-features .license-container .hero-content-area {
   padding-top: 3rem;
 }
 
-#hero-section-features .hero-content-area .content {
-  max-height: 634px !important;
+#hero-section-features .container .hero-content-area .content, #hero-section-features .license-section .license-container .hero-content-area .content, .license-section #hero-section-features .license-container .hero-content-area .content {
+  max-height: 634px;
+}
+
+@media (max-width: 768px) {
+  #hero-section-features .container .hero-content-area .content, #hero-section-features .license-section .license-container .hero-content-area .content, .license-section #hero-section-features .license-container .hero-content-area .content {
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
 }
 
 #hero-section-features .hero-content-area .content {
@@ -1140,7 +1206,7 @@ body {
   padding-bottom: 7rem;
 }
 
-#ub-features .container .section-heading .section-title, #ub-features .license-section .license-container .section-heading .section-title, .license-section #ub-features .license-container .section-heading .section-title, #ub-features .container .section-heading .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-features .container .section-heading .license-title, #ub-features .license-section .license-container .section-heading .license-header .license-title, #ub-features .license-section .license-container .license-header .section-heading .license-title, .license-section #ub-features .license-container .section-heading .license-header .license-title, .license-section #ub-features .license-container .license-header .section-heading .license-title {
+#ub-features .container .section-heading .section-title, #ub-features .license-section .license-container .section-heading .section-title, .license-section #ub-features .license-container .section-heading .section-title, #ub-features .container .section-heading .job-title, #ub-features .license-section .license-container .section-heading .job-title, .license-section #ub-features .license-container .section-heading .job-title, #ub-features .container .section-heading .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-features .container .section-heading .license-title, #ub-features .license-section .license-container .section-heading .license-header .license-title, #ub-features .license-section .license-container .license-header .section-heading .license-title, .license-section #ub-features .license-container .section-heading .license-header .license-title, .license-section #ub-features .license-container .license-header .section-heading .license-title {
   font-size: 2.8rem;
 }
 
@@ -1180,28 +1246,74 @@ body {
   }
 }
 
-#feature-details .section-heading .circle-icon {
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: #4382FF;
-  border-radius: 50%;
+#ub-feature-details .container, #ub-feature-details .license-section .license-container, .license-section #ub-feature-details .license-container {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
-#feature-details .section-heading #hero-section-home .container .hero-content-area .hero-sub-title, #hero-section-home .container .hero-content-area #feature-details .section-heading .hero-sub-title, #feature-details .section-heading #hero-section-home .license-section .license-container .hero-content-area .hero-sub-title, #hero-section-home .license-section .license-container .hero-content-area #feature-details .section-heading .hero-sub-title, #feature-details .section-heading .license-section #hero-section-home .license-container .hero-content-area .hero-sub-title, .license-section #hero-section-home .license-container .hero-content-area #feature-details .section-heading .hero-sub-title, #feature-details .section-heading #hero-section-features .hero-content-area .hero-sub-title, #hero-section-features .hero-content-area #feature-details .section-heading .hero-sub-title, #feature-details .section-heading .section-sub-title {
-  background-color: #FFFFFF;
-  border: 1px solid #F3F7FF;
+#ub-feature-details .container .section-heading .heading-desc, #ub-feature-details .license-section .license-container .section-heading .heading-desc, .license-section #ub-feature-details .license-container .section-heading .heading-desc {
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 27px;
+}
+
+#ub-feature-details .container .features-area, #ub-feature-details .license-section .license-container .features-area, .license-section #ub-feature-details .license-container .features-area {
+  margin-top: 4rem;
+}
+
+#ub-feature-details .container .features-area .thumbnail, #ub-feature-details .license-section .license-container .features-area .thumbnail, .license-section #ub-feature-details .license-container .features-area .thumbnail {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+#ub-feature-details .container .features-area .thumbnail img, #ub-feature-details .license-section .license-container .features-area .thumbnail img, .license-section #ub-feature-details .license-container .features-area .thumbnail img {
+  width: 100%;
+}
+
+#ub-feature-details .container .feature-content, #ub-feature-details .license-section .license-container .feature-content, .license-section #ub-feature-details .license-container .feature-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
 }
 
-#feature-details .feature-content h3 {
+#ub-feature-details .container .feature-content .wrapper, #ub-feature-details .license-section .license-container .feature-content .wrapper, .license-section #ub-feature-details .license-container .feature-content .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+#ub-feature-details .container .feature-content .wrapper h3, #ub-feature-details .license-section .license-container .feature-content .wrapper h3, .license-section #ub-feature-details .license-container .feature-content .wrapper h3 {
   color: #171717;
+  font-weight: 500;
+  font-size: 1.875rem;
 }
 
-#feature-details .feature-content p {
+#ub-feature-details .container .feature-content .wrapper p, #ub-feature-details .license-section .license-container .feature-content .wrapper p, .license-section #ub-feature-details .license-container .feature-content .wrapper p {
   color: #404040;
+}
+
+@media (min-width: 768px) {
+  #ub-feature-details .container .feature-content, #ub-feature-details .license-section .license-container .feature-content, .license-section #ub-feature-details .license-container .feature-content {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #ub-feature-details .container, #ub-feature-details .license-section .license-container, .license-section #ub-feature-details .license-container {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
 }
 
 #ub-faq {
@@ -1462,7 +1574,7 @@ body {
   margin-bottom: 3.5rem;
 }
 
-#ub-pricing .section-heading .section-title, #ub-pricing .section-heading .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-pricing .section-heading .license-title {
+#ub-pricing .section-heading .section-title, #ub-pricing .section-heading .job-title, #ub-pricing .section-heading .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-pricing .section-heading .license-title {
   margin-bottom: 1.5rem;
   max-width: 556px;
 }
@@ -1603,7 +1715,7 @@ body {
   padding-right: 1.5rem;
 }
 
-#hero-pricing .container .content-area .content .section-title, #hero-pricing .license-section .license-container .content-area .content .section-title, .license-section #hero-pricing .license-container .content-area .content .section-title, #hero-pricing .container .content-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #hero-pricing .container .content-area .content .license-title, #hero-pricing .license-section .license-container .content-area .content .license-header .license-title, #hero-pricing .license-section .license-container .license-header .content-area .content .license-title, .license-section #hero-pricing .license-container .content-area .content .license-header .license-title, .license-section #hero-pricing .license-container .license-header .content-area .content .license-title {
+#hero-pricing .container .content-area .content .section-title, #hero-pricing .license-section .license-container .content-area .content .section-title, .license-section #hero-pricing .license-container .content-area .content .section-title, #hero-pricing .container .content-area .content .job-title, #hero-pricing .license-section .license-container .content-area .content .job-title, .license-section #hero-pricing .license-container .content-area .content .job-title, #hero-pricing .container .content-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #hero-pricing .container .content-area .content .license-title, #hero-pricing .license-section .license-container .content-area .content .license-header .license-title, #hero-pricing .license-section .license-container .license-header .content-area .content .license-title, .license-section #hero-pricing .license-container .content-area .content .license-header .license-title, .license-section #hero-pricing .license-container .license-header .content-area .content .license-title {
   font-size: 3rem;
   font-weight: 500;
   line-height: 57px;
@@ -1720,7 +1832,7 @@ body {
   gap: 1.5rem;
 }
 
-#pricing-details .pricing-details-area .content .section-title, #pricing-details .pricing-details-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #pricing-details .pricing-details-area .content .license-title {
+#pricing-details .pricing-details-area .content .section-title, #pricing-details .pricing-details-area .content .job-title, #pricing-details .pricing-details-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #pricing-details .pricing-details-area .content .license-title {
   margin-top: 0;
   text-align: left;
 }
@@ -1951,6 +2063,103 @@ body {
   }
 }
 
+#ub-blog-details .container, #ub-blog-details .license-section .license-container, .license-section #ub-blog-details .license-container {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+#ub-blog-details .container .section-heading .meta, #ub-blog-details .license-section .license-container .section-heading .meta, .license-section #ub-blog-details .license-container .section-heading .meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+#ub-blog-details .container .section-heading .meta span, #ub-blog-details .license-section .license-container .section-heading .meta span, .license-section #ub-blog-details .license-container .section-heading .meta span, #ub-blog-details .container .section-heading .meta p, #ub-blog-details .license-section .license-container .section-heading .meta p, .license-section #ub-blog-details .license-container .section-heading .meta p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+#ub-blog-details .container .section-heading .meta .blog-date p, #ub-blog-details .license-section .license-container .section-heading .meta .blog-date p, .license-section #ub-blog-details .license-container .section-heading .meta .blog-date p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ub-blog-details .container .section-heading .meta .blog-date p span, #ub-blog-details .license-section .license-container .section-heading .meta .blog-date p span, .license-section #ub-blog-details .license-container .section-heading .meta .blog-date p span {
+  padding: 0;
+}
+
+#ub-blog-details .container .section-heading .meta .blog-date img, #ub-blog-details .license-section .license-container .section-heading .meta .blog-date img, .license-section #ub-blog-details .license-container .section-heading .meta .blog-date img {
+  width: 12px;
+}
+
+#ub-blog-details .container .blog-area, #ub-blog-details .license-section .license-container .blog-area, .license-section #ub-blog-details .license-container .blog-area {
+  margin-top: 4rem;
+}
+
+#ub-blog-details .container .blog-area .thumbnail, #ub-blog-details .license-section .license-container .blog-area .thumbnail, .license-section #ub-blog-details .license-container .blog-area .thumbnail {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+#ub-blog-details .container .blog-area .thumbnail img, #ub-blog-details .license-section .license-container .blog-area .thumbnail img, .license-section #ub-blog-details .license-container .blog-area .thumbnail img {
+  width: 100%;
+}
+
+#ub-blog-details .container .blog-area .blog-content, #ub-blog-details .license-section .license-container .blog-area .blog-content, .license-section #ub-blog-details .license-container .blog-area .blog-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+#ub-blog-details .container .blog-area .blog-content .text-wrapper, #ub-blog-details .license-section .license-container .blog-area .blog-content .text-wrapper, .license-section #ub-blog-details .license-container .blog-area .blog-content .text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+#ub-blog-details .container .blog-area .blog-content .text-wrapper h3, #ub-blog-details .license-section .license-container .blog-area .blog-content .text-wrapper h3, .license-section #ub-blog-details .license-container .blog-area .blog-content .text-wrapper h3 {
+  font-weight: 500;
+  font-size: 1.875rem;
+  color: #171717;
+}
+
+@media (min-width: 768px) {
+  #ub-blog-details .container .blog-area .blog-content, #ub-blog-details .license-section .license-container .blog-area .blog-content, .license-section #ub-blog-details .license-container .blog-area .blog-content {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #ub-blog-details .container, #ub-blog-details .license-section .license-container, .license-section #ub-blog-details .license-container {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
 #ub-cta .cta-area {
   margin: 0 auto;
   background-color: #012C16;
@@ -2100,13 +2309,14 @@ body {
   margin-top: -90px;
 }
 
-.our-mission .card {
-  background-color: #EBF5EF;
+#blog-breadcrumb .container, #blog-breadcrumb .license-section .license-container, .license-section #blog-breadcrumb .license-container {
+  padding-top: 13rem;
+  padding-bottom: 24rem;
 }
 
-.our-mission .card p {
-  color: #404040;
-  font-size: 18px;
+#blog-breadcrumb .container .section-heading .section-desc, #blog-breadcrumb .license-section .license-container .section-heading .section-desc, .license-section #blog-breadcrumb .license-container .section-heading .section-desc, #blog-breadcrumb .container .section-heading #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #blog-breadcrumb .container .section-heading li, #blog-breadcrumb .license-section .license-container .section-heading #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item #blog-breadcrumb .license-section .license-container .section-heading li, .license-section #blog-breadcrumb .license-container .section-heading #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .content .list-item .license-section #blog-breadcrumb .license-container .section-heading li, #blog-breadcrumb .container .section-heading .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #blog-breadcrumb .container .section-heading .license-description, #blog-breadcrumb .license-section .license-container .section-heading .license-header .license-description, #blog-breadcrumb .license-section .license-container .license-header .section-heading .license-description, .license-section #blog-breadcrumb .license-container .section-heading .license-header .license-description, .license-section #blog-breadcrumb .license-container .license-header .section-heading .license-description {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 #ub-team .container .section-heading, #ub-team .license-section .license-container .section-heading, .license-section #ub-team .license-container .section-heading {
@@ -2180,7 +2390,7 @@ body {
   }
 }
 
-#ub-team-details .details-area .content .section-title, #ub-team-details .details-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-team-details .details-area .content .license-title {
+#ub-team-details .details-area .content .section-title, #ub-team-details .details-area .content .job-title, #ub-team-details .details-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-team-details .details-area .content .license-title {
   text-align: left;
 }
 
@@ -2288,6 +2498,155 @@ body {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
     gap: 3.5rem;
+  }
+}
+
+#ub-mission .container, #ub-mission .license-section .license-container, .license-section #ub-mission .license-container {
+  padding-top: 0;
+}
+
+#ub-mission .container .about-image, #ub-mission .license-section .license-container .about-image, .license-section #ub-mission .license-container .about-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+#ub-mission .container .about-image .image-wrapper, #ub-mission .license-section .license-container .about-image .image-wrapper, .license-section #ub-mission .license-container .about-image .image-wrapper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #ub-mission .container .about-image .image-wrapper.large, #ub-mission .license-section .license-container .about-image .image-wrapper.large, .license-section #ub-mission .license-container .about-image .image-wrapper.large {
+    width: 66.6667%;
+  }
+}
+
+@media (min-width: 768px) {
+  #ub-mission .container .about-image .image-wrapper.small, #ub-mission .license-section .license-container .about-image .image-wrapper.small, .license-section #ub-mission .license-container .about-image .image-wrapper.small {
+    width: 33.3333%;
+  }
+}
+
+#ub-mission .container .about-image .image-wrapper img, #ub-mission .license-section .license-container .about-image .image-wrapper img, .license-section #ub-mission .license-container .about-image .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  #ub-mission .container .about-image, #ub-mission .license-section .license-container .about-image, .license-section #ub-mission .license-container .about-image {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+#ub-mission .container .our-mission, #ub-mission .license-section .license-container .our-mission, .license-section #ub-mission .license-container .our-mission {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+#ub-mission .container .our-mission .card, #ub-mission .license-section .license-container .our-mission .card, .license-section #ub-mission .license-container .our-mission .card {
+  border-radius: 12px;
+  background-color: #EBF5EF;
+  padding: 1.5rem;
+}
+
+#ub-mission .container .our-mission .card .card-title, #ub-mission .license-section .license-container .our-mission .card .card-title, .license-section #ub-mission .license-container .our-mission .card .card-title {
+  font-size: 2.25rem;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#ub-mission .container .our-mission .card .card-desc, #ub-mission .license-section .license-container .our-mission .card .card-desc, .license-section #ub-mission .license-container .our-mission .card .card-desc {
+  text-align: left;
+  line-height: 1.625;
+  color: #404040;
+  font-size: 18px;
+}
+
+@media (min-width: 1024px) {
+  #ub-mission .container .our-mission .card.col-span-3, #ub-mission .license-section .license-container .our-mission .card.col-span-3, .license-section #ub-mission .license-container .our-mission .card.col-span-3 {
+    grid-column: span 3;
+  }
+  #ub-mission .container .our-mission .card.col-span-2, #ub-mission .license-section .license-container .our-mission .card.col-span-2, .license-section #ub-mission .license-container .our-mission .card.col-span-2 {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 768px) {
+  #ub-mission .container .our-mission, #ub-mission .license-section .license-container .our-mission, .license-section #ub-mission .license-container .our-mission {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #ub-mission .container .our-mission, #ub-mission .license-section .license-container .our-mission, .license-section #ub-mission .license-container .our-mission {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+#job-details .container .job-details-area, #job-details .license-section .license-container .job-details-area, .license-section #job-details .license-container .job-details-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+#job-details .container .job-details-area .content-wrapper .top-spacing-4, #job-details .license-section .license-container .job-details-area .content-wrapper .top-spacing-4, .license-section #job-details .license-container .job-details-area .content-wrapper .top-spacing-4 {
+  margin-top: 1rem;
+}
+
+#job-details .container .job-details-area .content-wrapper .top-spacing-16, #job-details .license-section .license-container .job-details-area .content-wrapper .top-spacing-16, .license-section #job-details .license-container .job-details-area .content-wrapper .top-spacing-16 {
+  margin-top: 4rem;
+}
+
+@media (min-width: 1024px) {
+  #job-details .container .job-details-area .content-wrapper, #job-details .license-section .license-container .job-details-area .content-wrapper, .license-section #job-details .license-container .job-details-area .content-wrapper {
+    grid-column: span 2;
+  }
+}
+
+#job-details .container .job-details-area .form-wrapper .contact-form, #job-details .license-section .license-container .job-details-area .form-wrapper .contact-form, .license-section #job-details .license-container .job-details-area .form-wrapper .contact-form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+#job-details .container .job-details-area .form-wrapper .contact-form .input-wrapper, #job-details .license-section .license-container .job-details-area .form-wrapper .contact-form .input-wrapper, .license-section #job-details .license-container .job-details-area .form-wrapper .contact-form .input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* flex-col */
+  margin-bottom: 1rem;
+  /* mb-4 */
+}
+
+@media (min-width: 1024px) {
+  #job-details .container .job-details-area, #job-details .license-section .license-container .job-details-area, .license-section #job-details .license-container .job-details-area {
+    gap: 3.5rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -2642,7 +3001,7 @@ body {
   padding-bottom: 0;
 }
 
-#ub-stats-section .container .section-heading-area .section-title, #ub-stats-section .license-section .license-container .section-heading-area .section-title, .license-section #ub-stats-section .license-container .section-heading-area .section-title, #ub-stats-section .container .section-heading-area .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-stats-section .container .section-heading-area .license-title, #ub-stats-section .license-section .license-container .section-heading-area .license-header .license-title, #ub-stats-section .license-section .license-container .license-header .section-heading-area .license-title, .license-section #ub-stats-section .license-container .section-heading-area .license-header .license-title, .license-section #ub-stats-section .license-container .license-header .section-heading-area .license-title {
+#ub-stats-section .container .section-heading-area .section-title, #ub-stats-section .license-section .license-container .section-heading-area .section-title, .license-section #ub-stats-section .license-container .section-heading-area .section-title, #ub-stats-section .container .section-heading-area .job-title, #ub-stats-section .license-section .license-container .section-heading-area .job-title, .license-section #ub-stats-section .license-container .section-heading-area .job-title, #ub-stats-section .container .section-heading-area .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #ub-stats-section .container .section-heading-area .license-title, #ub-stats-section .license-section .license-container .section-heading-area .license-header .license-title, #ub-stats-section .license-section .license-container .license-header .section-heading-area .license-title, .license-section #ub-stats-section .license-container .section-heading-area .license-header .license-title, .license-section #ub-stats-section .license-container .license-header .section-heading-area .license-title {
   font-size: 2.5rem;
   line-height: 48px;
   text-align: center;
@@ -2734,7 +3093,7 @@ body {
   margin-top: 5rem;
 }
 
-#job-details .job-details-area .section-title, #job-details .job-details-area .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #job-details .job-details-area .license-title {
+#job-details .job-details-area .section-title, #job-details .job-details-area .job-title, #job-details .job-details-area .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #job-details .job-details-area .license-title {
   font-size: 2.3rem;
   margin-bottom: 15px;
 }
@@ -2870,7 +3229,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-#terms-condition .content-area .section-header .section-title, #terms-condition .content-area .section-header .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #terms-condition .content-area .section-header .license-title {
+#terms-condition .content-area .section-header .section-title, #terms-condition .content-area .section-header .job-title, #terms-condition .content-area .section-header .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #terms-condition .content-area .section-header .license-title {
   margin-bottom: 1rem;
   font-size: 3.2rem;
   line-height: 70px;
@@ -2944,7 +3303,7 @@ body {
           justify-content: space-between;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .section-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .section-title, #sign-in .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .license-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .section-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .section-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .license-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .section-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .section-title, #sign-in .container .auth-panel .welcome-panel .welcome-content .job-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .job-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .job-title, #sign-in .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .license-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .section-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .section-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .section-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .job-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .job-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .job-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .license-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .license-header .license-title, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .license-title {
   color: #FFFFFF;
   text-align: center;
 }
@@ -2954,7 +3313,7 @@ body {
   text-align: center;
 }
 
-#sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title {
+#sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .job-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .job-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .job-title, #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-in .container .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-in .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, #sign-in .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, .license-section #sign-in .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, .license-section #sign-in .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .section-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .job-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .job-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .job-title, #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #sign-up .container .auth-panel .welcome-panel .welcome-content .feature-section .license-title, #sign-up .license-section .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, #sign-up .license-section .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title, .license-section #sign-up .license-container .auth-panel .welcome-panel .welcome-content .feature-section .license-header .license-title, .license-section #sign-up .license-container .license-header .auth-panel .welcome-panel .welcome-content .feature-section .license-title {
   font-size: 2rem;
   line-height: 48px;
   font-weight: 500;

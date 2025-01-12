@@ -17,8 +17,22 @@
     padding: 3px 20px;
     border-radius: 50px;
     text-align: center;
-    text-align: center;  
     font-size: 1.25rem;
+}
+.section-sub-title-with-bulet{
+    @extend .section-sub-title; 
+    background-color:$white;
+    border:1px solid #F3F7FF;
+    display: flex;
+    align-items:center;
+    gap: 0.5rem;
+}
+.circle-icon{
+    display: block;
+    width:8px; 
+    height:8px;
+    background-color:#4382FF;      
+    border-radius:50%;                  
 }
 .hero-title{
     font-family: $font-family-heading;
@@ -32,6 +46,20 @@
         font-size: 3.5rem;
     }
 }
+.hero-desc {
+    text-align: center; 
+    margin-top: 1.5rem; 
+    line-height: 27px;
+    font-size:18px;
+    line-height:27px;
+    color:$dark-gray;
+    font-weight: normal
+  }
+  .job-title{
+    @extend .section-title;
+    text-align:left;
+  }
+  
 .btn,.btn-primary{
     @include btn();
 }

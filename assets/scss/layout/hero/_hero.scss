@@ -69,17 +69,23 @@
 // features page
 #hero-section-features{
     margin-top: -90px;
-    .hero-content-area{
-        padding-top: 3rem; 
-        .content{ 
-            max-height: 634px !important; 
-        }
-        .hero-sub-title{
-            @extend .section-sub-title;
-        }
-        .hero-title{
-           @extend .hero-title; 
-        }
-    }  
+
+    .container{
+        padding-top:0;
+        padding-bottom:0;
+
+        .hero-content-area{
+            padding-top: 3rem; 
+
+            .content {
+                max-height: 634px;
+              
+                @media (max-width: 768px) {
+                  max-height: fit-content;
+                }
+              }              
+           
+        } 
+    } 
 } 
 

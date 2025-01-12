@@ -60,3 +60,20 @@
     }
     
 }
+
+.btn-wrapper {
+    display: flex; 
+    gap: 1rem; 
+    justify-content: center;  
+    margin-top: 2rem; 
+    margin-bottom: 2rem;
+}
+
+.blog-page .breadcrumb{
+    margin-top:-96px;
+}
+#blog-breadcrumb{
+    .custom-padding{
+        padding-bottom:17rem !important;    
+    }
+}
