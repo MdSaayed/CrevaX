@@ -2,8 +2,13 @@
     .container{
         padding: 0;
         .auth-panel{
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 3rem;  
+            align-items: center;  
             padding: 2rem;
             min-height: 100lvh;
+
             .welcome-panel{
                 background-color: $green-deep; 
                 border-radius: 20px;
@@ -68,9 +73,17 @@
 
             // form panel
             .form-panel{
+                display: flex;    
+                flex-direction: column;  
+                justify-content: center;
                 padding: 2rem 7rem;
                 position: relative;
                 height: 100vh;
+
+                .brand-header {
+                    margin-bottom: 2rem;  
+                  }
+                  
                 .tab-buttons{
                     background-color: $light-normal;
                     border-radius: 8px;
@@ -78,6 +91,8 @@
                     display: flex;
                     justify-content: space-between;
                     gap: 5px;
+                    margin-bottom: 1.5rem;
+                      
                     .tab-button{
                         @extend .btn; 
                         width: 50%;
@@ -98,6 +113,20 @@
                         }
                     }
                 }
+
+                .input-wrapper {
+                    display: flex;         
+                    flex-direction: column;  
+                    margin-bottom: 1rem;    
+                  }
+                
+                .flex-container {
+                    display: flex;            
+                    justify-content: space-between;  
+                    align-items: center;     
+                }
+                  
+
                 #signup-form ,#signin-form{
                     display: none;
                     &.active {
@@ -216,6 +245,12 @@
                 }
                 
             }
+             
+            @media (min-width: 1024px) {  
+                grid-template-columns: repeat(2, 1fr);  
+                gap: 0;  
+            }
+            
         }
     }
 }
