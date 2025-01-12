@@ -1,6 +1,10 @@
 #brands,#blogs,#cta,#footer{
     background-color: $mint-white;
 }
+.card-bg-white{
+    background-color:$white !important;  
+    box-shadow: 0px 11px 25px 0px rgba(0,0,0,0.1);
+}
 
 .list{
     list-style-type: disc;  
