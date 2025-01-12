@@ -1579,9 +1579,34 @@ body {
   display: none;
 }
 
-#hero-pricing .content-area {
+#hero-pricing .container, #hero-pricing .license-section .license-container, .license-section #hero-pricing .license-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#hero-pricing .container .content-area, #hero-pricing .license-section .license-container .content-area, .license-section #hero-pricing .license-container .content-area {
   background-color: #d5ebf2;
   z-index: -10;
+  border-radius: 1.5rem;
+}
+
+#hero-pricing .container .content-area .content, #hero-pricing .license-section .license-container .content-area .content, .license-section #hero-pricing .license-container .content-area .content {
+  min-height: 700px;
+  padding-top: 7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#hero-pricing .container .content-area .content .section-title, #hero-pricing .license-section .license-container .content-area .content .section-title, .license-section #hero-pricing .license-container .content-area .content .section-title, #hero-pricing .container .content-area .content .license-section .license-container .license-header .license-title, .license-section .license-container .license-header #hero-pricing .container .content-area .content .license-title, #hero-pricing .license-section .license-container .content-area .content .license-header .license-title, #hero-pricing .license-section .license-container .license-header .content-area .content .license-title, .license-section #hero-pricing .license-container .content-area .content .license-header .license-title, .license-section #hero-pricing .license-container .license-header .content-area .content .license-title {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 57px;
+  margin-top: 1.25rem;
+}
+
+#hero-pricing .container .content-area .content .section-desc, #hero-pricing .license-section .license-container .content-area .content .section-desc, .license-section #hero-pricing .license-container .content-area .content .section-desc, #hero-pricing .container .content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area #hero-pricing .container .content-area .content .list-item li, #hero-pricing .license-section .license-container .content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area #hero-pricing .license-section .license-container .content-area .content .list-item li, .license-section #hero-pricing .license-container .content-area #ub-team-details .details-area .content .list-item li, #ub-team-details .details-area .license-section #hero-pricing .license-container .content-area .content .list-item li, #hero-pricing .container .content-area .content .license-section .license-container .license-header .license-description, .license-section .license-container .license-header #hero-pricing .container .content-area .content .license-description, #hero-pricing .license-section .license-container .content-area .content .license-header .license-description, #hero-pricing .license-section .license-container .license-header .content-area .content .license-description, .license-section #hero-pricing .license-container .content-area .content .license-header .license-description, .license-section #hero-pricing .license-container .license-header .content-area .content .license-description {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 @media (min-width: 566px) {

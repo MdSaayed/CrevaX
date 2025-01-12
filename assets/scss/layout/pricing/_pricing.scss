@@ -174,10 +174,36 @@
 
 // Pricing Page
 #hero-pricing {
-    // Default styles
-    .content-area {
-        background-color: #d5ebf2;
-        z-index: -10;
+    .container{
+        padding-top:0;
+        padding-bottom:0;
+
+        .content-area {
+            background-color: #d5ebf2;
+            z-index: -10;
+            border-radius:1.5rem;
+
+            .content {
+                min-height: 700px;  
+                padding-top: 7rem;   
+                padding-left: 1.5rem;  
+                padding-right: 1.5rem;  
+
+                .section-title {
+                    font-size: 3rem;  
+                    font-weight: 500;  
+                    line-height: 57px;
+                    margin-top: 1.25rem;  
+                }
+                .section-desc {
+                    margin-top: 1.5rem; 
+                    text-align: center;
+                }
+                  
+                  
+              }
+              
+        }
     }
 
     // Responsive breakpoint for 565px
