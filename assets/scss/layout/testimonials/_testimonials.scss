@@ -1,5 +1,5 @@
 #ub-testimonial{
-    background-color: $light-color;
+    background-color:$soft-lilac;
     .section-sub-title{
         @extend .section-sub-title;
     }
@@ -30,6 +30,7 @@
                  p{
                     color: $dark-gray;
                     font-weight:500;
+                    font-size:16px;
                     line-height: 24px;
                 }
             }
@@ -66,7 +67,7 @@
                     .bio-position {
                         line-height: 24px;  
                         color: #4B5563;
-                        font-size:16;
+                        font-size:16px;
                         font-weight:normal; 
                     }
                     

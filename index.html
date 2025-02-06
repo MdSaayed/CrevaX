@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrevaX</title>
     <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- maincss -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/scss/main.css">
@@ -37,7 +37,7 @@
                     <nav>
                         <ul class="nav-menu">
                             <!-- Main navigation links -->
-                            <li><a href="index.html">Home</a></li>
+                            <li><a class="active" href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="careers.html">Careers</a></li>
                             <li><a href="feature.html">Features</a></li>
@@ -105,7 +105,8 @@
                 <div  class="hero-content-area"  data-bg-img="./assets/img/hero/heroBg.png" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="content">
                         <div class="sub-title-wrapper" data-aos="fade-up" data-aos-delay="300">
-                            <span class="hero-sub-title">Boost Customer Relationships with AirSync</span>
+                            <img src="./assets/icons/fav.svg" alt="">
+                            <span class="section-sub-title">Boost Customer Relationships with AirSync</span>
                         </div>
                         <h1 data-aos="fade-up" data-aos-delay="400" class="hero-title">Revolutionize your CRM <br>experience with AirSync </h1>
                         <p class="section-desc" data-aos="fade-up" ata-aos-delay="500" > Introducing AirSync: the all-in-one CRM solution for seamless customer relationship management. <br>
@@ -124,6 +125,39 @@
             </div>
         </section>
         <!-- hero end here --> 
+
+        <!-- hero start here -->
+        <section id="hero-section-home" class="hero">
+            <div class="hero__container container">
+                <div class="hero__content-area" data-bg-img="./assets/img/hero/heroBg.png" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="hero__content">
+                        <!-- Subtitle Section -->
+                        <div class="hero__subtitle-area">
+                            <div class="hero__subtitle-group">
+                                <img class="hero__icon" src="./assets/icons/fav.svg" alt="Favorite Icon">
+                                <span class="hero__subtitle">Boost Customer Relationships with AirSync</span>
+                            </div>
+                        </div>
+                        <h1 class="hero__title" data-aos="fade-up" data-aos-delay="400">Revolutionize your CRM <br>experience with AirSync</h1>
+                        <!-- Description -->
+                        <p class="hero__description" data-aos="fade-up" data-aos-delay="500">
+                            Introducing AirSync: the all-in-one CRM solution for seamless customer relationship management. <br>
+                            Streamline workflow, boost productivity, and drive growth with our user-friendly platform.
+                        </p>
+                        <!-- Buttons -->
+                        <div class="hero__button-group" data-aos="fade-up" data-aos-delay="600">
+                            <button class="hero__button hero__button--primary">Get started</button>
+                            <button class="hero__button hero__button--secondary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Background Image -->
+                <div class="hero__image-wrapper" data-aos="fade-up" data-aos-delay="700">
+                    <img class="hero__img" src="./assets/img/hero/Application Shell.png" alt="Application Shell">
+                </div>
+            </div>
+        </section>
+        <!-- hero end here -->
 
         <!-- brands start here -->
         <section id="ub-brands">
@@ -168,7 +202,7 @@
                         <a href="feature-single.html" class="thumbnail">
                             <h3 class="feature-title">Analytics & Reporting</h3>
                         </a>
-                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <p class="feature-desc">Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
                         <div class="feature-thumbnail">
                             <a href="feature-single.html" class="thumbnail">
                                 <img  src="./assets/img/features/feature-1.png" alt="">
@@ -179,7 +213,7 @@
                         <a href="feature-single.html" class="thumbnail">
                             <h3 class="feature-title">Centralized Customer Data</h3>
                         </a>
-                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <p class="feature-desc">Tailor your CRM dashboard to suit your business needs. Customize your view with widgets, reports, and KPIs that matter most to you and your team.</p>
                         <div class="feature-thumbnail">
                             <a href="feature-single.html" class="thumbnail">
                                 <img  src="./assets/img/features/feature-2.png" alt="">
@@ -190,7 +224,7 @@
                         <a href="feature-single.html" class="thumbnail">
                             <h3 class="feature-title">Task & Workflow Automation</h3>
                         </a>
-                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <p class="feature-desc">Easily access customer profiles, communication history, and transaction details in a single, organized dashboard. No more switching between tools or losing track of valuable information</p>
                         <div class="feature-thumbnail">
                             <a href="feature-single.html" class="thumbnail">
                                 <img  src="./assets/img/features/feature-3.png" alt="">
@@ -201,7 +235,7 @@
                         <a href="feature-single.html" class="thumbnail">
                             <h3 class="feature-title">Customizable Dashboards</h3>
                         </a>
-                        <p>Make data-driven decisions with our advanced reporting features. Track customer trends, monitor sales pipelines, and evaluate team performance to improve your overall strategy</p>
+                        <p class="feature-desc">Automate repetitive tasks like sending follow-up emails, assigning tasks to team members, or setting reminders. Free up time to focus on what matters most—growing your business.</p>
                         <div class="feature-thumbnail">
                             <a href="feature-single.html" class="thumbnail">
                                 <img src="./assets/img/features/feature-4.png" alt="">
@@ -218,15 +252,14 @@
             <div class="container">
                 <div class="grid-container">
                     <!-- Section Heading -->
-                    <div class="section-heading">
+                    <div class="section-heading" data-aos="fade-up" data-aos-duration="600">
                         <div class="sub-title-wrapper">
-                            <span class="section-sub-title" data-aos="fade-right" data-aos-duration="500">Faq</span>
+                            <span class="section-sub-title">Faq</span>
                         </div>
-                        <h2 class="section-title "data-aos="fade-right" data-aos-duration="600">The answers to <br> your questions.</h2>
+                        <h2 class="section-title">The answers to <br> your questions.</h2>
                     </div>
-
                     <!-- faq area -->
-                    <div class="faq-area" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="faq-area" data-aos="fade-up" data-aos-duration="700">
                         <!-- faw item -->
                         <div class="faq-item">
                             <button class="faq-question">
@@ -401,7 +434,7 @@
         <!-- pricing start here -->
         <section id="ub-pricing"> 
             <div class="container">
-                <div class="section-heading">
+                <div class="section-heading"> 
                     <h2 class="section-title" data-aos="fade-up" data-aos-duration="500">Powerful features for </br> Visionary Creators</h2>
                     <p class="section-desc" data-aos="fade-up" data-aos-duration="600">AirSync offers flexible pricing plans for businesses of all sizes. Whether you're a small startup or a large enterprise</p>
                 </div>
@@ -548,15 +581,15 @@
                         <div class="blog-content">
                             <div class="meta">
                                 <div class="blog-cat">
-                                    <span >Technology</span>
+                                    <span class="">Technology</span>
                                 </div>
                                 <div class="blog-date">
-                                    <p ><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                                    <p class=""><span><img src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
                                 </div>
                             </div>
                             <div class="blog-title">
                                 <a href="blog-details.html">
-                                    <p class="font-medium text-2xl">Stay ahead of the curve with the newest features on AirSync CRM Platform!</p>
+                                    <h2>Stay ahead of the curve with the newest features on AirSync CRM Platform!</h2>
                                 </a>
                             </div>
                         </div>
@@ -565,15 +598,15 @@
                         <div class="blog-content">
                             <div class="meta">
                                 <div class="blog-cat">
-                                    <span >Technology</span>
+                                    <span class="">Technology</span>
                                 </div>
                                 <div class="blog-date">
-                                    <p ><span><img class="w-[12px]" src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
+                                    <p class=""><span><img src="./assets/icons/calendar.svg" alt=""></span> <span>July 10,2024</span></p>
                                 </div>
                             </div>
                             <div class="blog-title">
                                 <a href="blog-details.html">
-                                    <p class="font-medium text-2xl">Stay in the loop with the newest features and enhancements on the AirSync CRM website!</p>
+                                    <h2>Stay in the loop with the newest features and enhancements on the AirSync CRM website!</h2>
                                 </a>
                             </div>
                         </div>
@@ -594,7 +627,7 @@
                 </div>
             </div>
         </section>
-        <!-- blogs end here -->
+        <!-- blogs end here -->   
 
         <!-- CTA start here -->
         <section id="ub-cta">
@@ -709,7 +742,7 @@
                           </p>
                     </div>
                     <div>
-                        <ul class="flex gap-2 justify-end">
+                        <ul class="social-liks">
                             <li><a href=""> <img src="./assets/icons/X.svg" alt=""></a></li>
                             <li><a href=""> <img src="./assets/icons/LinkedIn.svg" alt=""></a></li>
                         </ul>
@@ -722,6 +755,6 @@
   
 
     <!-- js  -->
-     <script src="./assets/js/srcipts.js"></script>
+     <script src="./assets/js/srcipts.js"></script> 
 </body>
 </html>

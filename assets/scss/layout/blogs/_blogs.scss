@@ -10,7 +10,7 @@
             display: grid;
             grid-template-columns: 1fr;  
             gap: 2rem;  
-            margin-top: 5rem;  
+            margin-top: 5rem;   
 
             .blog-card {
                 background-color: $white;
@@ -37,16 +37,25 @@
                         border-radius: 0.25rem;  
                     }
 
-                    .blog-date p {
-                        display: flex;  
-                        gap: 0.5rem;  
-                        align-items: center;  
-                        padding: 2px 0.5rem;
-                        border-radius: 0.25rem;  
+                    .blog-date{
+                        p {
+                            display: flex;  
+                            gap: 0.5rem;  
+                            align-items: center;  
+                            padding: 2px 0.5rem;
+                            border-radius: 0.25rem;  
+                        }
+                        img{
+                            width:12px; 
+                        }
                     }
 
                     .blog-title {
                         margin-top: 1rem;
+                        font-weight: 500;  
+                        font-size: 1.5rem; 
+                        line-height: 2rem;
+                        color:$dark-neutral;
                     }
                 }
 

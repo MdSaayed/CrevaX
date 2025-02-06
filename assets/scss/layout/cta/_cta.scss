@@ -32,7 +32,7 @@
             margin-top: 2rem;  
             z-index: 9999;
             .cta-btn{
-                @include btn($bgColor: $light-color, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor: $light-color, $border:$light-color); 
+                @include btn($bgColor:$soft-lilac, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor:$soft-lilac, $border:$soft-lilac); 
                 display:inline-block;
                 
             }

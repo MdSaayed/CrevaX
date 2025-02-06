@@ -7,10 +7,10 @@
     padding-bottom: 0;
 
     .header-wrapper {
-      display: flex;  
-      justify-content: space-between;  
-      align-items: center;  
-      height: 96px; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 96px;
 
       nav {
         ul {
@@ -20,20 +20,25 @@
           gap: 24px;
 
           li {
-            color: $soft-gray;
             font-weight: 400;
             line-height: 100px;
             position: relative;
 
-            &:hover {
-              color: $primary-color;
-              transition: 0.5s ease;
+            > a {
+              color: $soft-gray;
+
+              &.active {
+                color: $primary-color;
+              }
+
+              &:hover {
+                color: $primary-color;
+                transition: 0.5s ease;
+              }
+
               @media (max-width: 992px) {
                 color: $white;
               }
-            @media (max-width: 992px) {
-              color: $white !important;
-            }
             }
 
             &.has-dropdown {
@@ -50,6 +55,7 @@
                 color: $soft-gray;
                 font-weight: 500;
                 transition: color 0.3s ease;
+
                 @media (max-width: 992px) {
                   right: 20px;
                   color: $white !important;
@@ -60,7 +66,6 @@
               &:hover::after {
                 content: '-';
                 color: $primary-color;
-                
               }
 
               .dropdown {
@@ -76,19 +81,30 @@
                 background-color: $white;
                 box-shadow: 5px 6px 15px -7px rgba(64, 64, 64, 0.3);
                 z-index: 1000;
+
                 li {
-                  color: $dark-gray;
                   line-height: 30px !important;
                   width: 100%;
-                  padding: 5px 15px;   
+                  padding: 5px 15px;
 
                   &:not(:first-child) {
                     border-top: 1px solid $light-normal;
                   }
 
+                  > a {
+                    color: $dark-gray;
+
+                    @media (max-width: 992px) {
+                      color: $white;
+                    }
+                  }
+
                   &:hover {
                     background-color: $primary-color;
-                    color: $white;
+
+                    > a {
+                      color: $white !important;
+                    }
 
                     @media (max-width: 992px) {
                       background-color: rgba(255, 255, 255, 0.1);
@@ -133,12 +149,12 @@
                     color: $white;
                   }
                 }
+
                 @media (max-width: 992px) {
                   position: static;
                   background-color: #000;
                   display: none;
                   padding: 5px;
-                  // padding-top: 0px;
                   border-radius: 5px;
                   margin-top: 10px;
                 }
@@ -164,6 +180,7 @@
               line-height: 30px !important;
             }
           }
+
           @media (max-width: 992px) {
             flex-direction: column;
             width: 100%;
@@ -192,7 +209,7 @@
           overflow-y: scroll;
           position: absolute;
           top: 0;
-          padding: 100px 0px;
+          padding: 100px 0;
           left: 0;
           width: 100%;
           height: 100vh;
@@ -209,27 +226,28 @@
       }
 
       .header-btn-area {
-        display: flex;  
-        align-items: center;  
-        gap: 1.5rem; 
-          .login-btn {
-            color: $soft-gray;
-            font-weight: 400;
-            line-height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
 
-            @media (max-width: 768px) {
-              display: none;
-            }
-          }
+        .login-btn {
+          color: $soft-gray;
+          font-weight: 400;
+          line-height: 24px;
 
-          .fa-bars {
+          @media (max-width: 768px) {
             display: none;
-            font-size: 25px;
-
-            @media (max-width: 992px) {
-              display: block;
-            }
           }
+        }
+
+        .fa-bars {
+          display: none;
+          font-size: 25px;
+
+          @media (max-width: 992px) {
+            display: block;
+          }
+        }
       }
     }
   }
@@ -250,4 +268,4 @@
     content: '-';
     color: $white !important;
   }
-} 
+}

@@ -6,20 +6,34 @@
     color: $dark-neutral;
     text-align:center;
 }
-.sub-title-wrapper{
+.hero__title{
+    @extend .section-title;
+}
+.hero__description{
+    color:$dark-gray;
+    font-size:18px;
+    line-height:27px;
+}
+
+.hero__subtitle-area,.flex-container{ 
     display: flex;
     justify-content:center;
+    align-items:center;
 }
-.section-sub-title{
-    color:$soft-gray ;
-    border: 1px solid $light-mint-green; 
+.subtitle__wrapper,.hero__subtitle-group{
+    background-color:$soft-lilac;   
+    border: 1px solid $light-gray-blue; 
+}
+.hero__subtitle, .sectoin__subtitle{
+    color:$deep-violet;   
     font-weight: 500;
-    padding: 3px 20px;
+    padding: 3px 20px; 
     border-radius: 50px;
     text-align: center;
     font-size: 1.25rem;
+    line-height:24px;
 }
-.section-sub-title-with-bulet{
+.section-sub-title-with-bulet{ 
     @extend .section-sub-title; 
     background-color:$white;
     border:1px solid #F3F7FF;
@@ -29,7 +43,7 @@
 }
 .circle-icon{
     display: block;
-    width:8px; 
+    width:8px;  
     height:8px;
     background-color:#4382FF;      
     border-radius:50%;                  
@@ -64,7 +78,7 @@
     @include btn();
 }
 .btn-secondary {
-    @include btn($bgColor: $light-color, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor: $light-color, $border:$light-color);    
+    @include btn($bgColor:$soft-lilac, $hoverBgColor: $primary-color, $color:$dark-gray, $hoverColor:$soft-lilac, $border:$soft-lilac);    
 } 
 
 .light-bg{
@@ -73,7 +87,7 @@
 
 .blog-cat{
     span{
-        background-color: $light-color;
+        background-color:$soft-lilac;
         font-weight: 500;
         color: $dark-gray;
         display: block; 
@@ -81,7 +95,7 @@
 }
 .blog-date{
     p{
-        background-color: $light-color;
+        background-color:$soft-lilac;
         font-weight: 500;
         color: $dark-gray; 
     }
@@ -91,6 +105,9 @@
 } 
 .section-desc{
     color: $dark-gray;
+    font-size:18px;
+    line-height:27px;
+    font-weight: normal;
 }
 
 .team-member-card{

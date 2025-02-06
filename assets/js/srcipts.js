@@ -15,16 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+ 
 
-
-
+// select  faq question
 const faqQuestions = document.querySelectorAll('.faq-question');
-
 // Set the first item active by default
 const firstAnswer = document.querySelector('.faq-answer.active');
 if (firstAnswer) {
     firstAnswer.style.maxHeight = firstAnswer.scrollHeight + 'px'; // Set height dynamically
 }
+
 
 // Add click event listeners for toggle
 faqQuestions.forEach(item => {
@@ -62,8 +62,6 @@ faqQuestions.forEach(item => {
 });
 
 
-
-
 // pricing swither
 document.querySelectorAll('.switcher-btn').forEach(button => {
     button.addEventListener('click', () => {
@@ -83,8 +81,6 @@ document.querySelectorAll('.switcher-btn').forEach(button => {
 });
 
 
-
-
 // Select all filter buttons
 const filterButtons = document.querySelectorAll('.filter-btn');
 filterButtons.forEach(button => {
@@ -96,7 +92,7 @@ filterButtons.forEach(button => {
   });
 });
 
-  
+
 // coundown section
 function startCounter() {
   const counters = document.querySelectorAll('#stats-section .animated-text');
@@ -282,7 +278,7 @@ function validateEmail(email) {
 function validatePasswordStrength(password) {
     const lengthRequirement = password.length >= 8;
     const hasNumber = /\d/.test(password);
-    const hasSpecialChar = /[!@#$%^&*]/.test(password);
+    const hasSpecialChar = /[!@#$%^&*]/.test(password); 
     const hasUpperCase = /[A-Z]/.test(password);
     const hasLowerCase = /[a-z]/.test(password);
 

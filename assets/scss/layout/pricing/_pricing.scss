@@ -36,7 +36,7 @@
         margin-top: 4rem;
 
         .card{
-            background-color: $light-color;
+            background-color:$soft-lilac;
             border: 1px solid rgba(64, 64, 64, 0.12);   
             padding: 2.5rem; 
             border-radius: 1rem;
@@ -51,13 +51,14 @@
                     color: #FAFDFB; 
                 }
                 .buy-now-btn{
-                    background-color: $light-color;
+                    background-color:$soft-lilac;
                 }
             }
 
             h3 {
                 font-weight: 600;  
                 font-size: 1.25rem;  
+                line-height:30px;
                 text-align: center; 
                 color: $soft-gray;
             }
@@ -82,8 +83,10 @@
             }
 
             .features-wrapper{
+                margin-top:2.5rem;
                 li {
                     margin-bottom: 0.75rem;
+                    text-align:center;
 
                     i{
                         width: 21px;  
@@ -102,12 +105,17 @@
                 margin-top: 4rem;
                 
                 .buy-now-btn{
-                    text-decoration: none;
                     display: block;
+                    text-decoration: none;
+                    font-size:16;
+                    font-weight:500;
+                    line-height: 24px;
                     background-color: $soft-green-gray;
-                    padding: 12px 5px;
+                    color:$dark-gray;
+                    padding: 8px 5px;
                     border-radius: 32px;
                     text-align: center;
+                    width:100%;
                 }
               }
               
@@ -213,7 +221,7 @@
             align-items: center;
 
             &:nth-child(odd) {
-                background-color: $light-color;
+                background-color:$soft-lilac;
             }
 
             &:nth-child(even) {

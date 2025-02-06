@@ -6,6 +6,16 @@
     box-shadow: 0px 11px 25px 0px rgba(0,0,0,0.1);
 }
 
+p {
+	font-size: 1.125;  
+	line-height: 1.688;  
+}
+a{
+	// color:$dark-neutral;
+	text-decoration: none;
+	display: inline-block;        
+}
+
 .list{
     list-style-type: disc;  
     padding-left: 20px;    
@@ -19,7 +29,7 @@
         font-size: 16px;
     }
 }
-
+ 
 .pricing-switcher {
     display: flex;  
     align-items: center;  
@@ -35,23 +45,27 @@
         border-radius: 9999px;    
 
         .switcher-btn {
-            font-family: 'Inter', sans-serif;
             border: none;
             background: none;
             color: $dark-gray;
-            transition: color 0.3s, background-color 0.3s;
+            font-weight:normal;
+            font-size:18px;
+            line-height:27px;
+            transition: color 0.3s, background-color 0.3s; 
             padding: 8px 15px;
             border-radius: 50px;
             cursor: pointer;
     
             &.active {
-            background-color: $primary-color; 
-            color: $light-color;
+                background-color: $primary-color; 
+                color:$soft-lilac;
+                font-weight:500;
             }
     
             &:hover {
-            background-color:$primary-color;
-            color: $light-color;
+                background-color:$primary-color;
+                color:$soft-lilac;
+                font-weight:500;
             }
             @media (max-width: 310px) {
                     padding: 4px 12px;
@@ -76,4 +90,9 @@
     .custom-padding{
         padding-bottom:17rem !important;    
     }
+}
+button{
+    border: none;
+    outline: none;
+    background: transparent;  
 }

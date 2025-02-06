@@ -7,7 +7,7 @@
         grid-template-columns: 3fr; 
         gap:4rem;
         .section-heading {
-            .sub-title-wrapper{
+            .sub-title-wrapper{ 
                 display: flex;
                 justify-content: start;
             }
@@ -22,7 +22,7 @@
             padding-left: 0;         
 
             .faq-item {
-                background-color: $light-color;
+                background-color:$soft-lilac;
                 width: 100%;
                 border-radius: 0.5rem;
                 padding: 1rem;
@@ -38,6 +38,10 @@
                     cursor: pointer;
                     gap: 1rem;
                     text-align: left;
+
+                    span{
+                        color:$dark-neutral;
+                    }
                 }
 
                 .faq-toggle-icon {
@@ -64,16 +68,18 @@
                 
 
                 .faq-answer {
-                    max-height: 0; // Initial state for transition
+                    max-height: 0;  
                     overflow: hidden;
                     opacity: 0;
                     color: $soft-gray;
+                    font-size:18px;
+                    line-height:27px;
                     transition:
                         max-height 0.5s ease-in-out,
                         opacity 0.5s ease-in-out;
                 
                     &.active {
-                        opacity: 1 !important; // Fade in when active
+                        opacity: 1 !important;  
                     }
                     p{
                         margin-top: 10px;

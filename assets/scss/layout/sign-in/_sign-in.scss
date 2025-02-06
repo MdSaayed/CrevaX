@@ -25,7 +25,7 @@
                         text-align: center;
                     }
                     .section-desc{
-                        color: $light-color;
+                        color:$soft-lilac;
                         text-align: center;
                     }
                     .feature-section{
@@ -104,12 +104,12 @@
                         &:hover{
                             border: none !important;
                             background-color: $primary-color;
-                            color: $light-color;
+                            color:$soft-lilac;
 
                         }
                         &.active{
                             background-color: $primary-color;
-                            color: $light-color;
+                            color:$soft-lilac;
                         }
                     }
                 }
@@ -175,7 +175,7 @@
                         list-style: none; 
                         padding: 0;
                         &.active{
-                            color: $primary-color;
+                            color: $primary-color; 
                         }
                     
                         .strength-item {
@@ -201,7 +201,7 @@
                         font-weight: 500;
                     }
                     .sign-in-btn {
-                        @include btn($bgColor: "transparent", $hoverBgColor: $primary-color, $color:$primary-color, $hoverColor: $light-color, $border:$primary-color); 
+                        @include btn($bgColor: "transparent", $hoverBgColor: $primary-color, $color:$primary-color, $hoverColor:$soft-lilac, $border:$primary-color); 
                         width: 100%;
                         display: block;
                         text-align: center;

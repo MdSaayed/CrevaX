@@ -1,5 +1,6 @@
-@mixin btn($bgColor: $primary-color, $hoverBgColor: transparent, $color:$light-color, $hoverColor:$primary-color, $border:$primary-color) {
+@mixin btn($bgColor: $primary-color, $hoverBgColor: transparent, $color:$soft-lilac, $hoverColor:$primary-color, $border:$primary-color) {
     font-weight: 400;
+    font-size:16px;
     line-height: 24px;
     color: $color;
     background-color: $bgColor;
@@ -11,7 +12,7 @@
     &:hover {
         color: $hoverColor;
         background-color: $hoverBgColor;
-        border: 1px solid $primary-color;
+        border: 1px solid $primary-color; 
         transition: 0.5s ease;
     }
 }
